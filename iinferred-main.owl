@@ -1,0 +1,697 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/asus/ontologies/2019/2/iinferred-main#"
+     xml:base="http://www.semanticweb.org/asus/ontologies/2019/2/iinferred-main"
+     xmlns:untitled-ontology-41="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-41#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
+     xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:swrla="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/asus/ontologies/2019/2/iinferred-main"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled -->
+
+    <owl:AnnotationProperty rdf:about="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-41#hasChild -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-41#hasChild">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-41#hasParent"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-41#Parent"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-41#hasDaughter -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-41#hasDaughter">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-41#hasChild"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-41#Parent"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-41#Woman"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-41#hasFather -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-41#hasFather">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-41#hasParent"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-41#Man"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-41#hasGrandChild -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-41#hasGrandChild">
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-41#hasChild"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-41#hasChild"/>
+        </owl:propertyChainAxiom>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-41#hasGrandDaughter -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-41#hasGrandDaughter">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-41#hasGrandChild"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-41#Woman"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-41#hasGrandFather -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-41#hasGrandFather">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-41#hasGrandParent"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-41#Man"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-41#hasGrandMother -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-41#hasGrandMother">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-41#hasGrandParent"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-41#Woman"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-41#hasGrandParent -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-41#hasGrandParent">
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-41#hasParent"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-41#hasParent"/>
+        </owl:propertyChainAxiom>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-41#hasGrandSon -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-41#hasGrandSon">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-41#hasGrandChild"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-41#Man"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-41#hasHusband -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-41#hasHusband">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-41#hasSpouse"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-41#Man"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-41#hasMother -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-41#hasMother">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-41#hasParent"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-41#Woman"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-41#hasParent -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-41#hasParent"/>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-41#hasSon -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-41#hasSon">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-41#hasChild"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-41#Parent"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-41#Man"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-41#hasSpouse -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-41#hasSpouse">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-41#hasSpouse"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-41#Person"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-41#Person"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-41#hasWife -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-41#hasWife">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-41#hasSpouse"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-41#Woman"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-41#hasBOD -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-41#hasBOD">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-41#Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-41#hasDOD -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-41#hasDOD">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-41#Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-41#hasName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-41#hasName">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-41#Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-41#hasSex -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-41#hasSex">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-41#Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-41#Man -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-41#Man">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-41#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-41#Parent -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-41#Parent">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-41#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-41#Person -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-41#Person"/>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-41#Woman -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-41#Woman">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-41#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://id.dbpedia.org/resource/Bayu_Soekarnoputra -->
+
+    <owl:NamedIndividual rdf:about="http://id.dbpedia.org/resource/Bayu_Soekarnoputra">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-41#Man"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-41#Person"/>
+        <untitled-ontology-41:hasParent rdf:resource="http://id.dbpedia.org/resource/Hartini"/>
+        <untitled-ontology-41:hasParent rdf:resource="http://id.dbpedia.org/resource/Soekarno"/>
+        <untitled-ontology-41:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bayu_Soekarnoputra</untitled-ontology-41:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://id.dbpedia.org/resource/Fatmawati_Soekarno -->
+
+    <owl:NamedIndividual rdf:about="http://id.dbpedia.org/resource/Fatmawati_Soekarno">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-41#Parent"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-41#Person"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-41#Woman"/>
+        <untitled-ontology-41:hasChild rdf:resource="http://id.dbpedia.org/resource/Guntur_Soekarnoputra"/>
+        <untitled-ontology-41:hasChild rdf:resource="http://id.dbpedia.org/resource/Guruh_Soekarnoputra"/>
+        <untitled-ontology-41:hasChild rdf:resource="http://id.dbpedia.org/resource/Megawati_Soekarnoputri"/>
+        <untitled-ontology-41:hasChild rdf:resource="http://id.dbpedia.org/resource/Rachmawati_Soekarnoputri"/>
+        <untitled-ontology-41:hasChild rdf:resource="http://id.dbpedia.org/resource/Sukmawati_Soekarnoputri"/>
+        <untitled-ontology-41:hasSpouse rdf:resource="http://id.dbpedia.org/resource/Soekarno"/>
+        <untitled-ontology-41:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fatmawati_Soekarno</untitled-ontology-41:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://id.dbpedia.org/resource/Guntur_Soekarnoputra -->
+
+    <owl:NamedIndividual rdf:about="http://id.dbpedia.org/resource/Guntur_Soekarnoputra">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-41#Man"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-41#Person"/>
+        <untitled-ontology-41:hasParent rdf:resource="http://id.dbpedia.org/resource/Fatmawati_Soekarno"/>
+        <untitled-ontology-41:hasParent rdf:resource="http://id.dbpedia.org/resource/Soekarno"/>
+        <untitled-ontology-41:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Guntur_Soekarnoputra</untitled-ontology-41:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://id.dbpedia.org/resource/Guruh_Soekarnoputra -->
+
+    <owl:NamedIndividual rdf:about="http://id.dbpedia.org/resource/Guruh_Soekarnoputra">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-41#Man"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-41#Person"/>
+        <untitled-ontology-41:hasParent rdf:resource="http://id.dbpedia.org/resource/Fatmawati_Soekarno"/>
+        <untitled-ontology-41:hasParent rdf:resource="http://id.dbpedia.org/resource/Soekarno"/>
+        <untitled-ontology-41:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Guruh_Soekarnoputra</untitled-ontology-41:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://id.dbpedia.org/resource/Hartini -->
+
+    <owl:NamedIndividual rdf:about="http://id.dbpedia.org/resource/Hartini">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-41#Parent"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-41#Person"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-41#Woman"/>
+        <untitled-ontology-41:hasChild rdf:resource="http://id.dbpedia.org/resource/Bayu_Soekarnoputra"/>
+        <untitled-ontology-41:hasChild rdf:resource="http://id.dbpedia.org/resource/Taufan_Soekarnoputra"/>
+        <untitled-ontology-41:hasSpouse rdf:resource="http://id.dbpedia.org/resource/Soekarno"/>
+        <untitled-ontology-41:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hartini</untitled-ontology-41:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://id.dbpedia.org/resource/Haryati -->
+
+    <owl:NamedIndividual rdf:about="http://id.dbpedia.org/resource/Haryati">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-41#Person"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-41#Woman"/>
+        <untitled-ontology-41:hasSpouse rdf:resource="http://id.dbpedia.org/resource/Soekarno"/>
+        <untitled-ontology-41:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Haryati</untitled-ontology-41:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://id.dbpedia.org/resource/Heldy_Djafar -->
+
+    <owl:NamedIndividual rdf:about="http://id.dbpedia.org/resource/Heldy_Djafar">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-41#Person"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-41#Woman"/>
+        <untitled-ontology-41:hasSpouse rdf:resource="http://id.dbpedia.org/resource/Soekarno"/>
+        <untitled-ontology-41:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Heldy_Djafar</untitled-ontology-41:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://id.dbpedia.org/resource/Inggit_Garnasih -->
+
+    <owl:NamedIndividual rdf:about="http://id.dbpedia.org/resource/Inggit_Garnasih">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-41#Person"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-41#Woman"/>
+        <untitled-ontology-41:hasSpouse rdf:resource="http://id.dbpedia.org/resource/Soekarno"/>
+        <untitled-ontology-41:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Inggit_Garnasih</untitled-ontology-41:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://id.dbpedia.org/resource/Kartika_Sari_Dewi_Soekarno -->
+
+    <owl:NamedIndividual rdf:about="http://id.dbpedia.org/resource/Kartika_Sari_Dewi_Soekarno">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-41#Person"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-41#Woman"/>
+        <untitled-ontology-41:hasParent rdf:resource="http://id.dbpedia.org/resource/Ratna_Sari_Dewi_Soekarno"/>
+        <untitled-ontology-41:hasParent rdf:resource="http://id.dbpedia.org/resource/Soekarno"/>
+        <untitled-ontology-41:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kartika_Sari_Dewi_Soekarno</untitled-ontology-41:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://id.dbpedia.org/resource/Kartini_Manoppo -->
+
+    <owl:NamedIndividual rdf:about="http://id.dbpedia.org/resource/Kartini_Manoppo">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-41#Parent"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-41#Person"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-41#Woman"/>
+        <untitled-ontology-41:hasChild rdf:resource="http://id.dbpedia.org/resource/Totok_Suryawan"/>
+        <untitled-ontology-41:hasSpouse rdf:resource="http://id.dbpedia.org/resource/Soekarno"/>
+        <untitled-ontology-41:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">KartiniManoppo</untitled-ontology-41:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://id.dbpedia.org/resource/Megawati_Soekarnoputri -->
+
+    <owl:NamedIndividual rdf:about="http://id.dbpedia.org/resource/Megawati_Soekarnoputri">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-41#Person"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-41#Woman"/>
+        <untitled-ontology-41:hasParent rdf:resource="http://id.dbpedia.org/resource/Fatmawati_Soekarno"/>
+        <untitled-ontology-41:hasParent rdf:resource="http://id.dbpedia.org/resource/Soekarno"/>
+        <untitled-ontology-41:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Megawati_Soekarnoputri</untitled-ontology-41:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://id.dbpedia.org/resource/Oetari -->
+
+    <owl:NamedIndividual rdf:about="http://id.dbpedia.org/resource/Oetari">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-41#Person"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-41#Woman"/>
+        <untitled-ontology-41:hasSpouse rdf:resource="http://id.dbpedia.org/resource/Soekarno"/>
+        <untitled-ontology-41:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Oetari</untitled-ontology-41:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://id.dbpedia.org/resource/Rachmawati_Soekarnoputri -->
+
+    <owl:NamedIndividual rdf:about="http://id.dbpedia.org/resource/Rachmawati_Soekarnoputri">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-41#Person"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-41#Woman"/>
+        <untitled-ontology-41:hasParent rdf:resource="http://id.dbpedia.org/resource/Fatmawati_Soekarno"/>
+        <untitled-ontology-41:hasParent rdf:resource="http://id.dbpedia.org/resource/Soekarno"/>
+        <untitled-ontology-41:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Rachmawati_Soekarno</untitled-ontology-41:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://id.dbpedia.org/resource/Ratna_Sari_Dewi_Soekarno -->
+
+    <owl:NamedIndividual rdf:about="http://id.dbpedia.org/resource/Ratna_Sari_Dewi_Soekarno">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-41#Parent"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-41#Person"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-41#Woman"/>
+        <untitled-ontology-41:hasChild rdf:resource="http://id.dbpedia.org/resource/Kartika_Sari_Dewi_Soekarno"/>
+        <untitled-ontology-41:hasSpouse rdf:resource="http://id.dbpedia.org/resource/Soekarno"/>
+        <untitled-ontology-41:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ratna_Sari_Dewi_Soekarno</untitled-ontology-41:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://id.dbpedia.org/resource/Soekarno -->
+
+    <owl:NamedIndividual rdf:about="http://id.dbpedia.org/resource/Soekarno">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-41#Man"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-41#Parent"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-41#Person"/>
+        <untitled-ontology-41:hasChild rdf:resource="http://id.dbpedia.org/resource/Bayu_Soekarnoputra"/>
+        <untitled-ontology-41:hasChild rdf:resource="http://id.dbpedia.org/resource/Guntur_Soekarnoputra"/>
+        <untitled-ontology-41:hasChild rdf:resource="http://id.dbpedia.org/resource/Guruh_Soekarnoputra"/>
+        <untitled-ontology-41:hasChild rdf:resource="http://id.dbpedia.org/resource/Kartika_Sari_Dewi_Soekarno"/>
+        <untitled-ontology-41:hasChild rdf:resource="http://id.dbpedia.org/resource/Megawati_Soekarnoputri"/>
+        <untitled-ontology-41:hasChild rdf:resource="http://id.dbpedia.org/resource/Rachmawati_Soekarnoputri"/>
+        <untitled-ontology-41:hasChild rdf:resource="http://id.dbpedia.org/resource/Sukmawati_Soekarnoputri"/>
+        <untitled-ontology-41:hasChild rdf:resource="http://id.dbpedia.org/resource/Taufan_Soekarnoputra"/>
+        <untitled-ontology-41:hasChild rdf:resource="http://id.dbpedia.org/resource/Totok_Suryawan"/>
+        <untitled-ontology-41:hasSpouse rdf:resource="http://id.dbpedia.org/resource/Fatmawati_Soekarno"/>
+        <untitled-ontology-41:hasSpouse rdf:resource="http://id.dbpedia.org/resource/Hartini"/>
+        <untitled-ontology-41:hasSpouse rdf:resource="http://id.dbpedia.org/resource/Haryati"/>
+        <untitled-ontology-41:hasSpouse rdf:resource="http://id.dbpedia.org/resource/Heldy_Djafar"/>
+        <untitled-ontology-41:hasSpouse rdf:resource="http://id.dbpedia.org/resource/Inggit_Garnasih"/>
+        <untitled-ontology-41:hasSpouse rdf:resource="http://id.dbpedia.org/resource/Kartini_Manoppo"/>
+        <untitled-ontology-41:hasSpouse rdf:resource="http://id.dbpedia.org/resource/Oetari"/>
+        <untitled-ontology-41:hasSpouse rdf:resource="http://id.dbpedia.org/resource/Ratna_Sari_Dewi_Soekarno"/>
+        <untitled-ontology-41:hasSpouse rdf:resource="http://id.dbpedia.org/resource/Yurike_Sanger"/>
+        <untitled-ontology-41:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Soekarno</untitled-ontology-41:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://id.dbpedia.org/resource/Sukmawati_Soekarnoputri -->
+
+    <owl:NamedIndividual rdf:about="http://id.dbpedia.org/resource/Sukmawati_Soekarnoputri">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-41#Person"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-41#Woman"/>
+        <untitled-ontology-41:hasParent rdf:resource="http://id.dbpedia.org/resource/Fatmawati_Soekarno"/>
+        <untitled-ontology-41:hasParent rdf:resource="http://id.dbpedia.org/resource/Soekarno"/>
+        <untitled-ontology-41:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sukmawati_Soekarnoputri</untitled-ontology-41:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://id.dbpedia.org/resource/Taufan_Soekarnoputra -->
+
+    <owl:NamedIndividual rdf:about="http://id.dbpedia.org/resource/Taufan_Soekarnoputra">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-41#Man"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-41#Person"/>
+        <untitled-ontology-41:hasParent rdf:resource="http://id.dbpedia.org/resource/Hartini"/>
+        <untitled-ontology-41:hasParent rdf:resource="http://id.dbpedia.org/resource/Soekarno"/>
+        <untitled-ontology-41:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Taufan_Soekarnoputra</untitled-ontology-41:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://id.dbpedia.org/resource/Totok_Suryawan -->
+
+    <owl:NamedIndividual rdf:about="http://id.dbpedia.org/resource/Totok_Suryawan">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-41#Man"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-41#Person"/>
+        <untitled-ontology-41:hasParent rdf:resource="http://id.dbpedia.org/resource/Kartini_Manoppo"/>
+        <untitled-ontology-41:hasParent rdf:resource="http://id.dbpedia.org/resource/Soekarno"/>
+        <untitled-ontology-41:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Totok_Suryawan</untitled-ontology-41:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://id.dbpedia.org/resource/Yurike_Sanger -->
+
+    <owl:NamedIndividual rdf:about="http://id.dbpedia.org/resource/Yurike_Sanger">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-41#Person"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-41#Woman"/>
+        <untitled-ontology-41:hasSpouse rdf:resource="http://id.dbpedia.org/resource/Soekarno"/>
+        <untitled-ontology-41:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Yurike_Sanger</untitled-ontology-41:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Rules
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-41#a">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-41#b">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-41#c">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hasTheSameParent</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-41#Man"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-41#c"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-41#Woman"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-41#b"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-41#hasParent"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-41#a"/>
+                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-41#b"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-41#hasSpouse"/>
+                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-41#b"/>
+                                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-41#c"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-41#hasParent"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-41#a"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-41#c"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hasTheSameChild</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-41#Man"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-41#a"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-41#Woman"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-41#b"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-41#hasSpouse"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-41#a"/>
+                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-41#b"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-41#hasChild"/>
+                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-41#b"/>
+                                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-41#c"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-41#hasChild"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-41#a"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-41#c"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+

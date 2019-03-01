@@ -1,8 +1,5 @@
 import org.apache.jena.query.*;
-import org.apache.jena.rdf.model.Literal;
-import org.apache.jena.rdf.model.Model;
-import org.apache.jena.rdf.model.ModelFactory;
-import org.apache.jena.rdf.model.Resource;
+import org.apache.jena.rdf.model.*;
 import org.apache.jena.util.FileManager;
 import org.apache.log4j.BasicConfigurator;
 import org.apache.log4j.LogManager;
@@ -17,55 +14,45 @@ public class Main {
         BasicConfigurator.configure(new NullAppender());
         System.out.println("Apache Jena Modelling, Reasoning and Inferring Tool");
 
-        // MEMODELKAN FILE ACTOR DARI JENA-FUSEKI DAN ONTOLOGI FAMILY
+                                 // MEMODELKAN FILE ACTOR DARI OWL ONTOLOGI FAMILY dan JENA-FUSEKI
 
         FileManager.get().addLocatorClassLoader(Main.class.getClassLoader());
-        Model Instances = FileManager.get().loadModel("D:/The-Tree-of-Heroes/main.owl");
+        Model Instances = FileManager.get().loadModel("http://localhost:3030/pohonkeluarga");
         Model famonto = FileManager.get().loadModel("D:/The-Tree-of-Heroes/famonto.owl");
 
-        QueryExecution qe = QueryExecutionFactory.sparqlService(
-                "http://localhost:3030/pohonkeluarga/query", "SELECT * WHERE {?s ?p ?o}");
-        ResultSet results = qe.execSelect();
-        System.out.println("Start Execution from JENA FUSEKI");
-        ResultSetFormatter.out(System.out, results);
-        System.out.println("End Execution from JENA FUSEKI");
-        for(int i=0;i<200;i++){
-            System.out.print("*");
-            if(i==199){
-                System.out.println("*");
-                break;
-            }
-        }
-        // MERGING FILE ACTOR DARI JENA-FUSEKI DAN ONTOLOGI FAMILY
+
+                                // MERGING FILE ACTOR DARI JENA-FUSEKI DAN ONTOLOGI FAMILY
 
         final Model union = ModelFactory.createUnion(Instances,famonto);
 
-        // REASONING
+                                // REASONING
 
-        // EKSTRAKSI
+                                // EKSTRAKSI
 
         String queryString = "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n" +
                 "PREFIX owl: <http://www.w3.org/2002/07/owl#>\n" +
                 "PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\n" +
                 "PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>\n" +
                 "PREFIX fam: <http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-41#>\n" +
-                "SELECT ?x\n" +
+                "SELECT ?s ?o\n" +
                 "WHERE {\n" +
-                "  ?x fam:hasName ?y\n" +
+                "  ?s fam:hasName ?o\n" +
                 "}";
 
         Query query = QueryFactory.create(queryString);
-        QueryExecution queryExecution = QueryExecutionFactory.create(query,union);
+        QueryExecution queryExecution = QueryExecutionFactory.create(query,Instances);
         try {
             System.out.println("Start Execution from OWL file");
             ResultSet resultSet = queryExecution.execSelect();
             while (resultSet.hasNext() ) {
                 QuerySolution querySolution = resultSet.nextSolution();
-                Resource uri = querySolution.getResource("x");
-                System.out.println(uri);
-
+                Resource uri = querySolution.getResource("s");
+                Resource p = querySolution.getResource("p");
+                RDFNode object = querySolution.get("o");
+                System.out.println(uri+"     "+object);
             }
-        }finally {
+        }
+        finally {
             queryExecution.close();
             System.out.println("End Execution from OWL file");
         }
