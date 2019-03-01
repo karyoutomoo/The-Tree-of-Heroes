@@ -17,7 +17,7 @@ public class Main {
                                  // MEMODELKAN FILE ACTOR DARI OWL ONTOLOGI FAMILY dan JENA-FUSEKI
 
         FileManager.get().addLocatorClassLoader(Main.class.getClassLoader());
-        Model Instances = FileManager.get().loadModel("http://localhost:3030/pohonkeluarga");
+        Model Instances = FileManager.get().loadModel("http://localhost:3030/pohon-keluarga-inferred-main");
         Model famonto = FileManager.get().loadModel("D:/The-Tree-of-Heroes/famonto.owl");
 
 
@@ -27,7 +27,7 @@ public class Main {
 
                                 // REASONING
 
-                                // EKSTRAKSI
+                                // QUERY TEST
 
         String queryString = "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n" +
                 "PREFIX owl: <http://www.w3.org/2002/07/owl#>\n" +
@@ -49,13 +49,17 @@ public class Main {
                 Resource uri = querySolution.getResource("s");
                 Resource p = querySolution.getResource("p");
                 RDFNode object = querySolution.get("o");
-                System.out.println(uri+"     "+object);
+                System.out.println(uri+"   "+p+"   "+object);
             }
         }
         finally {
             queryExecution.close();
             System.out.println("End Execution from OWL file");
         }
+
+        // EKSTRAKSI
+
+
         // KONVERSI
     }
 }
