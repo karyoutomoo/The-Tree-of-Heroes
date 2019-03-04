@@ -1,18 +1,19 @@
-import org.apache.jena.atlas.iterator.FilterUnique;
-import org.apache.jena.ontology.OntModel;
-import org.apache.jena.ontology.OntModelSpec;
-import org.apache.jena.query.*;
-import org.apache.jena.rdf.model.*;
-import org.apache.jena.rdf.model.impl.StmtIteratorImpl;
-import org.apache.jena.reasoner.Reasoner;
-import org.apache.jena.reasoner.ReasonerRegistry;
-import org.apache.jena.util.FileManager;
-import org.apache.jena.util.iterator.ExtendedIterator;
+import com.hp.hpl.jena.ontology.OntModel;
+import com.hp.hpl.jena.ontology.OntModelSpec;
+import com.hp.hpl.jena.query.*;
+import com.hp.hpl.jena.rdf.model.*;
+import com.hp.hpl.jena.rdf.model.impl.StmtIteratorImpl;
+import com.hp.hpl.jena.reasoner.Reasoner;
+import com.hp.hpl.jena.util.FileManager;
+import com.hp.hpl.jena.util.iterator.ExtendedIterator;
 import org.apache.log4j.BasicConfigurator;
 import org.apache.log4j.LogManager;
 import org.apache.log4j.Logger;
 import org.apache.log4j.varia.NullAppender;
+import com.hp.hpl.jena.util.iterator.Filter;
+import org.mindswap.pellet.jena.PelletReasonerFactory;
 
+import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.PrintStream;
 
@@ -21,8 +22,8 @@ public class Main {
     private static final Logger logger = LogManager.getLogger(Main.class);
     public static void main(String[] args) throws FileNotFoundException {
 
-        String UPLOAD_FUSEKI = "http://localhost:3030/pohon-keluarga-inferred-main/upload";
-        String READ_FUSEKI = "http://localhost:3030/pohon-keluarga-inferred-main";
+        String UPLOAD_FUSEKI = "http://localhost:3030/pohonkeluarga/upload";
+        String READ_FUSEKI = "http://localhost:3030/pohonkeluarga/data";
         String OWL_FILE_LOCATION = "D:/The-Tree-of-Heroes/famonto.owl";
 
         BasicConfigurator.configure(new NullAppender());
@@ -31,7 +32,10 @@ public class Main {
 
                                  // MEMODELKAN FILE ACTOR DARI OWL ONTOLOGI FAMILY dan JENA-FUSEKI
         FileManager.get().addLocatorClassLoader(Main.class.getClassLoader());
-        Model Instances = FileManager.get().loadModel(READ_FUSEKI);
+        //Model Instances = FileManager.get().loadModel(READ_FUSEKI);
+        Model Instances = ModelFactory.createDefaultModel();
+        Instances.read(READ_FUSEKI,"TTL");
+
         Model famonto = FileManager.get().loadModel(OWL_FILE_LOCATION);
 
 
@@ -39,7 +43,7 @@ public class Main {
         final Model union = ModelFactory.createUnion(Instances,famonto);
 
                                 // REASONING DAN INFERRING MODEL UNION
-        Reasoner reasoner = ReasonerRegistry.getOWLReasoner();
+        Reasoner reasoner = PelletReasonerFactory.theInstance().create();
         InfModel infModel = ModelFactory.createInfModel(reasoner,union);
 
                                 // QUERY TESTING
@@ -71,24 +75,24 @@ public class Main {
             System.out.println("End Execution from OWL file");
         }
 
-                            // EKSTRAKSI INFERRED MODEL ONLY
+                                // EKSTRAKSI INFERRED MODEL ONLY
         System.out.println("Getting Inferred Model..");
-        ExtendedIterator<Statement> stmts = infModel.listStatements().filterDrop(new FilterUnique<Statement>(){
+        ExtendedIterator<Statement> stmts = infModel.listStatements().filterDrop( new Filter<Statement>(){
             public boolean accept(Statement o){
                 return ontModel.contains(o);
             }
         });
 
-                            // KONVERSI KE .RDF
+                                // KONVERSI KE .RDF
         Model deductions = ModelFactory.createDefaultModel().add( new StmtIteratorImpl( stmts ));
 
         System.out.println("Creating RDF File..");
         PrintStream fileStream = new PrintStream("result.rdf");
         System.setOut(fileStream);
 
-        infModel.write( System.out, "RDF/XML" );
+        deductions.write( System.out, "RDF/XML" );
 
-                            // UPLOAD TO JENA FUSEKI
+                                // UPLOAD TO JENA FUSEKI
         System.out.println("Uploading to Jena Fuseki Server..");
     }
 }
