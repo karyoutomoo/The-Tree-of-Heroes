@@ -12,19 +12,27 @@ import org.apache.log4j.Logger;
 import org.apache.log4j.varia.NullAppender;
 import com.hp.hpl.jena.util.iterator.Filter;
 import org.mindswap.pellet.jena.PelletReasonerFactory;
+import java.io.*;
 
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
-import java.io.PrintStream;
+/**
+ * Simple Ontology and DBpedia learning service preprocessor for
+ * family tree web app.
+ *
+ * @author FAIQ, karyoutomoo@Gmail.com
+ */
 
 public class Main {
 
     private static final Logger logger = LogManager.getLogger(Main.class);
     public static void main(String[] args) throws FileNotFoundException {
 
-        String UPLOAD_FUSEKI = "http://localhost:3030/pohonkeluarga/upload";
+        String UPLOAD_FUSEKI = "http://localhost:3030/pohonkeluarga";
         String READ_FUSEKI = "http://localhost:3030/pohonkeluarga/data";
-        String OWL_FILE_LOCATION = "D:/The-Tree-of-Heroes/famonto.owl";
+        String OWL_FILE_LOCATION = "D:/The-Tree-of-Heroes/family-ontology-r-stevens.owl";
+        File fileRDF = new File("D:\\The-Tree-of-Heroes\\PreprocessorTA\\result.rdf");
+        String actor="";
+        String DBpedia_MODEL="http://http://id.dbpedia.org/resource/"+actor;
+
 
         BasicConfigurator.configure(new NullAppender());
         final OntModel ontModel = ModelFactory.createOntologyModel( OntModelSpec.OWL_DL_MEM );
@@ -51,6 +59,7 @@ public class Main {
                 "PREFIX owl: <http://www.w3.org/2002/07/owl#>\n" +
                 "PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\n" +
                 "PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>\n" +
+                "PREFIX dbr: <http://dbpedia.org/resource/>\n" +
                 "PREFIX fam: <http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-41#>\n" +
                 "SELECT ?s ?o\n" +
                 "WHERE {\n" +
@@ -59,8 +68,11 @@ public class Main {
 
         Query query = QueryFactory.create(queryString);
         QueryExecution queryExecution = QueryExecutionFactory.create(query,infModel);
+        //untuk test tanpa reasoning
+        //QueryExecution queryExecution = QueryExecutionFactory.create(query,union);
+
         try {
-            System.out.println("Start Execution from OWL file");
+            System.out.println("Start Query");
             ResultSet resultSet = queryExecution.execSelect();
             while (resultSet.hasNext() ) {
                 QuerySolution querySolution = resultSet.nextSolution();
@@ -72,7 +84,7 @@ public class Main {
         }
         finally {
             queryExecution.close();
-            System.out.println("End Execution from OWL file");
+            System.out.println("End Query");
         }
 
                                 // EKSTRAKSI INFERRED MODEL ONLY
@@ -86,13 +98,31 @@ public class Main {
                                 // KONVERSI KE .RDF
         Model deductions = ModelFactory.createDefaultModel().add( new StmtIteratorImpl( stmts ));
 
-        System.out.println("Creating RDF File..");
+        if(fileRDF.delete())
+        {
+            System.out.println("The old result.rdf file deleted successfully");
+        }
+        else
+        {
+            System.out.println("Creating new result as RDF File");
+        }
         PrintStream fileStream = new PrintStream("result.rdf");
         System.setOut(fileStream);
 
         deductions.write( System.out, "RDF/XML" );
 
                                 // UPLOAD TO JENA FUSEKI
-        System.out.println("Uploading to Jena Fuseki Server..");
+        // parse the file
+        Model m = ModelFactory.createDefaultModel();
+        try (FileInputStream in = new FileInputStream(fileRDF)) {
+            m.read(in, null, "RDF/XML");
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+        // upload the resulting model
+        DatasetAccessor accessor = DatasetAccessorFactory
+                .createHTTP(UPLOAD_FUSEKI);
+        accessor.putModel(m);
     }
 }

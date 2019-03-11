@@ -9,10 +9,11 @@
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="log4j-1.2.17" level="project" />
     <orderEntry type="library" name="pellet-cli-ignazio1977-2.4.0-ignazio1977" level="project" />
-    <orderEntry type="library" name="javadoc-core" level="project" />
     <orderEntry type="library" name="aterm-java-1.8.2-p1" level="project" />
     <orderEntry type="library" name="jjtraveler-0.6" level="project" />
     <orderEntry type="library" name="shared-objects-1.4.9-p1" level="project" />
     <orderEntry type="library" name="jgrapht-jdk1.5-0.7.3" level="project" />
+    <orderEntry type="library" name="org.apache.jena:jena-arq:2.11.2" level="project" />
+    <orderEntry type="library" name="eu.freme-project.e-services:dbpedia-spotlight:1.1" level="project" />
   </component>
 </module>
