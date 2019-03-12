@@ -40,8 +40,7 @@ public class Main {
 
                                  // MEMODELKAN FILE ACTOR DARI OWL ONTOLOGI FAMILY dan JENA-FUSEKI
         FileManager.get().addLocatorClassLoader(Main.class.getClassLoader());
-        //Model Instances = FileManager.get().loadModel(READ_FUSEKI);
-        Model Instances = ModelFactory.createDefaultModel();
+        Model Instances = FileManager.get().loadModel(READ_FUSEKI);
         Instances.read(READ_FUSEKI,"TTL");
 
         Model famonto = FileManager.get().loadModel(OWL_FILE_LOCATION);
@@ -54,7 +53,15 @@ public class Main {
         Reasoner reasoner = PelletReasonerFactory.theInstance().create();
         InfModel infModel = ModelFactory.createInfModel(reasoner,union);
 
-                                // QUERY TESTING
+                                 //ADD ACTOR
+        FileManager fManager = FileManager.get();
+        fManager.addLocatorURL();
+        Model modelActor = fManager.loadModel("http://id.dbpedia.org/data/Soekarno.rdf");
+        Instances.add(modelActor);
+
+
+
+                                //QUERY TESTING
         String queryString = "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n" +
                 "PREFIX owl: <http://www.w3.org/2002/07/owl#>\n" +
                 "PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\n" +
@@ -79,7 +86,7 @@ public class Main {
                 Resource uri = querySolution.getResource("s");
                 Resource p = querySolution.getResource("p");
                 RDFNode object = querySolution.get("o");
-                System.out.println(uri+"   "+p+"   "+object);
+                System.out.println(uri+"   "+p+"   "+object+".");
             }
         }
         finally {
@@ -95,7 +102,7 @@ public class Main {
             }
         });
 
-                                // KONVERSI KE .RDF
+                                // KONVERSI KE FILE .RDF
         Model deductions = ModelFactory.createDefaultModel().add( new StmtIteratorImpl( stmts ));
 
         if(fileRDF.delete())
@@ -113,16 +120,18 @@ public class Main {
 
                                 // UPLOAD TO JENA FUSEKI
         // parse the file
-        Model m = ModelFactory.createDefaultModel();
+        /*Model m = ModelFactory.createDefaultModel();
         try (FileInputStream in = new FileInputStream(fileRDF)) {
-            m.read(in, null, "RDF/XML");
+            deductions.read(in, null, "RDF/XML");
         } catch (IOException e) {
             e.printStackTrace();
-        }
+        }*/
 
         // upload the resulting model
         DatasetAccessor accessor = DatasetAccessorFactory
                 .createHTTP(UPLOAD_FUSEKI);
-        accessor.putModel(m);
+        accessor.putModel(deductions);
+
+
     }
 }
