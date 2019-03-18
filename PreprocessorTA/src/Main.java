@@ -26,8 +26,8 @@ public class Main {
     private static final Logger logger = LogManager.getLogger(Main.class);
     public static void main(String[] args) throws FileNotFoundException {
 
-        String UPLOAD_FUSEKI = "http://localhost:3030/pohonkeluarga";
-        String READ_FUSEKI = "http://localhost:3030/pohonkeluarga";
+        String UPLOAD_FUSEKI = "http://localhost:3030/famtree";
+        String READ_FUSEKI = "http://localhost:3030/famtree";
         String OWL_FILE_LOCATION = "D:/The-Tree-of-Heroes/family-ontology-r-stevens.owl";
         File fileRDF = new File("D:\\The-Tree-of-Heroes\\PreprocessorTA\\result.rdf");
         String actor="";
@@ -56,7 +56,8 @@ public class Main {
                                  //ADD ACTOR
         FileManager fManager = FileManager.get();
         fManager.addLocatorURL();
-        Model modelActor = fManager.loadModel("http://id.dbpedia.org/data/Mohammad_Hatta.rdf");
+        Model modelActor = fManager.loadModel("http://id.dbpedia.org/data/Soekarno.rdf");
+
         Instances.add(modelActor);
 
 
@@ -120,12 +121,12 @@ public class Main {
 
                                 // UPLOAD TO JENA FUSEKI
         // parse the file
-        /*Model m = ModelFactory.createDefaultModel();
+        Model m = ModelFactory.createDefaultModel();
         try (FileInputStream in = new FileInputStream(fileRDF)) {
             deductions.read(in, null, "RDF/XML");
         } catch (IOException e) {
             e.printStackTrace();
-        }*/
+        }
 
         // upload the resulting model
         DatasetAccessor accessor = DatasetAccessorFactory
