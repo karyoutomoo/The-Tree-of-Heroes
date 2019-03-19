@@ -15,10 +15,12 @@
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="273">
-              <caret line="28" column="63" lean-forward="true" selection-start-line="28" selection-start-column="63" selection-end-line="28" selection-end-column="63" />
+            <state relative-caret-position="410">
+              <caret line="66" column="43" lean-forward="true" selection-start-line="66" selection-start-column="43" selection-end-line="66" selection-end-column="43" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#4355#4493#0" expanded="true" />
+                <element signature="e#4492#4493#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -54,7 +56,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-9" />
     <option name="y" value="-9" />
     <option name="width" value="1938" />
@@ -201,15 +203,15 @@
       <workItem from="1552449248680" duration="1549000" />
       <workItem from="1552541332657" duration="6185000" />
       <workItem from="1552632172000" duration="4000" />
-      <workItem from="1552885386741" duration="1443000" />
+      <workItem from="1552885386741" duration="7107000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="74261000" />
+    <option name="totallyTimeSpent" value="79925000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-9" y="-9" width="1938" height="1048" extended-state="7" />
+    <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -289,6 +291,8 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#4355#4493#0" expanded="true" />
+            <element signature="e#4492#4493#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -299,6 +303,8 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#4355#4493#0" expanded="true" />
+            <element signature="e#4492#4493#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -309,6 +315,8 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#4355#4493#0" expanded="true" />
+            <element signature="e#4492#4493#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -326,6 +334,8 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#4355#4493#0" expanded="true" />
+            <element signature="e#4492#4493#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -336,6 +346,8 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#4355#4493#0" expanded="true" />
+            <element signature="e#4492#4493#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -346,6 +358,8 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#4355#4493#0" expanded="true" />
+            <element signature="e#4492#4493#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -356,6 +370,8 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#4355#4493#0" expanded="true" />
+            <element signature="e#4492#4493#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -366,23 +382,8 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/lib/pellet-jena.jar!/org/mindswap/pellet/jena/PelletReasonerFactory.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#4355#4493#0" expanded="true" />
+            <element signature="e#4492#4493#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -400,6 +401,8 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#4355#4493#0" expanded="true" />
+            <element signature="e#4492#4493#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -417,6 +420,8 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#4355#4493#0" expanded="true" />
+            <element signature="e#4492#4493#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -434,6 +439,27 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#4355#4493#0" expanded="true" />
+            <element signature="e#4492#4493#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/pellet-jena.jar!/org/mindswap/pellet/jena/PelletReasonerFactory.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#4355#4493#0" expanded="true" />
+            <element signature="e#4492#4493#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -444,6 +470,8 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#4355#4493#0" expanded="true" />
+            <element signature="e#4492#4493#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -454,6 +482,8 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#4355#4493#0" expanded="true" />
+            <element signature="e#4492#4493#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -464,6 +494,8 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#4355#4493#0" expanded="true" />
+            <element signature="e#4492#4493#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -474,6 +506,8 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#4355#4493#0" expanded="true" />
+            <element signature="e#4492#4493#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -503,10 +537,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="28" column="63" lean-forward="true" selection-start-line="28" selection-start-column="63" selection-end-line="28" selection-end-column="63" />
+        <state relative-caret-position="410">
+          <caret line="66" column="43" lean-forward="true" selection-start-line="66" selection-start-column="43" selection-end-line="66" selection-end-column="43" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#4355#4493#0" expanded="true" />
+            <element signature="e#4492#4493#0" expanded="true" />
           </folding>
         </state>
       </provider>

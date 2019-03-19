@@ -26,13 +26,10 @@ public class Main {
     private static final Logger logger = LogManager.getLogger(Main.class);
     public static void main(String[] args) throws FileNotFoundException {
 
-        String UPLOAD_FUSEKI = "http://localhost:3030/famtree";
-        String READ_FUSEKI = "http://localhost:3030/famtree";
+        String UPLOAD_FUSEKI = "http://localhost:3030/pohonkeluarga";
+        String READ_FUSEKI = "http://localhost:3030/pohonkeluarga";
         String OWL_FILE_LOCATION = "D:/The-Tree-of-Heroes/family-ontology-r-stevens.owl";
         File fileRDF = new File("D:\\The-Tree-of-Heroes\\PreprocessorTA\\result.rdf");
-        String actor="";
-        String DBpedia_MODEL="http://http://id.dbpedia.org/resource/"+actor;
-
 
         BasicConfigurator.configure(new NullAppender());
         final OntModel ontModel = ModelFactory.createOntologyModel( OntModelSpec.OWL_DL_MEM );
@@ -45,22 +42,18 @@ public class Main {
 
         Model famonto = FileManager.get().loadModel(OWL_FILE_LOCATION);
 
+                                //ADD ACTOR
+        FileManager fManager = FileManager.get();
+        fManager.addLocatorURL();
+        Model modelActor = fManager.loadModel("http://id.dbpedia.org/data/Megawati_Soekarnoputri.rdf");
+        Instances.add(modelActor);
 
                                 // MERGING MODEL DARI JENA-FUSEKI DAN MODEL ONTOLOGI FAMILY
         final Model union = ModelFactory.createUnion(Instances,famonto);
 
-                                // REASONING DAN INFERRING MODEL UNION
+                                // REASONING MODEL UNION
         Reasoner reasoner = PelletReasonerFactory.theInstance().create();
-        InfModel infModel = ModelFactory.createInfModel(reasoner,union);
-
-                                 //ADD ACTOR
-        FileManager fManager = FileManager.get();
-        fManager.addLocatorURL();
-        Model modelActor = fManager.loadModel("http://id.dbpedia.org/data/Soekarno.rdf");
-
-        Instances.add(modelActor);
-
-
+        Model reasonedModel = ModelFactory.createInfModel(reasoner,union);
 
                                 //QUERY TESTING
         String queryString = "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n" +
@@ -75,7 +68,7 @@ public class Main {
                 "}";
 
         Query query = QueryFactory.create(queryString);
-        QueryExecution queryExecution = QueryExecutionFactory.create(query,infModel);
+        QueryExecution queryExecution = QueryExecutionFactory.create(query,reasonedModel);
         //untuk test tanpa reasoning
         //QueryExecution queryExecution = QueryExecutionFactory.create(query,union);
 
@@ -96,10 +89,11 @@ public class Main {
         }
 
                                 // EKSTRAKSI INFERRED MODEL ONLY
+        InfModel pModel = ModelFactory.createInfModel( PelletReasonerFactory.theInstance().create(), reasonedModel);
         System.out.println("Getting Inferred Model..");
-        ExtendedIterator<Statement> stmts = infModel.listStatements().filterDrop( new Filter<Statement>(){
+        ExtendedIterator<Statement> stmts = pModel.listStatements().filterDrop( new Filter<Statement>(){
             public boolean accept(Statement o){
-                return ontModel.contains(o);
+                return union.contains(o);
             }
         });
 
@@ -121,7 +115,6 @@ public class Main {
 
                                 // UPLOAD TO JENA FUSEKI
         // parse the file
-        Model m = ModelFactory.createDefaultModel();
         try (FileInputStream in = new FileInputStream(fileRDF)) {
             deductions.read(in, null, "RDF/XML");
         } catch (IOException e) {
