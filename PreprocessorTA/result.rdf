@@ -1,1003 +1,409 @@
 <rdf:RDF
     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-    xmlns:owl="http://www.w3.org/2002/07/owl#"
-    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" > 
-  <rdf:Description rdf:about="http://id.dbpedia.org/resource/Ruhut_Sitompul">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <owl:sameAs rdf:resource="http://id.dbpedia.org/resource/Ruhut_Sitompul"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://id.wikipedia.org/wiki/Megawati_Soekarnoputri?oldid=6596840">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <owl:sameAs rdf:resource="http://id.wikipedia.org/wiki/Megawati_Soekarnoputri?oldid=6596840"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://id.dbpedia.org/resource/Mohamad_Prakosa">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <owl:sameAs rdf:resource="http://id.dbpedia.org/resource/Mohamad_Prakosa"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://id.dbpedia.org/resource/Pemilihan_umum_Presiden_Indonesia_2009">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <owl:sameAs rdf:resource="http://id.dbpedia.org/resource/Pemilihan_umum_Presiden_Indonesia_2009"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://id.dbpedia.org/resource/Badan_Penyehatan_Perbankan_Nasional">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <owl:sameAs rdf:resource="http://id.dbpedia.org/resource/Badan_Penyehatan_Perbankan_Nasional"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://id.dbpedia.org/resource/Pemilu">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <owl:sameAs rdf:resource="http://id.dbpedia.org/resource/Pemilu"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://id.dbpedia.org/resource/Sistem_Administrasi_Badan_Hukum">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <owl:sameAs rdf:resource="http://id.dbpedia.org/resource/Sistem_Administrasi_Badan_Hukum"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://id.dbpedia.org/resource/2002">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <owl:sameAs rdf:resource="http://id.dbpedia.org/resource/2002"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://id.dbpedia.org/resource/SMA_Negeri_13_Jakarta">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <owl:sameAs rdf:resource="http://id.dbpedia.org/resource/SMA_Negeri_13_Jakarta"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://id.dbpedia.org/resource/Maret">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <owl:sameAs rdf:resource="http://id.dbpedia.org/resource/Maret"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://id.dbpedia.org/resource/Bachtiar_Chamsyah">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <owl:sameAs rdf:resource="http://id.dbpedia.org/resource/Bachtiar_Chamsyah"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://id.dbpedia.org/resource/Hamzah_Haz">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <owl:sameAs rdf:resource="http://id.dbpedia.org/resource/Hamzah_Haz"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://id.dbpedia.org/resource/Kategori:Wanita_pemimpin">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <owl:sameAs rdf:resource="http://id.dbpedia.org/resource/Kategori:Wanita_pemimpin"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://id.dbpedia.org/resource/Pemilu_2004">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <owl:sameAs rdf:resource="http://id.dbpedia.org/resource/Pemilu_2004"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://id.dbpedia.org/resource/Zainal_Bakar">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <owl:sameAs rdf:resource="http://id.dbpedia.org/resource/Zainal_Bakar"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://id.dbpedia.org/resource/Bangka">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <owl:sameAs rdf:resource="http://id.dbpedia.org/resource/Bangka"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://id.dbpedia.org/resource/Pemilihan_umum_di_Indonesia">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <owl:sameAs rdf:resource="http://id.dbpedia.org/resource/Pemilihan_umum_di_Indonesia"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://id.dbpedia.org/resource/Partai_Demokrasi_Indonesia_Perjuangan">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <owl:sameAs rdf:resource="http://id.dbpedia.org/resource/Partai_Demokrasi_Indonesia_Perjuangan"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://kepustakaan-presiden.pnri.go.id/biography/?box=detail&amp;presiden_id=5&amp;presiden=megawati">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <owl:sameAs rdf:resource="http://kepustakaan-presiden.pnri.go.id/biography/?box=detail&amp;presiden_id=5&amp;presiden=megawati"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://id.dbpedia.org/resource/Syamsul_Mu&apos;arif">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <owl:sameAs rdf:resource="http://id.dbpedia.org/resource/Syamsul_Mu&apos;arif"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://id.dbpedia.org/resource/Sutiyoso">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <owl:sameAs rdf:resource="http://id.dbpedia.org/resource/Sutiyoso"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://id.dbpedia.org/resource/Adolf_Jouke_Sondakh">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <owl:sameAs rdf:resource="http://id.dbpedia.org/resource/Adolf_Jouke_Sondakh"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://id.dbpedia.org/resource/Museum_Batik_Danar_Hadi">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <owl:sameAs rdf:resource="http://id.dbpedia.org/resource/Museum_Batik_Danar_Hadi"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://id.dbpedia.org/resource/1996">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <owl:sameAs rdf:resource="http://id.dbpedia.org/resource/1996"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://id.dbpedia.org/resource/Sabtu">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <owl:sameAs rdf:resource="http://id.dbpedia.org/resource/Sabtu"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://id.dbpedia.org/resource/Rokhmin_Dahuri">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <owl:sameAs rdf:resource="http://id.dbpedia.org/resource/Rokhmin_Dahuri"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://id.dbpedia.org/resource/Jembatan_Kahayan">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <owl:sameAs rdf:resource="http://id.dbpedia.org/resource/Jembatan_Kahayan"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://id.dbpedia.org/resource/1972">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <owl:sameAs rdf:resource="http://id.dbpedia.org/resource/1972"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://id.dbpedia.org/resource/Danny_Setiawan">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <owl:sameAs rdf:resource="http://id.dbpedia.org/resource/Danny_Setiawan"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://id.dbpedia.org/resource/Maret_2005">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <owl:sameAs rdf:resource="http://id.dbpedia.org/resource/Maret_2005"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://id.dbpedia.org/resource/Muhammad_Jusuf_Kalla">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <owl:sameAs rdf:resource="http://id.dbpedia.org/resource/Muhammad_Jusuf_Kalla"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://id.dbpedia.org/resource/Pakubuwana_XIII">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <owl:sameAs rdf:resource="http://id.dbpedia.org/resource/Pakubuwana_XIII"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://id.dbpedia.org/resource/BJ_Habibie">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <owl:sameAs rdf:resource="http://id.dbpedia.org/resource/BJ_Habibie"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://id.dbpedia.org/resource/Sidang_Istimewa_MPR">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <owl:sameAs rdf:resource="http://id.dbpedia.org/resource/Sidang_Istimewa_MPR"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://id.dbpedia.org/resource/Soekarwo">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <owl:sameAs rdf:resource="http://id.dbpedia.org/resource/Soekarwo"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://id.dbpedia.org/resource/I_Gede_Ardhika">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <owl:sameAs rdf:resource="http://id.dbpedia.org/resource/I_Gede_Ardhika"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://id.dbpedia.org/resource/Papua">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <owl:sameAs rdf:resource="http://id.dbpedia.org/resource/Papua"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.tokoh-indonesia.com/ensiklopedi/m/megawati/">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <owl:sameAs rdf:resource="http://www.tokoh-indonesia.com/ensiklopedi/m/megawati/"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://id.dbpedia.org/resource/Rusli_Zainal">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <owl:sameAs rdf:resource="http://id.dbpedia.org/resource/Rusli_Zainal"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://id.dbpedia.org/resource/Bandar_Udara_Fatmawati_Soekarno">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <owl:sameAs rdf:resource="http://id.dbpedia.org/resource/Bandar_Udara_Fatmawati_Soekarno"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://id.dbpedia.org/resource/Jalan_Diponegoro">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <owl:sameAs rdf:resource="http://id.dbpedia.org/resource/Jalan_Diponegoro"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://id.dbpedia.org/resource/1993">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <owl:sameAs rdf:resource="http://id.dbpedia.org/resource/1993"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://id.dbpedia.org/resource/Detri_Warmanto">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <owl:sameAs rdf:resource="http://id.dbpedia.org/resource/Detri_Warmanto"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://id.dbpedia.org/resource/Freddy_Numberi">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <owl:sameAs rdf:resource="http://id.dbpedia.org/resource/Freddy_Numberi"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://upload.wikimedia.org/wikipedia/commons/8/88/President_Megawati_Sukarnoputri_-_Indonesia.jpg">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <owl:sameAs rdf:resource="http://upload.wikimedia.org/wikipedia/commons/8/88/President_Megawati_Sukarnoputri_-_Indonesia.jpg"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://id.dbpedia.org/resource/Suku_Sikumbang">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <owl:sameAs rdf:resource="http://id.dbpedia.org/resource/Suku_Sikumbang"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://id.dbpedia.org/resource/Bengkulu">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <owl:sameAs rdf:resource="http://id.dbpedia.org/resource/Bengkulu"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://id.dbpedia.org/resource/Tahun_Baru_Imlek">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <owl:sameAs rdf:resource="http://id.dbpedia.org/resource/Tahun_Baru_Imlek"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://id.dbpedia.org/resource/Museum_Geologi_Bandung">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <owl:sameAs rdf:resource="http://id.dbpedia.org/resource/Museum_Geologi_Bandung"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.forbes.com/2004/08/18/04powomland.html">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <owl:sameAs rdf:resource="http://www.forbes.com/2004/08/18/04powomland.html"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://id.dbpedia.org/resource/Soekarno">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <owl:sameAs rdf:resource="http://id.dbpedia.org/resource/Soekarno"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://id.dbpedia.org/resource/Hakamuddin_Djamal">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <owl:sameAs rdf:resource="http://id.dbpedia.org/resource/Hakamuddin_Djamal"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://id.dbpedia.org/resource/Kabupaten_Pakpak_Bharat">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <owl:sameAs rdf:resource="http://id.dbpedia.org/resource/Kabupaten_Pakpak_Bharat"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://id.dbpedia.org/resource/Mohammad_Tadjudin_Noor_Aly">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <owl:sameAs rdf:resource="http://id.dbpedia.org/resource/Mohammad_Tadjudin_Noor_Aly"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://id.dbpedia.org/resource/Ledok_Ratmakan">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <owl:sameAs rdf:resource="http://id.dbpedia.org/resource/Ledok_Ratmakan"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://id.dbpedia.org/resource/Soenarjo">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <owl:sameAs rdf:resource="http://id.dbpedia.org/resource/Soenarjo"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://upload.wikimedia.org/wikipedia/commons/thumb/8/88/President_Megawati_Sukarnoputri_-_Indonesia.jpg/200px-President_Megawati_Sukarnoputri_-_Indonesia.jpg">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <owl:sameAs rdf:resource="http://upload.wikimedia.org/wikipedia/commons/thumb/8/88/President_Megawati_Sukarnoputri_-_Indonesia.jpg/200px-President_Megawati_Sukarnoputri_-_Indonesia.jpg"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://id.dbpedia.org/resource/Universitas_Andalas">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <owl:sameAs rdf:resource="http://id.dbpedia.org/resource/Universitas_Andalas"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://id.dbpedia.org/resource/Djoko_Munandar">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <owl:sameAs rdf:resource="http://id.dbpedia.org/resource/Djoko_Munandar"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://id.dbpedia.org/resource/Kategori:Tokoh_dari_Kota_Yogyakarta">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <owl:sameAs rdf:resource="http://id.dbpedia.org/resource/Kategori:Tokoh_dari_Kota_Yogyakarta"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://id.dbpedia.org/resource/Hassan_Gamal_Ahmad_Hasan">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <owl:sameAs rdf:resource="http://id.dbpedia.org/resource/Hassan_Gamal_Ahmad_Hasan"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://id.dbpedia.org/resource/Bina_Graha">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <owl:sameAs rdf:resource="http://id.dbpedia.org/resource/Bina_Graha"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://id.dbpedia.org/resource/Indra_Kusuma">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <owl:sameAs rdf:resource="http://id.dbpedia.org/resource/Indra_Kusuma"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://id.dbpedia.org/property/birthName">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
-    <owl:equivalentProperty rdf:resource="http://id.dbpedia.org/property/birthName"/>
-    <rdfs:subPropertyOf rdf:resource="http://id.dbpedia.org/property/birthName"/>
-    <owl:propertyDisjointWith rdf:resource="http://www.w3.org/2002/07/owl#bottomDataProperty"/>
-    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://id.dbpedia.org/resource/Balita">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <owl:sameAs rdf:resource="http://id.dbpedia.org/resource/Balita"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://id.dbpedia.org/resource/Melanie_Putria_Dewita_Sari">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <owl:sameAs rdf:resource="http://id.dbpedia.org/resource/Melanie_Putria_Dewita_Sari"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://id.dbpedia.org/resource/Megawati_Sukarnoputri">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <owl:sameAs rdf:resource="http://id.dbpedia.org/resource/Megawati_Sukarnoputri"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://id.dbpedia.org/resource/Wan_Abubakar">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <owl:sameAs rdf:resource="http://id.dbpedia.org/resource/Wan_Abubakar"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://id.dbpedia.org/resource/Megawati_soekarnoputri">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <owl:sameAs rdf:resource="http://id.dbpedia.org/resource/Megawati_soekarnoputri"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://id.dbpedia.org/resource/Peristiwa_27_Juli">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <owl:sameAs rdf:resource="http://id.dbpedia.org/resource/Peristiwa_27_Juli"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://id.dbpedia.org/resource/Sudi_Silalahi">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <owl:sameAs rdf:resource="http://id.dbpedia.org/resource/Sudi_Silalahi"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://id.dbpedia.org/resource/20_Oktober">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <owl:sameAs rdf:resource="http://id.dbpedia.org/resource/20_Oktober"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://id.dbpedia.org/resource/Kwik_Kian_Gie">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <owl:sameAs rdf:resource="http://id.dbpedia.org/resource/Kwik_Kian_Gie"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://id.dbpedia.org/resource/Tejowulan">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <owl:sameAs rdf:resource="http://id.dbpedia.org/resource/Tejowulan"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://id.dbpedia.org/resource/Hari_Sabarno">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <owl:sameAs rdf:resource="http://id.dbpedia.org/resource/Hari_Sabarno"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://id.dbpedia.org/resource/Herman_Abdullah">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <owl:sameAs rdf:resource="http://id.dbpedia.org/resource/Herman_Abdullah"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://id.dbpedia.org/resource/Hatta_Rajasa">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <owl:sameAs rdf:resource="http://id.dbpedia.org/resource/Hatta_Rajasa"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://id.dbpedia.org/resource/Mohammad_Mahfud">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <owl:sameAs rdf:resource="http://id.dbpedia.org/resource/Mohammad_Mahfud"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://id.dbpedia.org/resource/1947">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <owl:sameAs rdf:resource="http://id.dbpedia.org/resource/1947"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://id.dbpedia.org/resource/1959">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <owl:sameAs rdf:resource="http://id.dbpedia.org/resource/1959"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://id.dbpedia.org/resource/Skyvan_T-701">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <owl:sameAs rdf:resource="http://id.dbpedia.org/resource/Skyvan_T-701"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://id.dbpedia.org/resource/Hasyim_Muzadi">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <owl:sameAs rdf:resource="http://id.dbpedia.org/resource/Hasyim_Muzadi"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://id.dbpedia.org/resource/Megawati_Soekarno_Putri">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <owl:sameAs rdf:resource="http://id.dbpedia.org/resource/Megawati_Soekarno_Putri"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://id.dbpedia.org/resource/Pemilihan_umum_Presiden_Indonesia_2004">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <owl:sameAs rdf:resource="http://id.dbpedia.org/resource/Pemilihan_umum_Presiden_Indonesia_2004"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://id.dbpedia.org/resource/Bendungan_Bilibili">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <owl:sameAs rdf:resource="http://id.dbpedia.org/resource/Bendungan_Bilibili"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://id.dbpedia.org/resource/Abdullah_Totong_Mahmud">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <owl:sameAs rdf:resource="http://id.dbpedia.org/resource/Abdullah_Totong_Mahmud"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://id.dbpedia.org/resource/Wakil_Presiden_Republik_Indonesia">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <owl:sameAs rdf:resource="http://id.dbpedia.org/resource/Wakil_Presiden_Republik_Indonesia"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://id.dbpedia.org/resource/Kebayoran_Baru">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <owl:sameAs rdf:resource="http://id.dbpedia.org/resource/Kebayoran_Baru"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://id.dbpedia.org/resource/20_September">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <owl:sameAs rdf:resource="http://id.dbpedia.org/resource/20_September"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://id.dbpedia.org/resource/Pulau_Halmahera">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <owl:sameAs rdf:resource="http://id.dbpedia.org/resource/Pulau_Halmahera"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://id.dbpedia.org/resource/Bungaran_Saragih">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <owl:sameAs rdf:resource="http://id.dbpedia.org/resource/Bungaran_Saragih"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://id.dbpedia.org/resource/News_dot_Com">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <owl:sameAs rdf:resource="http://id.dbpedia.org/resource/News_dot_Com"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://id.dbpedia.org/resource/Trans_TV">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <owl:sameAs rdf:resource="http://id.dbpedia.org/resource/Trans_TV"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://id.dbpedia.org/resource/Nabiel_Makarim">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <owl:sameAs rdf:resource="http://id.dbpedia.org/resource/Nabiel_Makarim"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://id.dbpedia.org/resource/Said_Agil_Husin_Al_Munawar">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <owl:sameAs rdf:resource="http://id.dbpedia.org/resource/Said_Agil_Husin_Al_Munawar"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://id.dbpedia.org/resource/23_Juli">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <owl:sameAs rdf:resource="http://id.dbpedia.org/resource/23_Juli"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://id.dbpedia.org/resource/Endriartono_Sutarto">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <owl:sameAs rdf:resource="http://id.dbpedia.org/resource/Endriartono_Sutarto"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://id.dbpedia.org/resource/Jacobus_Perviddya_Solossa">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <owl:sameAs rdf:resource="http://id.dbpedia.org/resource/Jacobus_Perviddya_Solossa"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://id.dbpedia.org/resource/Megawati_Soekarnoputri__1">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <owl:sameAs rdf:resource="http://id.dbpedia.org/resource/Megawati_Soekarnoputri__1"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://id.dbpedia.org/resource/Rieke_Diah_Pitaloka">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <owl:sameAs rdf:resource="http://id.dbpedia.org/resource/Rieke_Diah_Pitaloka"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://id.dbpedia.org/resource/Njoo_Han_Siang">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <owl:sameAs rdf:resource="http://id.dbpedia.org/resource/Njoo_Han_Siang"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://id.dbpedia.org/resource/Ratu_Hemas">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <owl:sameAs rdf:resource="http://id.dbpedia.org/resource/Ratu_Hemas"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://id.dbpedia.org/resource/Dorodjatun_Kuntjoro-Jakti">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <owl:sameAs rdf:resource="http://id.dbpedia.org/resource/Dorodjatun_Kuntjoro-Jakti"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://id.dbpedia.org/resource/Kabupaten_Serdang_Bedagai">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <owl:sameAs rdf:resource="http://id.dbpedia.org/resource/Kabupaten_Serdang_Bedagai"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://id.dbpedia.org/resource/Wage_Rudolf_Soepratman">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <owl:sameAs rdf:resource="http://id.dbpedia.org/resource/Wage_Rudolf_Soepratman"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://id.dbpedia.org/resource/Kategori:Presiden_Indonesia">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <owl:sameAs rdf:resource="http://id.dbpedia.org/resource/Kategori:Presiden_Indonesia"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://id.dbpedia.org/resource/22_Januari">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <owl:sameAs rdf:resource="http://id.dbpedia.org/resource/22_Januari"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://id.dbpedia.org/resource/Rini_Mariani_Soemarno_Soewandi">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <owl:sameAs rdf:resource="http://id.dbpedia.org/resource/Rini_Mariani_Soemarno_Soewandi"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://id.dbpedia.org/resource/Saifullah_Yusuf">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <owl:sameAs rdf:resource="http://id.dbpedia.org/resource/Saifullah_Yusuf"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://id.dbpedia.org/resource/Daftar_aksi_Front_Pembela_Islam">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <owl:sameAs rdf:resource="http://id.dbpedia.org/resource/Daftar_aksi_Front_Pembela_Islam"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://id.dbpedia.org/resource/September_2004">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <owl:sameAs rdf:resource="http://id.dbpedia.org/resource/September_2004"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://id.dbpedia.org/resource/9_Maret">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <owl:sameAs rdf:resource="http://id.dbpedia.org/resource/9_Maret"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://id.dbpedia.org/resource/Menteri_Koordinator">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <owl:sameAs rdf:resource="http://id.dbpedia.org/resource/Menteri_Koordinator"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://id.dbpedia.org/resource/Aklamasi">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <owl:sameAs rdf:resource="http://id.dbpedia.org/resource/Aklamasi"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://id.dbpedia.org/resource/Stadion_Kanjuruhan">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <owl:sameAs rdf:resource="http://id.dbpedia.org/resource/Stadion_Kanjuruhan"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://id.dbpedia.org/resource/Wanita">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <owl:sameAs rdf:resource="http://id.dbpedia.org/resource/Wanita"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://id.dbpedia.org/resource/Gerakan_Mahasiswa_Nasional_Indonesia">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <owl:sameAs rdf:resource="http://id.dbpedia.org/resource/Gerakan_Mahasiswa_Nasional_Indonesia"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://id.dbpedia.org/resource/Cornelis">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <owl:sameAs rdf:resource="http://id.dbpedia.org/resource/Cornelis"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://id.dbpedia.org/resource/Kementerian_Pembangunan_Daerah_Tertinggal_Indonesia">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <owl:sameAs rdf:resource="http://id.dbpedia.org/resource/Kementerian_Pembangunan_Daerah_Tertinggal_Indonesia"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://id.dbpedia.org/resource/Pemilihan_umum_Presiden_Indonesia_2014">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <owl:sameAs rdf:resource="http://id.dbpedia.org/resource/Pemilihan_umum_Presiden_Indonesia_2014"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://id.dbpedia.org/resource/Sejarah_Indonesia_(1998-sekarang)">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <owl:sameAs rdf:resource="http://id.dbpedia.org/resource/Sejarah_Indonesia_(1998-sekarang)"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://id.dbpedia.org/resource/Juwono_Sudarsono">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <owl:sameAs rdf:resource="http://id.dbpedia.org/resource/Juwono_Sudarsono"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://id.dbpedia.org/resource/Bayu_Sutiyono">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <owl:sameAs rdf:resource="http://id.dbpedia.org/resource/Bayu_Sutiyono"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://id.dbpedia.org/resource/Slamet_Suryanto">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <owl:sameAs rdf:resource="http://id.dbpedia.org/resource/Slamet_Suryanto"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://id.dbpedia.org/resource/Pekan_Olahraga_Nasional_XVI">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <owl:sameAs rdf:resource="http://id.dbpedia.org/resource/Pekan_Olahraga_Nasional_XVI"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://id.dbpedia.org/resource/Tentara_Nasional_Indonesia_Angkatan_Udara">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <owl:sameAs rdf:resource="http://id.dbpedia.org/resource/Tentara_Nasional_Indonesia_Angkatan_Udara"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://id.dbpedia.org/resource/Susilo_Bambang_Yudhoyono">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <owl:sameAs rdf:resource="http://id.dbpedia.org/resource/Susilo_Bambang_Yudhoyono"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://id.dbpedia.org/resource/Manuel_Kaisiepo">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <owl:sameAs rdf:resource="http://id.dbpedia.org/resource/Manuel_Kaisiepo"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://id.dbpedia.org/resource/Megawati_Soekarno_Poetri">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <owl:sameAs rdf:resource="http://id.dbpedia.org/resource/Megawati_Soekarno_Poetri"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://id.dbpedia.org/resource/Mahkamah_Konstitusi_Indonesia">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <owl:sameAs rdf:resource="http://id.dbpedia.org/resource/Mahkamah_Konstitusi_Indonesia"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://id.dbpedia.org/resource/Don_Murdono">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <owl:sameAs rdf:resource="http://id.dbpedia.org/resource/Don_Murdono"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://id.dbpedia.org/resource/Agum_Gumelar">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <owl:sameAs rdf:resource="http://id.dbpedia.org/resource/Agum_Gumelar"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://id.dbpedia.org/resource/Laksamana_Sukardi">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <owl:sameAs rdf:resource="http://id.dbpedia.org/resource/Laksamana_Sukardi"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://id.dbpedia.org/resource/Amir_Pasaribu">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <owl:sameAs rdf:resource="http://id.dbpedia.org/resource/Amir_Pasaribu"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://id.dbpedia.org/resource/Biak">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <owl:sameAs rdf:resource="http://id.dbpedia.org/resource/Biak"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://id.dbpedia.org/resource/Pemilihan_umum_legislatif_Indonesia_1997">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <owl:sameAs rdf:resource="http://id.dbpedia.org/resource/Pemilihan_umum_legislatif_Indonesia_1997"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://id.dbpedia.org/resource/Imam_Supardi">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <owl:sameAs rdf:resource="http://id.dbpedia.org/resource/Imam_Supardi"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://id.dbpedia.org/resource/Kategori:Ketua_Partai_Demokrasi_Indonesia_Perjuangan">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <owl:sameAs rdf:resource="http://id.dbpedia.org/resource/Kategori:Ketua_Partai_Demokrasi_Indonesia_Perjuangan"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#bottomObjectProperty">
-    <rdfs:subPropertyOf rdf:resource="http://dbpedia.org/ontology/chairperson"/>
-    <rdfs:subPropertyOf rdf:resource="http://id.dbpedia.org/property/beforeElection"/>
-    <owl:propertyDisjointWith rdf:resource="http://id.dbpedia.org/property/beforeElection"/>
-    <owl:propertyDisjointWith rdf:resource="http://id.dbpedia.org/property/nominee"/>
-    <rdfs:subPropertyOf rdf:resource="http://id.dbpedia.org/property/nominee"/>
-    <owl:propertyDisjointWith rdf:resource="http://dbpedia.org/ontology/chairperson"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://id.dbpedia.org/property/beforeElection">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <owl:equivalentProperty rdf:resource="http://id.dbpedia.org/property/beforeElection"/>
-    <rdfs:subPropertyOf rdf:resource="http://id.dbpedia.org/property/beforeElection"/>
-    <owl:propertyDisjointWith rdf:resource="http://www.w3.org/2002/07/owl#bottomObjectProperty"/>
-    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://id.dbpedia.org/resource/Tentara_Nasional_Indonesia">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <owl:sameAs rdf:resource="http://id.dbpedia.org/resource/Tentara_Nasional_Indonesia"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://id.dbpedia.org/resource/Amien_Rais">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <owl:sameAs rdf:resource="http://id.dbpedia.org/resource/Amien_Rais"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://id.dbpedia.org/resource/Hamengkubuwana_X">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <owl:sameAs rdf:resource="http://id.dbpedia.org/resource/Hamengkubuwana_X"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://id.dbpedia.org/resource/Alimarwan_Hanan">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <owl:sameAs rdf:resource="http://id.dbpedia.org/resource/Alimarwan_Hanan"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://id.dbpedia.org/resource/DPR">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <owl:sameAs rdf:resource="http://id.dbpedia.org/resource/DPR"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://id.dbpedia.org/resource/Daftar_tokoh_Yogyakarta">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <owl:sameAs rdf:resource="http://id.dbpedia.org/resource/Daftar_tokoh_Yogyakarta"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://id.dbpedia.org/resource/Bambang_Dwi_Hartono">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <owl:sameAs rdf:resource="http://id.dbpedia.org/resource/Bambang_Dwi_Hartono"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://dbpedia.org/ontology/birthName">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
-    <owl:equivalentProperty rdf:resource="http://dbpedia.org/ontology/birthName"/>
-    <rdfs:subPropertyOf rdf:resource="http://dbpedia.org/ontology/birthName"/>
-    <owl:propertyDisjointWith rdf:resource="http://www.w3.org/2002/07/owl#bottomDataProperty"/>
-    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://id.dbpedia.org/property/parents">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
-    <owl:equivalentProperty rdf:resource="http://id.dbpedia.org/property/parents"/>
-    <rdfs:subPropertyOf rdf:resource="http://id.dbpedia.org/property/parents"/>
-    <owl:propertyDisjointWith rdf:resource="http://www.w3.org/2002/07/owl#bottomDataProperty"/>
-    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://id.dbpedia.org/resource/Madiun">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <owl:sameAs rdf:resource="http://id.dbpedia.org/resource/Madiun"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://id.dbpedia.org/resource/Olimpiade_Fisika_Asia">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <owl:sameAs rdf:resource="http://id.dbpedia.org/resource/Olimpiade_Fisika_Asia"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://id.dbpedia.org/resource/1968">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <owl:sameAs rdf:resource="http://id.dbpedia.org/resource/1968"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.time.com/time/pow/printout/0,8816,169130,00.html">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <owl:sameAs rdf:resource="http://www.time.com/time/pow/printout/0,8816,169130,00.html"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://id.dbpedia.org/resource/Masjid_Agung_Palembang">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <owl:sameAs rdf:resource="http://id.dbpedia.org/resource/Masjid_Agung_Palembang"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://id.dbpedia.org/resource/Nono_Sampono">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <owl:sameAs rdf:resource="http://id.dbpedia.org/resource/Nono_Sampono"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://id.dbpedia.org/resource/Dada_Rosada">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <owl:sameAs rdf:resource="http://id.dbpedia.org/resource/Dada_Rosada"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://id.dbpedia.org/resource/Berkas:Vice_President_Megawati_Sukarnoputri_-_Indonesia.jpg">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <owl:sameAs rdf:resource="http://id.dbpedia.org/resource/Berkas:Vice_President_Megawati_Sukarnoputri_-_Indonesia.jpg"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://id.dbpedia.org/resource/Pramono_Edhie_Wibowo">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <owl:sameAs rdf:resource="http://id.dbpedia.org/resource/Pramono_Edhie_Wibowo"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://id.dbpedia.org/resource/Kebagusan,_Pasar_Minggu,_Jakarta_Selatan">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <owl:sameAs rdf:resource="http://id.dbpedia.org/resource/Kebagusan,_Pasar_Minggu,_Jakarta_Selatan"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://id.dbpedia.org/resource/Kali_Code">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <owl:sameAs rdf:resource="http://id.dbpedia.org/resource/Kali_Code"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://id.dbpedia.org/resource/Ratih_TV">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <owl:sameAs rdf:resource="http://id.dbpedia.org/resource/Ratih_TV"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#bottomDataProperty">
-    <owl:propertyDisjointWith rdf:resource="http://dbpedia.org/ontology/birthName"/>
-    <owl:propertyDisjointWith rdf:resource="http://id.dbpedia.org/property/birthName"/>
-    <owl:propertyDisjointWith rdf:resource="http://id.dbpedia.org/property/parents"/>
-    <rdfs:subPropertyOf rdf:resource="http://id.dbpedia.org/property/birthName"/>
-    <rdfs:subPropertyOf rdf:resource="http://id.dbpedia.org/property/parents"/>
-    <rdfs:subPropertyOf rdf:resource="http://dbpedia.org/ontology/birthName"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://id.dbpedia.org/resource/Ibu_Kasur">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <owl:sameAs rdf:resource="http://id.dbpedia.org/resource/Ibu_Kasur"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://id.dbpedia.org/resource/Kategori:Wakil_Presiden_Indonesia">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <owl:sameAs rdf:resource="http://id.dbpedia.org/resource/Kategori:Wakil_Presiden_Indonesia"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://dbpedia.org/ontology/chairperson">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <owl:equivalentProperty rdf:resource="http://dbpedia.org/ontology/chairperson"/>
-    <rdfs:subPropertyOf rdf:resource="http://dbpedia.org/ontology/chairperson"/>
-    <owl:propertyDisjointWith rdf:resource="http://www.w3.org/2002/07/owl#bottomObjectProperty"/>
-    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://id.dbpedia.org/resource/Burhanuddin_Abdullah">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <owl:sameAs rdf:resource="http://id.dbpedia.org/resource/Burhanuddin_Abdullah"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://id.dbpedia.org/resource/Matori_Abdul_Djalil">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <owl:sameAs rdf:resource="http://id.dbpedia.org/resource/Matori_Abdul_Djalil"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://id.dbpedia.org/resource/Kota_Yogyakarta">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <owl:sameAs rdf:resource="http://id.dbpedia.org/resource/Kota_Yogyakarta"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://id.dbpedia.org/resource/Saleh_Djasit">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <owl:sameAs rdf:resource="http://id.dbpedia.org/resource/Saleh_Djasit"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://id.dbpedia.org/resource/SMA_Negeri_1_Cilacap">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <owl:sameAs rdf:resource="http://id.dbpedia.org/resource/SMA_Negeri_1_Cilacap"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://id.dbpedia.org/property/nominee">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <owl:equivalentProperty rdf:resource="http://id.dbpedia.org/property/nominee"/>
-    <rdfs:subPropertyOf rdf:resource="http://id.dbpedia.org/property/nominee"/>
-    <owl:propertyDisjointWith rdf:resource="http://www.w3.org/2002/07/owl#bottomObjectProperty"/>
-    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://id.dbpedia.org/resource/Kabupaten_Pohuwato">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <owl:sameAs rdf:resource="http://id.dbpedia.org/resource/Kabupaten_Pohuwato"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://id.dbpedia.org/resource/Soenarno">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <owl:sameAs rdf:resource="http://id.dbpedia.org/resource/Soenarno"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://id.dbpedia.org/resource/5_Juli">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <owl:sameAs rdf:resource="http://id.dbpedia.org/resource/5_Juli"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://id.dbpedia.org/resource/Kongres_Medan">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <owl:sameAs rdf:resource="http://id.dbpedia.org/resource/Kongres_Medan"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://id.dbpedia.org/resource/Universitas_Trunojoyo">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <owl:sameAs rdf:resource="http://id.dbpedia.org/resource/Universitas_Trunojoyo"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://id.dbpedia.org/resource/1954">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <owl:sameAs rdf:resource="http://id.dbpedia.org/resource/1954"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://id.dbpedia.org/resource/Yogyakarta">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <owl:sameAs rdf:resource="http://id.dbpedia.org/resource/Yogyakarta"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://id.dbpedia.org/resource/Sri_Redjeki_Sumarjoto">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <owl:sameAs rdf:resource="http://id.dbpedia.org/resource/Sri_Redjeki_Sumarjoto"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://id.dbpedia.org/resource/Wakil_Presiden_Indonesia">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <owl:sameAs rdf:resource="http://id.dbpedia.org/resource/Wakil_Presiden_Indonesia"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://id.dbpedia.org/resource/Piet_Tallo">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <owl:sameAs rdf:resource="http://id.dbpedia.org/resource/Piet_Tallo"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://id.dbpedia.org/resource/Jakarta_Pusat">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <owl:sameAs rdf:resource="http://id.dbpedia.org/resource/Jakarta_Pusat"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://id.dbpedia.org/resource/Fraksi">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <owl:sameAs rdf:resource="http://id.dbpedia.org/resource/Fraksi"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://id.dbpedia.org/resource/Boediono">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <owl:sameAs rdf:resource="http://id.dbpedia.org/resource/Boediono"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://id.dbpedia.org/resource/Bibit_Waluyo">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <owl:sameAs rdf:resource="http://id.dbpedia.org/resource/Bibit_Waluyo"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://id.dbpedia.org/resource/Pengadilan_Tinggi_Agama">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <owl:sameAs rdf:resource="http://id.dbpedia.org/resource/Pengadilan_Tinggi_Agama"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://id.dbpedia.org/resource/Abu_Bakar_Ba&apos;asyir">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <owl:sameAs rdf:resource="http://id.dbpedia.org/resource/Abu_Bakar_Ba&apos;asyir"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://id.dbpedia.org/resource/Partai_Golkar">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <owl:sameAs rdf:resource="http://id.dbpedia.org/resource/Partai_Golkar"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://id.dbpedia.org/resource/Imam_Utomo">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <owl:sameAs rdf:resource="http://id.dbpedia.org/resource/Imam_Utomo"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://id.dbpedia.org/resource/Ketep_Pass">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <owl:sameAs rdf:resource="http://id.dbpedia.org/resource/Ketep_Pass"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://id.dbpedia.org/resource/Megawati">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <owl:sameAs rdf:resource="http://id.dbpedia.org/resource/Megawati"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://id.dbpedia.org/resource/Oktober">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <owl:sameAs rdf:resource="http://id.dbpedia.org/resource/Oktober"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://id.dbpedia.org/resource/1963">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <owl:sameAs rdf:resource="http://id.dbpedia.org/resource/1963"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://id.dbpedia.org/resource/1987">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <owl:sameAs rdf:resource="http://id.dbpedia.org/resource/1987"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://id.dbpedia.org/resource/1999">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <owl:sameAs rdf:resource="http://id.dbpedia.org/resource/1999"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://id.dbpedia.org/resource/Jembatan_Nasional_Suramadu">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <owl:sameAs rdf:resource="http://id.dbpedia.org/resource/Jembatan_Nasional_Suramadu"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://id.dbpedia.org/resource/Bingky_Irawan">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <owl:sameAs rdf:resource="http://id.dbpedia.org/resource/Bingky_Irawan"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://id.dbpedia.org/resource/Sarwana_Thamrin">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <owl:sameAs rdf:resource="http://id.dbpedia.org/resource/Sarwana_Thamrin"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://id.dbpedia.org/resource/Universitas_Pajajaran">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <owl:sameAs rdf:resource="http://id.dbpedia.org/resource/Universitas_Pajajaran"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://themegawati-institute.org">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <owl:sameAs rdf:resource="http://themegawati-institute.org"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://id.dbpedia.org/resource/Akbar_Tanjung">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <owl:sameAs rdf:resource="http://id.dbpedia.org/resource/Akbar_Tanjung"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://id.dbpedia.org/resource/Presiden_Wanita">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <owl:sameAs rdf:resource="http://id.dbpedia.org/resource/Presiden_Wanita"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://id.dbpedia.org/resource/Achmad_Sujudi">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <owl:sameAs rdf:resource="http://id.dbpedia.org/resource/Achmad_Sujudi"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://id.dbpedia.org/resource/Nani_Wartabone">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <owl:sameAs rdf:resource="http://id.dbpedia.org/resource/Nani_Wartabone"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://id.dbpedia.org/resource/Fauzi_Bowo">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <owl:sameAs rdf:resource="http://id.dbpedia.org/resource/Fauzi_Bowo"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://id.dbpedia.org/resource/Kategori:Tokoh_Marhaenis">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <owl:sameAs rdf:resource="http://id.dbpedia.org/resource/Kategori:Tokoh_Marhaenis"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://id.dbpedia.org/resource/Surindro_Supjarso">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <owl:sameAs rdf:resource="http://id.dbpedia.org/resource/Surindro_Supjarso"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://id.dbpedia.org/resource/Tengku_Rizal_Nurdin">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <owl:sameAs rdf:resource="http://id.dbpedia.org/resource/Tengku_Rizal_Nurdin"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://id.dbpedia.org/resource/Partai_Demokrasi_Pembaruan">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <owl:sameAs rdf:resource="http://id.dbpedia.org/resource/Partai_Demokrasi_Pembaruan"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://id.dbpedia.org/resource/A._M._Hendropriyono">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <owl:sameAs rdf:resource="http://id.dbpedia.org/resource/A._M._Hendropriyono"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://id.dbpedia.org/resource/Hassan_Wirajuda">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <owl:sameAs rdf:resource="http://id.dbpedia.org/resource/Hassan_Wirajuda"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://id.dbpedia.org/resource/Mardiyanto">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <owl:sameAs rdf:resource="http://id.dbpedia.org/resource/Mardiyanto"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://id.dbpedia.org/resource/MPR">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <owl:sameAs rdf:resource="http://id.dbpedia.org/resource/MPR"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://id.dbpedia.org/resource/April_2010">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <owl:sameAs rdf:resource="http://id.dbpedia.org/resource/April_2010"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://id.dbpedia.org/resource/Juru_bicara_Presiden">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <owl:sameAs rdf:resource="http://id.dbpedia.org/resource/Juru_bicara_Presiden"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://id.dbpedia.org/resource/Agresi_Militer_Belanda">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <owl:sameAs rdf:resource="http://id.dbpedia.org/resource/Agresi_Militer_Belanda"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://id.dbpedia.org/resource/27_Juli">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <owl:sameAs rdf:resource="http://id.dbpedia.org/resource/27_Juli"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://id.dbpedia.org/resource/Tjahjo_Kumolo">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <owl:sameAs rdf:resource="http://id.dbpedia.org/resource/Tjahjo_Kumolo"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://id.dbpedia.org/resource/Achmad_Faris_Sulchaq">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <owl:sameAs rdf:resource="http://id.dbpedia.org/resource/Achmad_Faris_Sulchaq"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://id.dbpedia.org/resource/Jacob_Nuwa_Wea">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <owl:sameAs rdf:resource="http://id.dbpedia.org/resource/Jacob_Nuwa_Wea"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://id.dbpedia.org/resource/Masjid_Raya_Bayur">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <owl:sameAs rdf:resource="http://id.dbpedia.org/resource/Masjid_Raya_Bayur"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://id.dbpedia.org/resource/Tzu_Chi">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <owl:sameAs rdf:resource="http://id.dbpedia.org/resource/Tzu_Chi"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://id.dbpedia.org/resource/Paku_Alam_IX">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <owl:sameAs rdf:resource="http://id.dbpedia.org/resource/Paku_Alam_IX"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://id.wikipedia.org/wiki/Megawati_Soekarnoputri">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <owl:sameAs rdf:resource="http://id.wikipedia.org/wiki/Megawati_Soekarnoputri"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://id.dbpedia.org/resource/Kristiani_Herrawati">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <owl:sameAs rdf:resource="http://id.dbpedia.org/resource/Kristiani_Herrawati"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://id.dbpedia.org/resource/Juli_2001">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <owl:sameAs rdf:resource="http://id.dbpedia.org/resource/Juli_2001"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://id.dbpedia.org/resource/2004">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <owl:sameAs rdf:resource="http://id.dbpedia.org/resource/2004"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://id.dbpedia.org/resource/Pasar_Gede_Harjonagoro">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <owl:sameAs rdf:resource="http://id.dbpedia.org/resource/Pasar_Gede_Harjonagoro"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.pemiluindonesia.com/profile/megawati-sukarnoputri.html">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <owl:sameAs rdf:resource="http://www.pemiluindonesia.com/profile/megawati-sukarnoputri.html"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://id.dbpedia.org/resource/Operasi_militer_Indonesia_di_Aceh_2003-2004">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <owl:sameAs rdf:resource="http://id.dbpedia.org/resource/Operasi_militer_Indonesia_di_Aceh_2003-2004"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://id.dbpedia.org/resource/1997">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <owl:sameAs rdf:resource="http://id.dbpedia.org/resource/1997"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://id.dbpedia.org/resource/Nana_Nuriana">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <owl:sameAs rdf:resource="http://id.dbpedia.org/resource/Nana_Nuriana"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://id.dbpedia.org/resource/Yusril_Ihza_Mahendra">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <owl:sameAs rdf:resource="http://id.dbpedia.org/resource/Yusril_Ihza_Mahendra"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://id.dbpedia.org/resource/1973">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <owl:sameAs rdf:resource="http://id.dbpedia.org/resource/1973"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://id.dbpedia.org/resource/Kota_Singkawang">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <owl:sameAs rdf:resource="http://id.dbpedia.org/resource/Kota_Singkawang"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://id.dbpedia.org/resource/Muhammad_Feisal_Tamin">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <owl:sameAs rdf:resource="http://id.dbpedia.org/resource/Muhammad_Feisal_Tamin"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://id.dbpedia.org/resource/Bambang_Kesowo">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <owl:sameAs rdf:resource="http://id.dbpedia.org/resource/Bambang_Kesowo"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://id.dbpedia.org/resource/Abdul_Malik_Fadjar">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <owl:sameAs rdf:resource="http://id.dbpedia.org/resource/Abdul_Malik_Fadjar"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://id.dbpedia.org/resource/Taufiq_Kiemas">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <owl:sameAs rdf:resource="http://id.dbpedia.org/resource/Taufiq_Kiemas"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://id.dbpedia.org/resource/Kategori:Tokoh_Yogyakarta">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <owl:sameAs rdf:resource="http://id.dbpedia.org/resource/Kategori:Tokoh_Yogyakarta"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://id.dbpedia.org/resource/Agustus_2009">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <owl:sameAs rdf:resource="http://id.dbpedia.org/resource/Agustus_2009"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://id.dbpedia.org/resource/Budi_Gunawan">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <owl:sameAs rdf:resource="http://id.dbpedia.org/resource/Budi_Gunawan"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://id.dbpedia.org/resource/Sarwono_Kusumaatmadja">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <owl:sameAs rdf:resource="http://id.dbpedia.org/resource/Sarwono_Kusumaatmadja"/>
+    xmlns:owl="http://www.w3.org/2002/07/owl#" > 
+  <rdf:Description rdf:nodeID="A0">
+    <rdf:first rdf:nodeID="A1"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A2">
+    <rdf:first rdf:resource="http://www.co-ode.org/roberts/family-tree.owl#Person"/>
+    <rdf:rest rdf:nodeID="A3"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A4">
+    <rdf:first rdf:resource="http://www.co-ode.org/roberts/family-tree.owl#Person"/>
+    <rdf:rest rdf:nodeID="A5"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A6">
+    <rdf:first rdf:nodeID="A7"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.co-ode.org/roberts/family-tree.owl#GreatGrandfather">
+    <owl:equivalentClass rdf:nodeID="A8"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.co-ode.org/roberts/family-tree.owl#Woman">
+    <owl:equivalentClass rdf:nodeID="A9"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A10">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:intersectionOf rdf:nodeID="A11"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A12">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:intersectionOf rdf:nodeID="A13"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A14">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://www.co-ode.org/roberts/family-tree.owl#isParentOf"/>
+    <owl:someValuesFrom rdf:resource="http://www.co-ode.org/roberts/family-tree.owl#Person"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A15">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:intersectionOf rdf:nodeID="A16"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A17">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://www.co-ode.org/roberts/family-tree.owl#isParentOf"/>
+    <owl:someValuesFrom rdf:nodeID="A18"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A19">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:intersectionOf rdf:nodeID="A20"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A1">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://www.co-ode.org/roberts/family-tree.owl#isMotherOf"/>
+    <owl:someValuesFrom rdf:nodeID="A21"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A22">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:intersectionOf rdf:nodeID="A2"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A23">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://www.co-ode.org/roberts/family-tree.owl#isParentOf"/>
+    <owl:someValuesFrom rdf:resource="http://www.co-ode.org/roberts/family-tree.owl#Person"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A7">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://www.co-ode.org/roberts/family-tree.owl#isParentOf"/>
+    <owl:someValuesFrom rdf:resource="http://www.co-ode.org/roberts/family-tree.owl#Person"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A24">
+    <rdf:first rdf:nodeID="A25"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A26">
+    <rdf:first rdf:resource="http://www.co-ode.org/roberts/family-tree.owl#Person"/>
+    <rdf:rest rdf:nodeID="A27"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A28">
+    <rdf:first rdf:nodeID="A29"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A30">
+    <rdf:first rdf:resource="http://www.co-ode.org/roberts/family-tree.owl#Person"/>
+    <rdf:rest rdf:nodeID="A31"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A32">
+    <rdf:first rdf:nodeID="A33"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A3">
+    <rdf:first rdf:nodeID="A34"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.co-ode.org/roberts/family-tree.owl#Sex">
+    <owl:equivalentClass rdf:nodeID="A35"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.co-ode.org/roberts/family-tree.owl#Grandfather">
+    <owl:equivalentClass rdf:nodeID="A36"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A37">
+    <rdf:first rdf:resource="http://www.co-ode.org/roberts/family-tree.owl#Person"/>
+    <rdf:rest rdf:nodeID="A38"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A11">
+    <rdf:first rdf:resource="http://www.co-ode.org/roberts/family-tree.owl#Person"/>
+    <rdf:rest rdf:nodeID="A39"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A5">
+    <rdf:first rdf:nodeID="A40"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A41">
+    <rdf:first rdf:resource="http://www.co-ode.org/roberts/family-tree.owl#Female"/>
+    <rdf:rest rdf:nodeID="A42"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A43">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://www.co-ode.org/roberts/family-tree.owl#isParentOf"/>
+    <owl:someValuesFrom rdf:resource="http://www.co-ode.org/roberts/family-tree.owl#Person"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A8">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:intersectionOf rdf:nodeID="A44"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.co-ode.org/roberts/family-tree.owl#Mother">
+    <owl:equivalentClass rdf:nodeID="A19"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A45">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://www.co-ode.org/roberts/family-tree.owl#isMotherOf"/>
+    <owl:someValuesFrom rdf:resource="http://www.co-ode.org/roberts/family-tree.owl#Person"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A46">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:intersectionOf rdf:nodeID="A47"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A48">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://www.co-ode.org/roberts/family-tree.owl#isParentOf"/>
+    <owl:someValuesFrom rdf:resource="http://www.co-ode.org/roberts/family-tree.owl#Person"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A18">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:intersectionOf rdf:nodeID="A49"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A50">
+    <rdf:first rdf:resource="http://www.co-ode.org/roberts/family-tree.owl#Person"/>
+    <rdf:rest rdf:nodeID="A51"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A21">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:intersectionOf rdf:nodeID="A37"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A34">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://www.co-ode.org/roberts/family-tree.owl#isParentOf"/>
+    <owl:someValuesFrom rdf:nodeID="A15"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A40">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://www.co-ode.org/roberts/family-tree.owl#isParentOf"/>
+    <owl:someValuesFrom rdf:nodeID="A52"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A35">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:unionOf rdf:nodeID="A41"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A27">
+    <rdf:first rdf:nodeID="A14"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A13">
+    <rdf:first rdf:resource="http://www.co-ode.org/roberts/family-tree.owl#Person"/>
+    <rdf:rest rdf:nodeID="A53"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A38">
+    <rdf:first rdf:nodeID="A54"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A16">
+    <rdf:first rdf:resource="http://www.co-ode.org/roberts/family-tree.owl#Person"/>
+    <rdf:rest rdf:nodeID="A55"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A31">
+    <rdf:first rdf:nodeID="A17"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A20">
+    <rdf:first rdf:resource="http://www.co-ode.org/roberts/family-tree.owl#Woman"/>
+    <rdf:rest rdf:nodeID="A56"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A9">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:intersectionOf rdf:nodeID="A50"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A57">
+    <rdf:first rdf:resource="http://www.co-ode.org/roberts/family-tree.owl#Man"/>
+    <rdf:rest rdf:nodeID="A58"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.co-ode.org/roberts/family-tree.owl#Father">
+    <owl:equivalentClass rdf:nodeID="A59"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A60">
+    <rdf:first rdf:resource="http://www.co-ode.org/roberts/family-tree.owl#Person"/>
+    <rdf:rest rdf:nodeID="A61"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A44">
+    <rdf:first rdf:resource="http://www.co-ode.org/roberts/family-tree.owl#Man"/>
+    <rdf:rest rdf:nodeID="A62"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A39">
+    <rdf:first rdf:nodeID="A63"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A64">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:intersectionOf rdf:nodeID="A65"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A66">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:intersectionOf rdf:nodeID="A67"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A68">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://www.co-ode.org/roberts/family-tree.owl#isParentOf"/>
+    <owl:someValuesFrom rdf:nodeID="A69"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A70">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:intersectionOf rdf:nodeID="A71"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.co-ode.org/roberts/family-tree.owl#Grandmother">
+    <owl:equivalentClass rdf:nodeID="A64"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A36">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:intersectionOf rdf:nodeID="A72"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A73">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://www.co-ode.org/roberts/family-tree.owl#isParentOf"/>
+    <owl:someValuesFrom rdf:nodeID="A74"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A75">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:intersectionOf rdf:nodeID="A76"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.co-ode.org/roberts/family-tree.owl#GreatGrandparent">
+    <owl:equivalentClass rdf:nodeID="A66"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A51">
+    <rdf:first rdf:nodeID="A77"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A54">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://www.co-ode.org/roberts/family-tree.owl#isParentOf"/>
+    <owl:someValuesFrom rdf:resource="http://www.co-ode.org/roberts/family-tree.owl#Person"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A42">
+    <rdf:first rdf:resource="http://www.co-ode.org/roberts/family-tree.owl#Male"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A59">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:intersectionOf rdf:nodeID="A57"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A63">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://www.co-ode.org/roberts/family-tree.owl#isParentOf"/>
+    <owl:someValuesFrom rdf:nodeID="A78"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A52">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:intersectionOf rdf:nodeID="A60"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A53">
+    <rdf:first rdf:nodeID="A43"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A49">
+    <rdf:first rdf:resource="http://www.co-ode.org/roberts/family-tree.owl#Person"/>
+    <rdf:rest rdf:nodeID="A79"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A56">
+    <rdf:first rdf:nodeID="A45"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.co-ode.org/roberts/family-tree.owl#Man">
+    <owl:equivalentClass rdf:nodeID="A75"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A58">
+    <rdf:first rdf:nodeID="A80"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A47">
+    <rdf:first rdf:resource="http://www.co-ode.org/roberts/family-tree.owl#Person"/>
+    <rdf:rest rdf:nodeID="A81"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A55">
+    <rdf:first rdf:nodeID="A48"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A61">
+    <rdf:first rdf:nodeID="A82"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A77">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://www.co-ode.org/roberts/family-tree.owl#hasSex"/>
+    <owl:someValuesFrom rdf:resource="http://www.co-ode.org/roberts/family-tree.owl#Female"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A62">
+    <rdf:first rdf:nodeID="A83"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A84">
+    <rdf:first rdf:resource="http://www.co-ode.org/roberts/family-tree.owl#Person"/>
+    <rdf:rest rdf:nodeID="A85"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A65">
+    <rdf:first rdf:resource="http://www.co-ode.org/roberts/family-tree.owl#Woman"/>
+    <rdf:rest rdf:nodeID="A0"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A71">
+    <rdf:first rdf:resource="http://www.co-ode.org/roberts/family-tree.owl#Person"/>
+    <rdf:rest rdf:nodeID="A6"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.co-ode.org/roberts/family-tree.owl#Grandparent">
+    <owl:equivalentClass rdf:nodeID="A46"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A25">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://www.co-ode.org/roberts/family-tree.owl#isFatherOf"/>
+    <owl:someValuesFrom rdf:nodeID="A12"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A74">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:intersectionOf rdf:nodeID="A26"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A29">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://www.co-ode.org/roberts/family-tree.owl#isParentOf"/>
+    <owl:someValuesFrom rdf:nodeID="A10"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A69">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:intersectionOf rdf:nodeID="A4"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A33">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://www.co-ode.org/roberts/family-tree.owl#hasSex"/>
+    <owl:someValuesFrom rdf:resource="http://www.co-ode.org/roberts/family-tree.owl#Male"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A86">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:intersectionOf rdf:nodeID="A30"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A80">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://www.co-ode.org/roberts/family-tree.owl#isFatherOf"/>
+    <owl:someValuesFrom rdf:resource="http://www.co-ode.org/roberts/family-tree.owl#Person"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A78">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:intersectionOf rdf:nodeID="A84"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A82">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://www.co-ode.org/roberts/family-tree.owl#isParentOf"/>
+    <owl:someValuesFrom rdf:resource="http://www.co-ode.org/roberts/family-tree.owl#Person"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.co-ode.org/roberts/family-tree.owl#Parent">
+    <owl:equivalentClass rdf:nodeID="A70"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A83">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://www.co-ode.org/roberts/family-tree.owl#isFatherOf"/>
+    <owl:someValuesFrom rdf:nodeID="A22"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.co-ode.org/roberts/family-tree.owl#GreatGreatGrandparent">
+    <owl:equivalentClass rdf:nodeID="A86"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A81">
+    <rdf:first rdf:nodeID="A73"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A67">
+    <rdf:first rdf:resource="http://www.co-ode.org/roberts/family-tree.owl#Person"/>
+    <rdf:rest rdf:nodeID="A28"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A79">
+    <rdf:first rdf:nodeID="A68"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A72">
+    <rdf:first rdf:resource="http://www.co-ode.org/roberts/family-tree.owl#Man"/>
+    <rdf:rest rdf:nodeID="A24"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A85">
+    <rdf:first rdf:nodeID="A23"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A76">
+    <rdf:first rdf:resource="http://www.co-ode.org/roberts/family-tree.owl#Person"/>
+    <rdf:rest rdf:nodeID="A32"/>
   </rdf:Description>
 </rdf:RDF>

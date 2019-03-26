@@ -26,8 +26,12 @@ public class Main {
     private static final Logger logger = LogManager.getLogger(Main.class);
     public static void main(String[] args) throws FileNotFoundException {
 
-        String UPLOAD_FUSEKI = "http://localhost:3030/pohonkeluarga";
-        String READ_FUSEKI = "http://localhost:3030/pohonkeluarga";
+        String dbJenaFuseki="famtree";
+        String prop = "http://id.dbpedia.org/property/";
+        String res = "http://id.dbpedia.org/resource/";
+        String foaf = "http://xmlns.com/foaf/0.1/";
+        String UPLOAD_FUSEKI = "http://localhost:3030/"+dbJenaFuseki;
+        String READ_FUSEKI = "http://localhost:3030/"+dbJenaFuseki;
         String OWL_FILE_LOCATION = "D:/The-Tree-of-Heroes/family-ontology-r-stevens.owl";
         File fileRDF = new File("D:\\The-Tree-of-Heroes\\PreprocessorTA\\result.rdf");
 
@@ -45,15 +49,32 @@ public class Main {
                                 //ADD ACTOR
         FileManager fManager = FileManager.get();
         fManager.addLocatorURL();
-        Model modelActor = fManager.loadModel("http://id.dbpedia.org/data/Megawati_Soekarnoputri.rdf");
-        Instances.add(modelActor);
 
+        String actor = "Abdurrahman_Wahid";
+        Model modelActor = fManager.loadModel("http://id.dbpedia.org/data/"+actor+".rdf");
+        final Resource actorResource = modelActor.getResource(res + actor);
+        final Property hasSpouse = modelActor.getProperty(prop + "spouse");
+        final Property hasChildren = modelActor.getProperty(prop + "children");
+
+        StmtIterator stmtIteratorChild, stmtIteratorSpouse;
+        stmtIteratorSpouse = modelActor.listStatements(actorResource,hasSpouse,(RDFNode)null);
+        while ( stmtIteratorSpouse.hasNext() ){
+            Statement spouse = stmtIteratorSpouse.nextStatement();
+            System.out.println( "ACTOR SPOUSE"+spouse );
+            Instances.add(spouse);
+        }
+        stmtIteratorChild = modelActor.listStatements(actorResource,hasChildren,(RDFNode)null);
+        while ( stmtIteratorChild.hasNext() ) {
+            Statement child = stmtIteratorChild.nextStatement();
+            System.out.println( "ACTOR CHILDREN"+child );
+            Instances.add(child);
+        }
                                 // MERGING MODEL DARI JENA-FUSEKI DAN MODEL ONTOLOGI FAMILY
         final Model union = ModelFactory.createUnion(Instances,famonto);
 
                                 // REASONING MODEL UNION
-        Reasoner reasoner = PelletReasonerFactory.theInstance().create();
-        Model reasonedModel = ModelFactory.createInfModel(reasoner,union);
+        Reasoner pelletReasoner = PelletReasonerFactory.theInstance().create();
+        InfModel reasonedModel = ModelFactory.createInfModel(pelletReasoner,union);
 
                                 //QUERY TESTING
         String queryString = "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n" +
@@ -61,7 +82,7 @@ public class Main {
                 "PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\n" +
                 "PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>\n" +
                 "PREFIX dbr: <http://dbpedia.org/resource/>\n" +
-                "PREFIX fam: <http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-41#>\n" +
+                "PREFIX fam: <http://www.co-ode.org/roberts/family-tree.owl#>\n" +
                 "SELECT ?s ?o\n" +
                 "WHERE {\n" +
                 "  ?s fam:hasParent ?o\n" +
@@ -69,8 +90,6 @@ public class Main {
 
         Query query = QueryFactory.create(queryString);
         QueryExecution queryExecution = QueryExecutionFactory.create(query,reasonedModel);
-        //untuk test tanpa reasoning
-        //QueryExecution queryExecution = QueryExecutionFactory.create(query,union);
 
         try {
             System.out.println("Start Query");
@@ -89,11 +108,10 @@ public class Main {
         }
 
                                 // EKSTRAKSI INFERRED MODEL ONLY
-        InfModel pModel = ModelFactory.createInfModel( PelletReasonerFactory.theInstance().create(), reasonedModel);
         System.out.println("Getting Inferred Model..");
-        ExtendedIterator<Statement> stmts = pModel.listStatements().filterDrop( new Filter<Statement>(){
+        ExtendedIterator<Statement> stmts = reasonedModel.listStatements().filterDrop( new Filter<Statement>(){
             public boolean accept(Statement o){
-                return union.contains(o);
+                return Instances.contains(o);
             }
         });
 
@@ -124,6 +142,6 @@ public class Main {
         // upload the resulting model
         DatasetAccessor accessor = DatasetAccessorFactory
                 .createHTTP(UPLOAD_FUSEKI);
-        accessor.putModel(deductions);
+        accessor.add(deductions);
     }
 }
