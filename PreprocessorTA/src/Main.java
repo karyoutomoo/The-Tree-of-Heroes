@@ -25,6 +25,8 @@ public class Main {
         String dbJenaFuseki="famtree";
         String prop = "http://id.dbpedia.org/property/";
         String res = "http://id.dbpedia.org/resource/";
+        String rdfs ="http://www.w3.org/1999/02/22-rdf-syntax-ns#";
+        String schema="http://schema.org/";
         String foaf = "http://xmlns.com/foaf/0.1/";
         String UPLOAD_FUSEKI = "http://localhost:3030/"+dbJenaFuseki;
         String READ_FUSEKI = "http://localhost:3030/"+dbJenaFuseki;
@@ -153,8 +155,9 @@ public class Main {
             final Property hasSpouse = modelActor.getProperty(prop + "spouse");
             final Property hasChildren = modelActor.getProperty(prop + "children");
             final Property hasName = modelActor.getProperty(prop + "name");
+            final Property hasType = modelActor.getProperty(rdfs + "type");
 
-            StmtIterator stmtIteratorChild, stmtIteratorSpouse, stmtIteratorName;
+            StmtIterator stmtIteratorChild, stmtIteratorSpouse, stmtIteratorName,stmtIteratorType;
             stmtIteratorSpouse = modelActor.listStatements(actorResource, hasSpouse, (RDFNode) null);
             while (stmtIteratorSpouse.hasNext()) {
                 Statement spouse = stmtIteratorSpouse.nextStatement();
@@ -173,43 +176,18 @@ public class Main {
                 System.out.println("ACTOR NAME" + actorName);
                 union.add(actorName);
             }
+            stmtIteratorType = modelActor.listStatements(actorResource, hasType, (RDFNode) null);
+            while (stmtIteratorType.hasNext()) {
+                Statement type = stmtIteratorType.nextStatement();
+                System.out.println("ACTOR TYPE" + type);
+                union.add(type);
+            }
         }
 
                                 // REASONING MODEL UNION
         Reasoner pelletReasoner = PelletReasonerFactory.theInstance().create();
         InfModel reasonedModel = ModelFactory.createInfModel(pelletReasoner,union);
-
-                                //QUERY TESTING
-        String queryString = "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n" +
-                "PREFIX owl: <http://www.w3.org/2002/07/owl#>\n" +
-                "PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\n" +
-                "PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>\n" +
-                "PREFIX dbr: <http://dbpedia.org/resource/>\n" +
-                "PREFIX fam: <http://www.co-ode.org/roberts/family-tree.owl#>\n" +
-                "SELECT ?s ?o\n" +
-                "WHERE {\n" +
-                "  ?s fam:hasParent ?o\n" +
-                "}";
-
-        Query query = QueryFactory.create(queryString);
-        QueryExecution queryExecution = QueryExecutionFactory.create(query,reasonedModel);
-
-        try {
-            System.out.println("Start Query");
-            ResultSet resultSet = queryExecution.execSelect();
-            while (resultSet.hasNext() ) {
-                QuerySolution querySolution = resultSet.nextSolution();
-                Resource uri = querySolution.getResource("s");
-                Resource p = querySolution.getResource("p");
-                RDFNode object = querySolution.get("o");
-                System.out.println(uri+"   "+p+"   "+object+".");
-            }
-        }
-        finally {
-            queryExecution.close();
-            System.out.println("End Query");
-        }
-
+        
 
                                 /*KONVERSI KE FILE .RDF*/
         if(fileRDF.delete())
