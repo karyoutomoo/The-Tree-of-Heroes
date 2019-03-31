@@ -47,120 +47,125 @@ public class Main {
                                 //ADD ACTOR
         FileManager fManager = FileManager.get();
         fManager.addLocatorURL();
-        /*
-        LIST ACTOR
-        Soekarno
-        Mohammad_Hatta
-        Abdul_Haris_Nasution
-        Adam_Malik
-        Ahmad_Yani
-        Basuki_Rahmat
-        Tjipto_Mangoenkoesoemo
-        Oemar_Said_Tjokroaminoto
-        Ernest_Douwes_Dekker
-        Dewi_Sartika
-        Cut_Nyak_Dhien
-        Diponegoro
-        Fatmawati
-        Ferdinand_Lumbantobing
-        Frans_Kaisiepo
-        Gatot_Soebroto
-        Halim_Perdanakusuma
-        Hamengkubuwana_I
-        Hamengkubuwana_IX
-        Hasjim_Asy%27ari
-        Sultan_Hasanuddin
-        Tuanku_Imam_Bonjol
-        Iskandar_Muda
-        Ismail_Marzuki
-        Iswahjoedi
-        Radin_Inten_II
-        Johannes_Abraham_Dimara
-        Djoeanda_Kartawidjaja
-        Karel_Satsuit_Tubun
-        Kartini
-        Kasman_Singodimedjo
-        I_Gusti_Ketut_Jelantik
-        Ki_Hadjar_Dewantara
-        Sultan_Mahmud_Badaruddin_II
-        Malahayati
-        Maria_Walanda_Maramis
-        Martha_Christina_Tiahahu
-        Mas_Tirtodarmo_Haryono
-        Cut_Nyak_Meutia
-        Mohammad_Husni_Thamrin
-        Mohammad_Natsir
-        Teuku_Muhammad_Hasan
-        Mohammad_Yamin
-        Muhammad_Yasin
-        Muhammad_Zainuddin_Abdul_Madjid
-        Moestopo
-        Nani_Wartabone
-        I_Gusti_Ngurah_Rai
-        Nuku_Muhammad_Amiruddin
-        Oto_Iskandar_di_Nata
-        Pakubuwana_VI
-        Pakubuwana_X
-        Pattimura
-        Pierre_Tendean
-        Raja_Haji_Fisabilillah
-        Rasuna_Said
-        Radjiman_Wedyodiningrat
-        Sam_Ratulangi
-        Samanhudi
-        Sisingamangaraja_XII
-        Siswondo_Parman
-        Slamet_Rijadi
-        Soedirman
-        Albertus_Soegijapranata
-        Suharso
-        Soekarni
-        Sultan_Agung_dari_Mataram
-        Andi_Sultan_Daeng_Radja
-        Soepeno
-        R._Suprapto_(pahlawan_revolusi)
-        Soeprijadi
-        Soeroso
-        Ario_Soerjo
-        Sutan_Syahrir
-        Soetomo
-        Sutomo
-        Sutoyo_Siswomiharjo
-        Syafruddin_Prawiranegara
-        Syam%27un
-        Syarif_Kasim_II_dari_Siak
-        T.B._Simatupang
-        Tan_Malaka
-        Tirto_Adhi_Soerjo
-        Teuku_Umar
-        Untung_Suropati
-        Oerip_Soemohardjo
-        Wage_Rudolf_Soepratman
-        Wahid_Hasjim
-        Wahidin_Soedirohoesodo
-        Wilhelmus_Zakaria_Johannes
-        Yos_Sudarso
-        Zainul_Arifin
-        Zainal_Mustafa
-         */
-        String actor = "Joko_Widodo";
-        Model modelActor = fManager.loadModel("http://id.dbpedia.org/data/"+actor+".rdf");
-        final Resource actorResource = modelActor.getResource(res + actor);
-        final Property hasSpouse = modelActor.getProperty(prop + "spouse");
-        final Property hasChildren = modelActor.getProperty(prop + "children");
 
-        StmtIterator stmtIteratorChild, stmtIteratorSpouse;
-        stmtIteratorSpouse = modelActor.listStatements(actorResource,hasSpouse,(RDFNode)null);
-        while ( stmtIteratorSpouse.hasNext() ){
-            Statement spouse = stmtIteratorSpouse.nextStatement();
-            System.out.println( "ACTOR SPOUSE"+spouse );
-            union.add(spouse);
-        }
-        stmtIteratorChild = modelActor.listStatements(actorResource,hasChildren,(RDFNode)null);
-        while ( stmtIteratorChild.hasNext() ) {
-            Statement child = stmtIteratorChild.nextStatement();
-            System.out.println( "ACTOR CHILDREN"+child );
-            union.add(child);
+        String[] actors = {
+//      Pahlawan Nasional
+                "Soekarno",
+        "Mohammad_Hatta",
+        "Abdul_Haris_Nasution",
+        "Adam_Malik",
+        "Ahmad_Yani",
+        "Basuki_Rahmat",
+        "Tjipto_Mangoenkoesoemo",
+        "Oemar_Said_Tjokroaminoto",
+        "Ernest_Douwes_Dekker",
+        "Dewi_Sartika",
+        "Cut_Nyak_Dhien",
+        "Diponegoro",
+        "Fatmawati",
+        "Ferdinand_Lumbantobing",
+        "Frans_Kaisiepo",
+        "Gatot_Soebroto",
+        "Halim_Perdanakusuma",
+        "Hamengkubuwana_I",
+        "Hamengkubuwana_IX",
+        "Hasjim_Asy%27ari",
+        "Sultan_Hasanuddin",
+        "Tuanku_Imam_Bonjol",
+        "Iskandar_Muda",
+        "Ismail_Marzuki",
+        "Iswahjoedi",
+        "Radin_Inten_II",
+        "Johannes_Abraham_Dimara",
+        "Djoeanda_Kartawidjaja",
+        "Karel_Satsuit_Tubun",
+        "Kartini",
+        "Kasman_Singodimedjo",
+        "I_Gusti_Ketut_Jelantik",
+        "Ki_Hadjar_Dewantara",
+        "Sultan_Mahmud_Badaruddin_II",
+        "Malahayati",
+        "Maria_Walanda_Maramis",
+        "Martha_Christina_Tiahahu",
+        "Mas_Tirtodarmo_Haryono",
+        "Cut_Nyak_Meutia",
+        "Mohammad_Husni_Thamrin",
+        "Mohammad_Natsir",
+        "Teuku_Muhammad_Hasan",
+        "Mohammad_Yamin",
+        "Muhammad_Yasin",
+        "Muhammad_Zainuddin_Abdul_Madjid",
+        "Moestopo",
+        "Nani_Wartabone",
+        "I_Gusti_Ngurah_Rai",
+        "Nuku_Muhammad_Amiruddin",
+        "Oto_Iskandar_di_Nata",
+        "Pakubuwana_VI",
+        "Pakubuwana_X",
+        "Pattimura",
+        "Pierre_Tendean",
+        "Raja_Haji_Fisabilillah",
+        "Rasuna_Said",
+        "Radjiman_Wedyodiningrat",
+        "Sam_Ratulangi",
+        "Samanhudi",
+        "Sisingamangaraja_XII",
+        "Siswondo_Parman",
+        "Slamet_Rijadi",
+        "Soedirman",
+        "Albertus_Soegijapranata",
+        "Suharso",
+        "Soekarni",
+        "Sultan_Agung_dari_Mataram",
+        "Andi_Sultan_Daeng_Radja",
+        "Soepeno",
+        "R._Suprapto_(pahlawan_revolusi)",
+        "Soeprijadi",
+        "Soeroso",
+        "Ario_Soerjo",
+        "Sutan_Syahrir",
+        "Soetomo",
+        "Sutomo",
+        "Sutoyo_Siswomiharjo",
+        "Syafruddin_Prawiranegara",
+        "Syam%27un",
+        "Syarif_Kasim_II_dari_Siak",
+        "T.B._Simatupang",
+        "Tan_Malaka",
+        "Tirto_Adhi_Soerjo",
+        "Teuku_Umar",
+        "Untung_Suropati",
+        "Oerip_Soemohardjo",
+        "Wage_Rudolf_Soepratman",
+        "Wahid_Hasjim",
+        "Wahidin_Soedirohoesodo",
+        "Wilhelmus_Zakaria_Johannes",
+        "Yos_Sudarso",
+        "Zainul_Arifin",
+        "Zainal_Mustafa"
+                //Tokoh kerajaan
+
+        };
+
+        for (Integer counter = 0; counter < actors.length; counter++) {
+            Model modelActor = fManager.loadModel("http://id.dbpedia.org/data/" + actors[counter] + ".rdf");
+            final Resource actorResource = modelActor.getResource(res + actors[counter]);
+            final Property hasSpouse = modelActor.getProperty(prop + "spouse");
+            final Property hasChildren = modelActor.getProperty(prop + "children");
+
+            StmtIterator stmtIteratorChild, stmtIteratorSpouse;
+            stmtIteratorSpouse = modelActor.listStatements(actorResource, hasSpouse, (RDFNode) null);
+            while (stmtIteratorSpouse.hasNext()) {
+                Statement spouse = stmtIteratorSpouse.nextStatement();
+                System.out.println("ACTOR SPOUSE" + spouse);
+                union.add(spouse);
+            }
+            stmtIteratorChild = modelActor.listStatements(actorResource, hasChildren, (RDFNode) null);
+            while (stmtIteratorChild.hasNext()) {
+                Statement child = stmtIteratorChild.nextStatement();
+                System.out.println("ACTOR CHILDREN" + child);
+                union.add(child);
+            }
         }
 
                                 // REASONING MODEL UNION

@@ -10,16 +10,25 @@
     <j.0:children xml:lang="id">Ratriana Ekarini</j.0:children>
     <j.0:children xml:lang="id">Dios Kurniawan</j.0:children>
   </rdf:Description>
-  <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#Thing">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <owl:equivalentClass rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <owl:complementOf rdf:resource="http://www.w3.org/2002/07/owl#Nothing"/>
-    <owl:disjointWith rdf:resource="http://www.w3.org/2002/07/owl#Nothing"/>
+  <rdf:Description rdf:about="http://id.dbpedia.org/resource/Cut_Gambang">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <owl:sameAs rdf:resource="http://id.dbpedia.org/resource/Cut_Gambang"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://id.dbpedia.org/resource/Bacharuddin_Jusuf_Habibie">
-    <j.0:spouse rdf:resource="http://id.dbpedia.org/resource/Hasri_Ainun_Habibie"/>
-    <j.0:children xml:lang="id">Ilham Akbar</j.0:children>
-    <j.0:children xml:lang="id">Thareq Kemal</j.0:children>
+  <rdf:Description rdf:about="http://id.dbpedia.org/resource/Kartini">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <owl:sameAs rdf:resource="http://id.dbpedia.org/resource/Kartini"/>
+    <j.0:spouse xml:lang="id">R.M.A.A. Singgih Djojo Adhiningrat</j.0:spouse>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://id.dbpedia.org/resource/Wahid_Hasjim">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <owl:sameAs rdf:resource="http://id.dbpedia.org/resource/Wahid_Hasjim"/>
+    <j.0:spouse xml:lang="id">Solehah binti K.H. Bisri Syansuri</j.0:spouse>
+    <j.0:children xml:lang="id">Hasyim Wahid</j.0:children>
+    <j.0:children xml:lang="id">Aisyah Hamid Baidlowi</j.0:children>
+    <j.0:children xml:lang="id">K.H. Salahuddin Wahid</j.0:children>
+    <j.0:children xml:lang="id">Lily Chodijah Wahid</j.0:children>
+    <j.0:children xml:lang="id">K.H. Abdurrahman Wahid</j.0:children>
+    <j.0:children xml:lang="id">dr. Umar Wahid, Sp.P</j.0:children>
   </rdf:Description>
   <rdf:Description rdf:about="http://id.dbpedia.org/resource/Muhammad_Jusuf_Kalla">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
@@ -67,14 +76,9 @@
     <owl:propertyDisjointWith rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
     <owl:propertyDisjointWith rdf:resource="http://www.w3.org/2002/07/owl#bottomDataProperty"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#topObjectProperty">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ReflexiveProperty"/>
-    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-    <owl:equivalentProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-    <owl:propertyDisjointWith rdf:resource="http://www.w3.org/2002/07/owl#bottomObjectProperty"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+  <rdf:Description rdf:about="http://id.dbpedia.org/resource/Ahmad_Yani">
+    <j.0:spouse rdf:resource="http://id.dbpedia.org/resource/Yayu_Rulia_Sutowiryo_Ahmad_Yani"/>
+    <j.0:children rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</j.0:children>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#bottomObjectProperty">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
@@ -89,6 +93,76 @@
     <owl:propertyDisjointWith rdf:resource="http://id.dbpedia.org/property/children"/>
     <owl:propertyDisjointWith rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
   </rdf:Description>
+  <rdf:Description rdf:about="http://id.dbpedia.org/resource/Hamengkubuwana_IX">
+    <j.0:children xml:lang="id">Adipati Anum, dll</j.0:children>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://id.dbpedia.org/resource/Diponegoro">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <owl:sameAs rdf:resource="http://id.dbpedia.org/resource/Diponegoro"/>
+    <j.0:spouse xml:lang="id">Ratnaningrum</j.0:spouse>
+    <j.0:spouse xml:lang="id">Ratnaningsih</j.0:spouse>
+    <j.0:spouse xml:lang="id">Kedhaton</j.0:spouse>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://id.dbpedia.org/resource/Agus_Harimurti_Yudhoyono">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <owl:sameAs rdf:resource="http://id.dbpedia.org/resource/Agus_Harimurti_Yudhoyono"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#Nothing">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <owl:equivalentClass rdf:resource="http://www.w3.org/2002/07/owl#Nothing"/>
+    <owl:complementOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2002/07/owl#Nothing"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://id.dbpedia.org/resource/Dewi_Sartika">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <owl:sameAs rdf:resource="http://id.dbpedia.org/resource/Dewi_Sartika"/>
+    <j.0:spouse xml:lang="id">Raden Kanduruan Agah Suriawinata</j.0:spouse>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://id.dbpedia.org/resource/Sutan_Syahrir">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <owl:sameAs rdf:resource="http://id.dbpedia.org/resource/Sutan_Syahrir"/>
+    <j.0:spouse xml:lang="id">Maria Duchateau</j.0:spouse>
+    <j.0:spouse xml:lang="id">Siti Wahyunah</j.0:spouse>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#Thing">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:equivalentClass rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <owl:complementOf rdf:resource="http://www.w3.org/2002/07/owl#Nothing"/>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2002/07/owl#Nothing"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://id.dbpedia.org/resource/Bacharuddin_Jusuf_Habibie">
+    <j.0:spouse rdf:resource="http://id.dbpedia.org/resource/Hasri_Ainun_Habibie"/>
+    <j.0:children xml:lang="id">Ilham Akbar</j.0:children>
+    <j.0:children xml:lang="id">Thareq Kemal</j.0:children>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://id.dbpedia.org/resource/Sisingamangaraja_XII">
+    <j.0:children xml:lang="id">Lo Pian</j.0:children>
+    <j.0:children xml:lang="id">Patuan Nagari</j.0:children>
+    <j.0:children xml:lang="id">Patuan Anggi</j.0:children>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://id.dbpedia.org/resource/Frans_Kaisiepo">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <owl:sameAs rdf:resource="http://id.dbpedia.org/resource/Frans_Kaisiepo"/>
+    <j.0:spouse xml:lang="id">Anthomina Arwam</j.0:spouse>
+    <j.0:spouse xml:lang="id">Maria Magdalena Moorwahyuni</j.0:spouse>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://id.dbpedia.org/resource/Cut_Nyak_Dhien">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <owl:sameAs rdf:resource="http://id.dbpedia.org/resource/Cut_Nyak_Dhien"/>
+    <j.0:children rdf:resource="http://id.dbpedia.org/resource/Cut_Gambang"/>
+    <j.0:spouse xml:lang="id">Ibrahim Lamnga, Teuku Umar</j.0:spouse>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#topObjectProperty">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ReflexiveProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    <owl:equivalentProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    <owl:propertyDisjointWith rdf:resource="http://www.w3.org/2002/07/owl#bottomObjectProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+  </rdf:Description>
   <rdf:Description rdf:about="http://id.dbpedia.org/resource/Susilo_Bambang_Yudhoyono">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
     <owl:sameAs rdf:resource="http://id.dbpedia.org/resource/Susilo_Bambang_Yudhoyono"/>
@@ -102,9 +176,15 @@
     <j.0:spouse xml:lang="id">Ny. Hj. Iriana Joko Widodo</j.0:spouse>
     <j.0:children xml:lang="id">Gibran Rakabuming RakaKahiyang AyuKaesang Pangarep</j.0:children>
   </rdf:Description>
-  <rdf:Description rdf:about="http://id.dbpedia.org/resource/Agus_Harimurti_Yudhoyono">
+  <rdf:Description rdf:about="http://id.dbpedia.org/resource/Oemar_Said_Tjokroaminoto">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <owl:sameAs rdf:resource="http://id.dbpedia.org/resource/Agus_Harimurti_Yudhoyono"/>
+    <owl:sameAs rdf:resource="http://id.dbpedia.org/resource/Oemar_Said_Tjokroaminoto"/>
+    <j.0:children rdf:resource="http://id.dbpedia.org/resource/Siti_Oetari"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://id.dbpedia.org/resource/Samanhudi">
+    <j.0:spouse rdf:resource="http://id.dbpedia.org/resource/Johanna_Mussel"/>
+    <j.0:spouse rdf:resource="http://id.dbpedia.org/resource/Clara_Charlotte_Deije"/>
+    <j.0:spouse rdf:resource="http://id.dbpedia.org/resource/Haroemi_Wanasita"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://id.dbpedia.org/resource/Soekarno">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
@@ -128,6 +208,10 @@
     <j.0:children xml:lang="id">Taufan Soekarnoputra</j.0:children>
     <j.0:spouse rdf:resource="http://id.dbpedia.org/resource/Oetari"/>
   </rdf:Description>
+  <rdf:Description rdf:about="http://id.dbpedia.org/resource/Siti_Oetari">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <owl:sameAs rdf:resource="http://id.dbpedia.org/resource/Siti_Oetari"/>
+  </rdf:Description>
   <rdf:Description rdf:about="http://id.dbpedia.org/resource/Mohammad_Hatta">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
     <owl:sameAs rdf:resource="http://id.dbpedia.org/resource/Mohammad_Hatta"/>
@@ -136,13 +220,34 @@
     <j.0:children xml:lang="id">Gemala Hatta</j.0:children>
     <j.0:children xml:lang="id">Halida Hatta</j.0:children>
   </rdf:Description>
-  <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#Nothing">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <owl:equivalentClass rdf:resource="http://www.w3.org/2002/07/owl#Nothing"/>
-    <owl:complementOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <owl:disjointWith rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <owl:disjointWith rdf:resource="http://www.w3.org/2002/07/owl#Nothing"/>
+  <rdf:Description rdf:about="http://id.dbpedia.org/resource/Ernest_Douwes_Dekker">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <owl:sameAs rdf:resource="http://id.dbpedia.org/resource/Ernest_Douwes_Dekker"/>
+    <j.0:spouse xml:lang="id">Clara Charlotte Deije</j.0:spouse>
+    <j.0:spouse xml:lang="id">Johanna P. Mossel</j.0:spouse>
+    <j.0:spouse xml:lang="id">Haroemi Wanasita</j.0:spouse>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://id.dbpedia.org/resource/Maria_Walanda_Maramis">
+    <j.0:spouse rdf:resource="http://id.dbpedia.org/resource/Joseph_Frederick_Caselung_Walanda"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://id.dbpedia.org/resource/Abdul_Haris_Nasution">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <owl:sameAs rdf:resource="http://id.dbpedia.org/resource/Abdul_Haris_Nasution"/>
+    <j.0:spouse xml:lang="id">Johanna Sunarti</j.0:spouse>
+    <j.0:children xml:lang="id">Hendrianti Saharah, Ade Irma Suryani</j.0:children>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://id.dbpedia.org/resource/Syafruddin_Prawiranegara">
+    <j.0:spouse rdf:resource="http://id.dbpedia.org/resource/T._Halimah_Syehabuddin_Prawiranegara"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://id.dbpedia.org/resource/Fatmawati">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <owl:sameAs rdf:resource="http://id.dbpedia.org/resource/Fatmawati"/>
+    <j.0:children rdf:resource="http://id.dbpedia.org/resource/Guntur_Soekarnoputra"/>
+    <j.0:spouse rdf:resource="http://id.dbpedia.org/resource/Soekarno"/>
+    <j.0:children xml:lang="id">Sukmawati Soekarnoputri</j.0:children>
+    <j.0:children xml:lang="id">Guruh Soekarnoputra</j.0:children>
+    <j.0:children xml:lang="id">Rachmawati Soekarnoputri</j.0:children>
+    <j.0:children xml:lang="id">Megawati Soekarnoputri</j.0:children>
   </rdf:Description>
   <rdf:Description rdf:about="http://id.dbpedia.org/resource/Megawati_Soekarnoputri">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
@@ -152,6 +257,22 @@
     <j.0:spouse xml:lang="id">- Moh. Taufiq Kiemas</j.0:spouse>
     <j.0:children xml:lang="id">- Mohammad Rizki Pratama dan Mohammad Prananda</j.0:children>
     <j.0:children xml:lang="id">- Puan Maharani</j.0:children>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://id.dbpedia.org/resource/Teuku_Umar">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <owl:sameAs rdf:resource="http://id.dbpedia.org/resource/Teuku_Umar"/>
+    <j.0:spouse xml:lang="id">Cut Nyak Sofiah</j.0:spouse>
+    <j.0:spouse xml:lang="id">Cut Nyak Dhien</j.0:spouse>
+    <j.0:spouse xml:lang="id">Cut Meuligou/Nyak Malighai</j.0:spouse>
+    <j.0:children xml:lang="id">Cut Mariyam</j.0:children>
+    <j.0:children xml:lang="id">Cut Gambang</j.0:children>
+    <j.0:children xml:lang="id">Teuku Raja Sulaiman</j.0:children>
+    <j.0:children xml:lang="id">Cut Sjak</j.0:children>
+    <j.0:children xml:lang="id">Dari Cut Meuligou:</j.0:children>
+    <j.0:children xml:lang="id">Teuku Bidin</j.0:children>
+    <j.0:children xml:lang="id">Dari Cut Nyak Dhien</j.0:children>
+    <j.0:children xml:lang="id">Teuku Sapeh</j.0:children>
+    <j.0:children xml:lang="id">Cut Teungoh</j.0:children>
   </rdf:Description>
   <rdf:Description rdf:about="http://id.dbpedia.org/resource/Guntur_Soekarnoputra">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
