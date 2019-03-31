@@ -41,9 +41,6 @@ public class Main {
 
         Model famonto = FileManager.get().loadModel(OWL_FILE_LOCATION);
 
-                                //MERGING MODEL DARI JENA-FUSEKI DAN MODEL ONTOLOGI FAMILY
-        final Model union = Instances;
-
                                 //ADD ACTOR
         FileManager fManager = FileManager.get();
         fManager.addLocatorURL();
@@ -147,13 +144,17 @@ public class Main {
 
         };
 
+        //MERGING MODEL DARI JENA-FUSEKI DAN MODEL ONTOLOGI FAMILY
+        final Model union = ModelFactory.createUnion(Instances,famonto);
+
         for (Integer counter = 0; counter < actors.length; counter++) {
             Model modelActor = fManager.loadModel("http://id.dbpedia.org/data/" + actors[counter] + ".rdf");
             final Resource actorResource = modelActor.getResource(res + actors[counter]);
             final Property hasSpouse = modelActor.getProperty(prop + "spouse");
             final Property hasChildren = modelActor.getProperty(prop + "children");
+            final Property hasName = modelActor.getProperty(prop + "name");
 
-            StmtIterator stmtIteratorChild, stmtIteratorSpouse;
+            StmtIterator stmtIteratorChild, stmtIteratorSpouse, stmtIteratorName;
             stmtIteratorSpouse = modelActor.listStatements(actorResource, hasSpouse, (RDFNode) null);
             while (stmtIteratorSpouse.hasNext()) {
                 Statement spouse = stmtIteratorSpouse.nextStatement();
@@ -165,6 +166,12 @@ public class Main {
                 Statement child = stmtIteratorChild.nextStatement();
                 System.out.println("ACTOR CHILDREN" + child);
                 union.add(child);
+            }
+            stmtIteratorName = modelActor.listStatements(actorResource, hasName, (RDFNode) null);
+            while (stmtIteratorName.hasNext()) {
+                Statement actorName = stmtIteratorName.nextStatement();
+                System.out.println("ACTOR NAME" + actorName);
+                union.add(actorName);
             }
         }
 
