@@ -1,0 +1,13 @@
+String dbJenaFuseki="famtree";
+        String prop = "http://id.dbpedia.org/property/";
+        String res = "http://id.dbpedia.org/resource/";
+        String owl = "http://dbpedia.org/ontology/";
+        String rdfs ="http://www.w3.org/1999/02/22-rdf-syntax-ns#";
+        String schema="http://schema.org/";
+        String foaf = "http://xmlns.com/foaf/0.1/";
+        String UPLOAD_FUSEKI = "http://localhost:3030/"+dbJenaFuseki;
+        String READ_FUSEKI = "http://localhost:3030/"+dbJenaFuseki+"/data";
+        //String OWL_FILE_LOCATION = "D:/The-Tree-of-Heroes/family-ontology.owl";
+        String OWL_FILE_LOCATION = "/Users/macfaiq/Local-Documents/the-tree-of-heroes/the-tree-of-heroes/family-ontology.owl";
+        //File fileRDF = new File("D:\\The-Tree-of-Heroes\\PreprocessorTA\\result.rdf");
+        File fileRDF = new File("/Users/macfaiq/Local-Documents/the-tree-of-heroes/the-tree-of-heroes/result.rdf");
