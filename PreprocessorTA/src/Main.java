@@ -7,6 +7,7 @@ import org.apache.log4j.LogManager;
 import org.apache.log4j.Logger;
 import org.apache.log4j.varia.NullAppender;
 import org.mindswap.pellet.jena.PelletReasonerFactory;
+
 import java.io.*;
 
 /**
@@ -21,7 +22,7 @@ public class Main {
     private static final Logger logger = LogManager.getLogger(Main.class);
     public static void main(String[] args) throws FileNotFoundException {
 
-        String dbJenaFuseki="pohonkeluarga";
+        String dbJenaFuseki="famtree";
         String prop = "http://id.dbpedia.org/property/";
         String res = "http://id.dbpedia.org/resource/";
         String owl = "http://dbpedia.org/ontology/";
@@ -39,7 +40,7 @@ public class Main {
         //MEMODELKAN FILE ACTOR DARI OWL ONTOLOGI FAMILY dan JENA-FUSEKI
         FileManager.get().addLocatorClassLoader(Main.class.getClassLoader());
         Model Instances = FileManager.get().loadModel(READ_FUSEKI);
-        Instances.read(READ_FUSEKI,"Turtle");
+        Instances.read(READ_FUSEKI,"TTL");
 
         Model famonto = FileManager.get().loadModel(OWL_FILE_LOCATION);
 
@@ -145,15 +146,15 @@ public class Main {
                 //Tokoh kerajaan
                 "Sultan_Agung_dari_Mataram",
                 "Raden_Wijaya",
-                "Hayam_Wuruk"
+                "Hayam_Wuruk",
         };
 
         //MERGING MODEL DARI JENA-FUSEKI DAN MODEL ONTOLOGI FAMILY
         final Model union = ModelFactory.createUnion(Instances,famonto);
 
-        for (Integer counter = 0; counter < actors.length; counter++) {
-            Model modelActor = fManager.loadModel("http://id.dbpedia.org/data/" + actors[counter] + ".rdf");
-            final Resource actorResource = modelActor.getResource(res + actors[counter]);
+        for (String actor : actors) {
+            Model modelActor = fManager.loadModel("http://id.dbpedia.org/data/" + actor + ".rdf");
+            final Resource actorResource = modelActor.getResource(res + actor);
             final Property hasSpouse = modelActor.getProperty(prop + "spouse");
             final Property hasChildren = modelActor.getProperty(prop + "children");
             final Property hasName = modelActor.getProperty(prop + "name");
@@ -161,6 +162,7 @@ public class Main {
             final Property hasParent = modelActor.getProperty(prop + "parent");
             final Property hasFather = modelActor.getProperty(prop + "father");
             final Property hasMother = modelActor.getProperty(prop + "mother");
+            final Property hasType = modelActor.getProperty(rdfs + "type");
             final Property hasThumbnail = modelActor.getProperty(owl + "thumbnail");
 
             StmtIterator stmtIterator;
@@ -176,51 +178,35 @@ public class Main {
                 System.out.println("ACTOR CHILDREN" + child);
                 union.add(child);
             }
-            stmtIterator = modelActor.listStatements(actorResource, hasName, (RDFNode) null);
-            while (stmtIterator.hasNext()) {
-                Statement actorName = stmtIterator.nextStatement();
-                System.out.println("ACTOR NAME" + actorName);
-                union.add(actorName);
-            }
-            stmtIterator = modelActor.listStatements(actorResource, hasParent, (RDFNode) null);
-            while (stmtIterator.hasNext()) {
-                Statement parents = stmtIterator.nextStatement();
-                System.out.println("ACTOR PARENT" + parents);
-                union.add(parents);
-            }
-            stmtIterator = modelActor.listStatements(actorResource, hasThumbnail, (RDFNode) null);
-            while (stmtIterator.hasNext()) {
-                Statement thumb = stmtIterator.nextStatement();
-                System.out.println("ACTOR THUMBNAIL" + thumb);
-                union.add(thumb);
-            }
+
         }
 
         //REASONING MODEL UNION - bugs
         System.out.println("Reasoning..");
         Reasoner pelletReasoner = PelletReasonerFactory.theInstance().create();
         InfModel reasonedModel = ModelFactory.createInfModel(pelletReasoner,union);
+        System.out.println("Reasoning done");
 
+        //Model reasonedModel=union;
                                 /*KONVERSI KE FILE .RDF*/
-        if(fileRDF.delete())
-        {
-            System.out.println("The old result.rdf file deleted successfully");
-        }
-        else System.out.println("Creating new result as RDF File");
+//        if(fileRDF.delete())
+//        {
+//            System.out.println("The old result.rdf file deleted successfully");
+//        }
+//        else System.out.println("Creating new result as RDF File");
+//
+//        PrintStream fileStream = new PrintStream("result.rdf");
+//        System.setOut(fileStream);
 
-        PrintStream fileStream = new PrintStream("result.rdf");
-        System.setOut(fileStream);
-
-        reasonedModel.write( System.out, "RDF/XML" );
 
         // READ FILE LOCATION
-        try (FileInputStream in = new FileInputStream(fileRDF)) {
-            reasonedModel.read(in, null, "RDF/XML");
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+//        try (FileInputStream in = new FileInputStream(fileRDF)) {
+//            reasonedModel.read(in, null, "RDF/XML");
+//        } catch (IOException e) {
+//            e.printStackTrace();
+//        }
+
         // UPLOAD TO JENA FUSEKI
-        System.out.println("Uploading..");
         DatasetAccessor accessor = DatasetAccessorFactory
                 .createHTTP(UPLOAD_FUSEKI);
         accessor.putModel(reasonedModel);
