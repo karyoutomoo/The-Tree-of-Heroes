@@ -27,7 +27,7 @@ public class Main {
     private static final Logger logger = LogManager.getLogger(Main.class);
     public static void main(String[] args) throws FileNotFoundException {
 
-        String dbJenaFuseki="tryme";
+        String dbJenaFuseki="tryme5";
         String prop = "http://id.dbpedia.org/property/";
         String res = "http://id.dbpedia.org/resource/";
         String rdfs ="http://www.w3.org/1999/02/22-rdf-syntax-ns#";
@@ -61,161 +61,104 @@ public class Main {
                 "Ahmad_Yani",
                 "Basuki_Rahmat",
                 "Tjipto_Mangoenkoesoemo",
-                "Oemar_Said_Tjokroaminoto",
-                "Ernest_Douwes_Dekker",
-                "Dewi_Sartika",
-                "Cut_Nyak_Dhien",
+//                "Ahmad_Dahlan",
                 "Diponegoro",
                 "Fatmawati",
+                "Teuku_Nyak_Arif",
                 "Ferdinand_Lumbantobing",
                 "Frans_Kaisiepo",
-                "Gatot_Soebroto",
+//                "Gatot_Soebroto",
                 "Halim_Perdanakusuma",
                 "Hamengkubuwana_I",
                 "Hamengkubuwana_IX",
                 "Hasjim_Asy%27ari",
                 "Sultan_Hasanuddin",
                 "Tuanku_Imam_Bonjol",
-                "Iskandar_Muda",
-                "Ismail_Marzuki",
-                "Iswahjoedi",
-                "Radin_Inten_II",
-                "Johannes_Abraham_Dimara",
-                "Djoeanda_Kartawidjaja",
-                "Karel_Satsuit_Tubun",
-                "Kartini",
-                "Kasman_Singodimedjo",
-                "I_Gusti_Ketut_Jelantik",
+//                "Iskandar_Muda",
+//                "Ismail_Marzuki",
+//                "Iswahjoedi",
+//                "Radin_Inten_II",
+//                "Johannes_Abraham_Dimara",
+//                "Djoeanda_Kartawidjaja",
+//                "Karel_Satsuit_Tubun",
+//                "Kartini", bug
+//                "Kasman_Singodimedjo",
+//                "I_Gusti_Ketut_Jelantik",
                 "Ki_Hadjar_Dewantara",
-                "Sultan_Mahmud_Badaruddin_II",
-                "Malahayati",
-                "Maria_Walanda_Maramis",
-                "Martha_Christina_Tiahahu",
-                "Mas_Tirtodarmo_Haryono",
+//                "Sultan_Mahmud_Badaruddin_II",
+//                "Malahayati",
+//                "Maria_Walanda_Maramis",
+//                "Martha_Christina_Tiahahu",
+//                "Mas_Tirtodarmo_Haryono",
                 "Cut_Nyak_Meutia",
-                "Mohammad_Husni_Thamrin",
+//                "Mohammad_Husni_Thamrin",
                 "Mohammad_Natsir",
-                "Teuku_Muhammad_Hasan",
-                "Mohammad_Yamin",
-                "Muhammad_Yasin",
-                "Muhammad_Zainuddin_Abdul_Madjid",
-                "Moestopo",
-                "Nani_Wartabone",
+//                "Teuku_Muhammad_Hasan",
+//                "Mohammad_Yamin",
+//                "Muhammad_Yasin",
+//                "Muhammad_Zainuddin_Abdul_Madjid",
+//                "Moestopo",
+//                "Nani_Wartabone",
                 "I_Gusti_Ngurah_Rai",
-                "Nuku_Muhammad_Amiruddin",
-                "Oto_Iskandar_di_Nata",
-                "Pakubuwana_VI",
-                "Pakubuwana_X",
+//                "Nuku_Muhammad_Amiruddin",
+//                "Oto_Iskandar_di_Nata",
+//                "Pakubuwana_VI",
+//                "Pakubuwana_X",
                 "Pattimura",
-                "Pierre_Tendean",
-                "Raja_Haji_Fisabilillah",
-                "Rasuna_Said",
-                "Radjiman_Wedyodiningrat",
-                "Sam_Ratulangi",
-                "Samanhudi",
-                "Sisingamangaraja_XII",
-                "Siswondo_Parman",
+//                "Pierre_Tendean",
+//                "Raja_Haji_Fisabilillah",
+//                "Rasuna_Said",
+//                "Radjiman_Wedyodiningrat",
+//                "Sam_Ratulangi",
+//                "Samanhudi",
+//                "Sisingamangaraja_XII",
+//                "Siswondo_Parman",
                 "Slamet_Rijadi",
                 "Soedirman",
-                "Albertus_Soegijapranata",
-                "Suharso",
-                "Soekarni",
-                "Sultan_Agung_dari_Mataram",
-                "Andi_Sultan_Daeng_Radja",
-                "Soepeno",
-                "R._Suprapto_(pahlawan_revolusi)",
-                "Soeprijadi",
-                "Soeroso",
-                "Ario_Soerjo",
-                "Sutan_Syahrir",
-                "Soetomo",
-                "Sutomo",
-                "Sutoyo_Siswomiharjo",
-                "Syafruddin_Prawiranegara",
-                "Syam%27un",
-                "Syarif_Kasim_II_dari_Siak",
-                "T.B._Simatupang",
-                "Tan_Malaka",
-                "Tirto_Adhi_Soerjo",
+//                "Albertus_Soegijapranata",
+//                "Suharso",
+//                "Soekarni",
+//                "Sultan_Agung_dari_Mataram",
+//                "Andi_Sultan_Daeng_Radja",
+//                "Soepeno",
+//                "R._Suprapto_(pahlawan_revolusi)",
+//                "Soeprijadi",
+//                "Soeroso",              //bug?
+//                "Ario_Soerjo",
+//                "Sutan_Syahrir",
+//                "Soetomo",
+//                "Sutomo",
+//                "Sutoyo_Siswomiharjo",
+//                "Syafruddin_Prawiranegara",
+//                "Syam%27un",
+//                "Syarif_Kasim_II_dari_Siak",
+//                "T.B._Simatupang",
+//                "Tan_Malaka",
+//                "Tirto_Adhi_Soerjo",
                 "Teuku_Umar",
                 "Untung_Suropati",
-                "Oerip_Soemohardjo",
-                "Wage_Rudolf_Soepratman",
+//                "Oerip_Soemohardjo",
+//                "Wage_Rudolf_Soepratman",
                 "Wahid_Hasjim",
-                "Wahidin_Soedirohoesodo",
-                "Wilhelmus_Zakaria_Johannes",
-                "Yos_Sudarso",
-                "Zainul_Arifin",
-                "Zainal_Mustafa",
+//                "Wahidin_Soedirohoesodo",
+//                "Wilhelmus_Zakaria_Johannes",
+//                "Yos_Sudarso",
+//                "Zainul_Arifin",
+//                "Zainal_Mustafa",
                 //Tokoh kerajaan
-                "Sultan_Agung_dari_Mataram",
+//                "Sultan_Agung_dari_Mataram",
                 "Raden_Wijaya",
                 "Hayam_Wuruk",
+                "Jayanegara",
+                "Airlangga",
+                "Tribhuwana_Wijayatunggadewi",
+                "Ken_Arok",
         };
 
         for (Integer counter = 0; counter < actors.length; counter++) {
             Model modelActor = fManager.loadModel("http://id.dbpedia.org/data/" + actors[counter] + ".rdf");
             Instances.add(modelActor);
             System.out.println(actors[counter]);
-//            final Resource actorResource = modelActor.getResource(res + actors[counter]);
-//            final Property hasSpouse = modelActor.getProperty(prop + "spouse");
-//            final Property hasChildren = modelActor.getProperty(prop + "children");
-//            final Property hasName = modelActor.getProperty(prop + "name");
-//            final Property hasSibling = modelActor.getProperty(rdfs + "sibling");
-//            final Property hasParent = modelActor.getProperty(rdfs + "parent");
-//            final Property hasFather = modelActor.getProperty(rdfs + "father");
-//            final Property hasMother = modelActor.getProperty(rdfs + "mother");
-//            final Property hasThumbnail = modelActor.getProperty(rdfs + "thumbnail");
-//
-//            StmtIterator stmtIterator;
-//            stmtIterator = modelActor.listStatements(actorResource, hasSpouse, (RDFNode) null);
-//            while (stmtIterator.hasNext()) {
-//                Statement spouse = stmtIterator.nextStatement();
-//                System.out.println("ACTOR SPOUSE" + spouse);
-//                Instances.add(spouse);
-//            }
-//            stmtIterator = modelActor.listStatements(actorResource, hasChildren, (RDFNode) null);
-//            while (stmtIterator.hasNext()) {
-//                Statement child = stmtIterator.nextStatement();
-//                System.out.println("ACTOR CHILDREN" + child);
-//                Instances.add(child);
-//            }
-//            stmtIterator = modelActor.listStatements(actorResource, hasName, (RDFNode) null);
-//            while (stmtIterator.hasNext()) {
-//                Statement actorName = stmtIterator.nextStatement();
-//                System.out.println("ACTOR NAME" + actorName);
-//                Instances.add(actorName);
-//            }
-//            stmtIterator = modelActor.listStatements(actorResource, hasSibling, (RDFNode) null);
-//            while (stmtIterator.hasNext()) {
-//                Statement sibling = stmtIterator.nextStatement();
-//                System.out.println("ACTOR SIBLING" + sibling);
-//                Instances.add(sibling);
-//            }
-//            stmtIterator = modelActor.listStatements(actorResource, hasParent, (RDFNode) null);
-//            while (stmtIterator.hasNext()) {
-//                Statement parents = stmtIterator.nextStatement();
-//                System.out.println("ACTOR PARENT" + parents);
-//                Instances.add(parents);
-//            }
-//            stmtIterator = modelActor.listStatements(actorResource, hasFather, (RDFNode) null);
-//            while (stmtIterator.hasNext()) {
-//                Statement father = stmtIterator.nextStatement();
-//                System.out.println("ACTOR FA" + father);
-//                Instances.add(father);
-//            }
-//            stmtIterator = modelActor.listStatements(actorResource, hasMother, (RDFNode) null);
-//            while (stmtIterator.hasNext()) {
-//                Statement mother = stmtIterator.nextStatement();
-//                System.out.println("ACTOR MO" + mother);
-//                Instances.add(mother);
-//            }
-//            stmtIterator = modelActor.listStatements(actorResource, hasThumbnail, (RDFNode) null);
-//            while (stmtIterator.hasNext()) {
-//                Statement thumb = stmtIterator.nextStatement();
-//                System.out.println("ACTOR THUMBNAIL" + thumb);
-//                Instances.add(thumb);
-//            }
         }
 
         // MERGING MODEL DARI JENA-FUSEKI DAN MODEL ONTOLOGI FAMILY
@@ -228,19 +171,19 @@ public class Main {
 
         // KONVERSI KE FILE .RDF
 
-//        if(fileRDF.delete())
-//        {
-//            System.out.println("The old result.rdf file deleted successfully");
-//        }
-//        else
-//        {
-//            System.out.println("Creating new result as RDF File");
-//        }
-//        PrintStream fileStream = new PrintStream("result.rdf");
-//        System.setOut(fileStream);
-//
-//        reasonedModel.write( System.out, "RDF/XML" );
-//
+        if(fileRDF.delete())
+        {
+            System.out.println("The old result.rdf file deleted successfully");
+        }
+        else
+        {
+            System.out.println("Creating new result as RDF File");
+        }
+        PrintStream fileStream = new PrintStream("result.rdf");
+        System.setOut(fileStream);
+
+        reasonedModel.write( System.out, "RDF/XML" );
+
 //        // UPLOAD TO JENA FUSEKI
 //        // parse the file
 //        try (FileInputStream in = new FileInputStream(fileRDF)) {
@@ -250,8 +193,8 @@ public class Main {
 //        }
 //
 //        // upload the resulting model
-        DatasetAccessor accessor = DatasetAccessorFactory
-                .createHTTP(UPLOAD_FUSEKI);
-        accessor.putModel(reasonedModel);
+//        DatasetAccessor accessor = DatasetAccessorFactory
+//                .createHTTP(UPLOAD_FUSEKI);
+//        accessor.putModel(reasonedModel);
     }
 }
