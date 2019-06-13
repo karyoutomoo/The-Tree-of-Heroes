@@ -1094,11 +1094,33 @@
     
 
 
+    <!-- http://dbpedia.org/ontology/parent -->
+
+    <owl:ObjectProperty rdf:about="http://dbpedia.org/ontology/parent">
+        <owl:equivalentProperty rdf:resource="http://www.co-ode.org/roberts/family-tree.owl#hasParent"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/spouse -->
+
+    <owl:ObjectProperty rdf:about="http://dbpedia.org/ontology/spouse">
+        <owl:equivalentProperty rdf:resource="http://www.co-ode.org/roberts/family-tree.owl#isSpouseOf"/>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://dbpedia.org/property/issue -->
 
     <owl:ObjectProperty rdf:about="http://dbpedia.org/property/issue">
         <owl:equivalentProperty rdf:resource="http://www.co-ode.org/roberts/family-tree.owl#hasChild"/>
     </owl:ObjectProperty>
+    
+
+
+    <!-- http://dbpedia.org/property/name -->
+
+    <owl:ObjectProperty rdf:about="http://dbpedia.org/property/name"/>
     
 
 
@@ -1349,15 +1371,6 @@
 
     <owl:DatatypeProperty rdf:about="http://www.co-ode.org/roberts/family-tree.owl#knownAs">
         <rdfs:subPropertyOf rdf:resource="http://www.co-ode.org/roberts/family-tree.owl#hasName"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- http://xmlns.com/foaf/0.1/gender -->
-
-    <owl:DatatypeProperty rdf:about="http://xmlns.com/foaf/0.1/gender">
-        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </owl:DatatypeProperty>
     

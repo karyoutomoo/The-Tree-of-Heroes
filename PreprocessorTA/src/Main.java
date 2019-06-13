@@ -35,7 +35,7 @@ public class Main {
         String foaf = "http://xmlns.com/foaf/0.1/";
         String UPLOAD_FUSEKI = "http://localhost:3030/"+dbJenaFuseki;
         String READ_FUSEKI = "http://localhost:3030/"+dbJenaFuseki;
-        String OWL_FILE_LOCATION = "D:/The-Tree-of-Heroes/family-ontology.owl";
+        String OWL_FILE_LOCATION = "D:/The-Tree-of-Heroes/ontologi_lokal.owl";
         File fileRDF = new File("D:\\The-Tree-of-Heroes\\PreprocessorTA\\result.rdf");
 
         BasicConfigurator.configure(new NullAppender());
@@ -123,21 +123,26 @@ public class Main {
 
         };
 
-        for (Integer counter = 0; counter < actors.length; counter++) {
+//        for (Integer counter = 0; counter < actors.length; counter++) {
 //            Model modelActor = fManager.loadModel("http://id.dbpedia.org/data/" + actors[counter] + ".rdf");
-            Model modelActor = fManager.loadModel("http://dbpedia.org/data/" + royalFamilies[counter] + ".rdf");
+//
+//            Instances.add(modelActor);
+//            System.out.println(actors[counter]);
+//        }
+        for (Integer counter = 0; counter < royalFamilies.length; counter++) {
+            Model modelActor = fManager.loadModel("http://dbpedia.org/data/" + royalFamilies[counter] + ".ttl");
 
             Instances.add(modelActor);
-            System.out.println(actors[counter]);
+            System.out.println(royalFamilies[counter]);
         }
 
         // MERGING MODEL DARI JENA-FUSEKI DAN MODEL ONTOLOGI FAMILY
         final Model union = ModelFactory.createUnion(Instances,famonto);
 
         // REASONING MODEL UNION
-        Reasoner reasoner = PelletReasonerFactory.theInstance().create();
-        InfModel reasonedModel = ModelFactory.createInfModel(reasoner,union);
-//        Model reasonedModel = union;
+//        Reasoner reasoner = PelletReasonerFactory.theInstance().create();
+//        InfModel reasonedModel = ModelFactory.createInfModel(reasoner,union);
+        Model reasonedModel = union;
 
         // KONVERSI KE FILE .RDF
 
