@@ -1,20 +1,21 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
     <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
-        <uri id="Automatically generated entry, Timestamp=1557512312432" name="http://cohse.semanticweb.org/ontologies/people" uri="PreprocessorTA/lib/pellet-2.4.0-ignazio1977/examples/src/main/resources/data/people+pets.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1557512312432" name="http://www.co-ode.org/ontologies/galen" uri="PreprocessorTA/lib/pellet-2.4.0-ignazio1977/examples/src/main/resources/data/simple-galen.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1557512312432" name="duplicate:http://www.co-ode.org/roberts/family-tree.owl" uri="family-ontology-r-stevens%20-%20Copy%20-%20Copy.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1557512312432" name="duplicate:http://www.co-ode.org/roberts/family-tree.owl" uri="family-ontology-r-stevens%20-%20Copy.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1557512312432" name="duplicate:http://www.co-ode.org/roberts/family-tree.owl" uri="family-ontology.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1557512312432" name="http://www.eswc2006.org/technologies/ontology" uri="PreprocessorTA/lib/apache-jena-2.7.4/src-examples/data/eswc-2006-09-21.rdf"/>
-        <uri id="Automatically generated entry, Timestamp=1557512312432" name="http://www.example.org/ontology3e84710c:1139cb9e449:-8000" uri="PreprocessorTA/lib/pellet-2.4.0-ignazio1977/examples/src/main/resources/data/wine.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1557512312432" name="http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl" uri="PreprocessorTA/lib/pellet-2.4.0-ignazio1977/examples/src/main/resources/data/univ-bench.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1557512312432" name="http://www.semanticweb.org/asus/ontologies/2019/1/main-25-2" uri="main-25-2.rdf"/>
-        <uri id="Automatically generated entry, Timestamp=1557512312432" name="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-41" uri="main.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1557512312432" name="http://www.semanticweb.org/asus/ontologies/2019/2/iinferred-main" uri="iinferred-main.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1557512312432" name="http://www.xfront.com/owl/ontologies/camera/" uri="PreprocessorTA/lib/apache-jena-2.7.4/src-examples/data/camera.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1557512312432" name="shadowed:http://www.co-ode.org/roberts/family-tree.owl" uri="PreprocessorTA/result%20with%20name%20and%20type.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1557512312432" name="urn:x-hp-jena:test1" uri="PreprocessorTA/lib/apache-jena-2.7.4/src-examples/data/test1.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1557512312432" name="urn:x-hp-jena:test2" uri="PreprocessorTA/lib/apache-jena-2.7.4/src-examples/data/test2.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1560354597832" name="http://cohse.semanticweb.org/ontologies/people" uri="PreprocessorTA/lib/pellet-2.4.0-ignazio1977/examples/src/main/resources/data/people+pets.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1560354597832" name="http://www.co-ode.org/ontologies/galen" uri="PreprocessorTA/lib/pellet-2.4.0-ignazio1977/examples/src/main/resources/data/simple-galen.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1560354597832" name="duplicate:http://www.co-ode.org/roberts/family-tree.owl" uri="family-ontology-r-stevens%20-%20Copy%20-%20Copy.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1560354597832" name="duplicate:http://www.co-ode.org/roberts/family-tree.owl" uri="family-ontology-r-stevens%20-%20Copy.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1560354597832" name="duplicate:http://www.co-ode.org/roberts/family-tree.owl" uri="family-ontology.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1560354597832" name="duplicate:http://www.co-ode.org/roberts/family-tree.owl" uri="ontologi_lokal.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1560354597832" name="http://www.eswc2006.org/technologies/ontology" uri="PreprocessorTA/lib/apache-jena-2.7.4/src-examples/data/eswc-2006-09-21.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1560354597832" name="http://www.example.org/ontology3e84710c:1139cb9e449:-8000" uri="PreprocessorTA/lib/pellet-2.4.0-ignazio1977/examples/src/main/resources/data/wine.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1560354597832" name="http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl" uri="PreprocessorTA/lib/pellet-2.4.0-ignazio1977/examples/src/main/resources/data/univ-bench.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1560354597832" name="http://www.semanticweb.org/asus/ontologies/2019/1/main-25-2" uri="main-25-2.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1560354597832" name="http://www.semanticweb.org/asus/ontologies/2019/1/untitled-ontology-41" uri="main.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1560354597832" name="http://www.semanticweb.org/asus/ontologies/2019/2/iinferred-main" uri="iinferred-main.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1560354597832" name="http://www.xfront.com/owl/ontologies/camera/" uri="PreprocessorTA/lib/apache-jena-2.7.4/src-examples/data/camera.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1560354597832" name="shadowed:http://www.co-ode.org/roberts/family-tree.owl" uri="PreprocessorTA/result%20with%20name%20and%20type.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1560354597832" name="urn:x-hp-jena:test1" uri="PreprocessorTA/lib/apache-jena-2.7.4/src-examples/data/test1.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1560354597832" name="urn:x-hp-jena:test2" uri="PreprocessorTA/lib/apache-jena-2.7.4/src-examples/data/test2.owl"/>
     </group>
 </catalog>

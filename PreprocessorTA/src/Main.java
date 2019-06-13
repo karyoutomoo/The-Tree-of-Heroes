@@ -27,7 +27,7 @@ public class Main {
     private static final Logger logger = LogManager.getLogger(Main.class);
     public static void main(String[] args) throws FileNotFoundException {
 
-        String dbJenaFuseki="tryme5";
+        String dbJenaFuseki="brits";
         String prop = "http://id.dbpedia.org/property/";
         String res = "http://id.dbpedia.org/resource/";
         String rdfs ="http://www.w3.org/1999/02/22-rdf-syntax-ns#";
@@ -61,102 +61,72 @@ public class Main {
                 "Ahmad_Yani",
                 "Basuki_Rahmat",
                 "Tjipto_Mangoenkoesoemo",
-//                "Ahmad_Dahlan",
                 "Diponegoro",
                 "Fatmawati",
                 "Teuku_Nyak_Arif",
                 "Ferdinand_Lumbantobing",
                 "Frans_Kaisiepo",
-//                "Gatot_Soebroto",
                 "Halim_Perdanakusuma",
                 "Hamengkubuwana_I",
                 "Hamengkubuwana_IX",
                 "Hasjim_Asy%27ari",
                 "Sultan_Hasanuddin",
                 "Tuanku_Imam_Bonjol",
-//                "Iskandar_Muda",
-//                "Ismail_Marzuki",
-//                "Iswahjoedi",
-//                "Radin_Inten_II",
-//                "Johannes_Abraham_Dimara",
-//                "Djoeanda_Kartawidjaja",
-//                "Karel_Satsuit_Tubun",
-//                "Kartini", bug
-//                "Kasman_Singodimedjo",
-//                "I_Gusti_Ketut_Jelantik",
                 "Ki_Hadjar_Dewantara",
-//                "Sultan_Mahmud_Badaruddin_II",
-//                "Malahayati",
-//                "Maria_Walanda_Maramis",
-//                "Martha_Christina_Tiahahu",
-//                "Mas_Tirtodarmo_Haryono",
                 "Cut_Nyak_Meutia",
-//                "Mohammad_Husni_Thamrin",
                 "Mohammad_Natsir",
-//                "Teuku_Muhammad_Hasan",
-//                "Mohammad_Yamin",
-//                "Muhammad_Yasin",
-//                "Muhammad_Zainuddin_Abdul_Madjid",
-//                "Moestopo",
-//                "Nani_Wartabone",
                 "I_Gusti_Ngurah_Rai",
-//                "Nuku_Muhammad_Amiruddin",
-//                "Oto_Iskandar_di_Nata",
-//                "Pakubuwana_VI",
-//                "Pakubuwana_X",
                 "Pattimura",
-//                "Pierre_Tendean",
-//                "Raja_Haji_Fisabilillah",
-//                "Rasuna_Said",
-//                "Radjiman_Wedyodiningrat",
-//                "Sam_Ratulangi",
-//                "Samanhudi",
-//                "Sisingamangaraja_XII",
-//                "Siswondo_Parman",
                 "Slamet_Rijadi",
                 "Soedirman",
-//                "Albertus_Soegijapranata",
-//                "Suharso",
-//                "Soekarni",
-//                "Sultan_Agung_dari_Mataram",
-//                "Andi_Sultan_Daeng_Radja",
-//                "Soepeno",
-//                "R._Suprapto_(pahlawan_revolusi)",
-//                "Soeprijadi",
-//                "Soeroso",              //bug?
-//                "Ario_Soerjo",
-//                "Sutan_Syahrir",
-//                "Soetomo",
-//                "Sutomo",
-//                "Sutoyo_Siswomiharjo",
-//                "Syafruddin_Prawiranegara",
-//                "Syam%27un",
-//                "Syarif_Kasim_II_dari_Siak",
-//                "T.B._Simatupang",
-//                "Tan_Malaka",
-//                "Tirto_Adhi_Soerjo",
                 "Teuku_Umar",
                 "Untung_Suropati",
-//                "Oerip_Soemohardjo",
-//                "Wage_Rudolf_Soepratman",
                 "Wahid_Hasjim",
-//                "Wahidin_Soedirohoesodo",
-//                "Wilhelmus_Zakaria_Johannes",
-//                "Yos_Sudarso",
-//                "Zainul_Arifin",
-//                "Zainal_Mustafa",
                 //Tokoh kerajaan
-//                "Sultan_Agung_dari_Mataram",
                 "Raden_Wijaya",
                 "Hayam_Wuruk",
                 "Jayanegara",
                 "Airlangga",
                 "Tribhuwana_Wijayatunggadewi",
                 "Ken_Arok",
+
+        };
+
+        String[] royalFamilies = {
+                //British Royal Family
+                "Elizabeth_II",
+                "Prince_Philip,_Duke_of_Edinburgh",
+                "Anne,_Princess_Royal",
+                "Charles,_Prince_of_Wales",
+                "Prince_Edward,_Earl_of_Wessex",
+                "Prince_Andrew,_Duke_of_York",
+                "Diana,_Princess_of_Wales",
+                "Camilla,_Duchess_of_Cornwall",
+                "Mark_Phillips",
+                "Timothy_Laurence",
+                "Sarah,_Duchess_of_York",
+                "Sophie,_Countess_of_Wessex",
+                "Prince_William,_Duke_of_Cambridge",
+                "Catherine,_Duchess_of_Cambridge",
+                "Prince_Harry",
+                "Meghan_Markle",
+                "Peter_Phillips",
+                "Autumn_Phillips",
+                "Zara_Phillips",
+                "Mike_Tindall",
+                "Princess_Beatrice_of_York",
+                "Princess_Eugenie_of_York",
+                "Lady_Louise_Windsor",
+                "James,_Viscount_Severn",
+                "Prince_George_of_Cambridge",
+                "Princess_Charlotte_of_Cambridge"
+
         };
 
         for (Integer counter = 0; counter < actors.length; counter++) {
-            Model modelActor = fManager.loadModel("http://id.dbpedia.org/data/" + actors[counter] + ".rdf");
+//            Model modelActor = fManager.loadModel("http://id.dbpedia.org/data/" + actors[counter] + ".rdf");
+            Model modelActor = fManager.loadModel("http://dbpedia.org/data/" + royalFamilies[counter] + ".rdf");
+
             Instances.add(modelActor);
             System.out.println(actors[counter]);
         }

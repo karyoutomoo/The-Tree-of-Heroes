@@ -1,0 +1,1403 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.co-ode.org/roberts/family-tree.owl#"
+     xml:base="http://www.co-ode.org/roberts/family-tree.owl"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:owl2xml="http://www.w3.org/2006/12/owl2-xml#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:j.1="http://www.w3.org/2003/01/geo/wgs84_pos#"
+     xmlns:j.0="http://www.opengis.net/gml/"
+     xmlns:j.3="http://schema.org/"
+     xmlns:j.2="http://dbpedia.org/ontology/"
+     xmlns:j.5="http://www.georss.org/georss/"
+     xmlns:j.4="http://purl.org/dc/terms/"
+     xmlns:j.7="http://id.dbpedia.org/property/"
+     xmlns:j.6="http://www.w3.org/ns/prov#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:j.8="http://xmlns.com/foaf/0.1/"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace">
+    <owl:Ontology rdf:about="http://www.co-ode.org/roberts/family-tree.owl">
+        <rdfs:comment>A simple family relationships ontology and associated instances. the description is of the family of Robert Stevens and the intention is to use the minimal of asserted relationships and the maximum of inference. To do this  I&apos;ve used role chains, nominals and properties hierarchies.</rdfs:comment>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A simple family relationships ontology and associated instances. the description is of the family of Robert Stevens and the intention is to use the minimal of asserted relationships and the maximum of inference. To do this  I&apos;ve used role chains, nominals and properties hierarchies.</rdfs:comment>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://dbpedia.org/ontology/abstract -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/abstract"/>
+    
+
+
+    <!-- http://dbpedia.org/ontology/activeYearsEndDate -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/activeYearsEndDate"/>
+    
+
+
+    <!-- http://dbpedia.org/ontology/activeYearsEndYear -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/activeYearsEndYear"/>
+    
+
+
+    <!-- http://dbpedia.org/ontology/activeYearsStartDate -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/activeYearsStartDate"/>
+    
+
+
+    <!-- http://dbpedia.org/ontology/activeYearsStartYear -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/activeYearsStartYear"/>
+    
+
+
+    <!-- http://dbpedia.org/ontology/alias -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/alias"/>
+    
+
+
+    <!-- http://dbpedia.org/ontology/almaMater -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/almaMater"/>
+    
+
+
+    <!-- http://dbpedia.org/ontology/author -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/author"/>
+    
+
+
+    <!-- http://dbpedia.org/ontology/award -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/award"/>
+    
+
+
+    <!-- http://dbpedia.org/ontology/birthDate -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/birthDate"/>
+    
+
+
+    <!-- http://dbpedia.org/ontology/birthName -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/birthName"/>
+    
+
+
+    <!-- http://dbpedia.org/ontology/birthPlace -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/birthPlace"/>
+    
+
+
+    <!-- http://dbpedia.org/ontology/birthYear -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/birthYear"/>
+    
+
+
+    <!-- http://dbpedia.org/ontology/child -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/child"/>
+    
+
+
+    <!-- http://dbpedia.org/ontology/cinematography -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/cinematography"/>
+    
+
+
+    <!-- http://dbpedia.org/ontology/commander -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/commander"/>
+    
+
+
+    <!-- http://dbpedia.org/ontology/country -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/country"/>
+    
+
+
+    <!-- http://dbpedia.org/ontology/deathDate -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/deathDate"/>
+    
+
+
+    <!-- http://dbpedia.org/ontology/deathPlace -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/deathPlace"/>
+    
+
+
+    <!-- http://dbpedia.org/ontology/knownFor -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/knownFor"/>
+    
+
+
+    <!-- http://dbpedia.org/ontology/location -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/location"/>
+    
+
+
+    <!-- http://dbpedia.org/ontology/monarch -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/monarch"/>
+    
+
+
+    <!-- http://dbpedia.org/ontology/musicComposer -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/musicComposer"/>
+    
+
+
+    <!-- http://dbpedia.org/ontology/nationality -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/nationality"/>
+    
+
+
+    <!-- http://dbpedia.org/ontology/occupation -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/occupation"/>
+    
+
+
+    <!-- http://dbpedia.org/ontology/office -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/office"/>
+    
+
+
+    <!-- http://dbpedia.org/ontology/orderInOffice -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/orderInOffice"/>
+    
+
+
+    <!-- http://dbpedia.org/ontology/parent -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/parent"/>
+    
+
+
+    <!-- http://dbpedia.org/ontology/party -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/party"/>
+    
+
+
+    <!-- http://dbpedia.org/ontology/predecessor -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/predecessor"/>
+    
+
+
+    <!-- http://dbpedia.org/ontology/president -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/president"/>
+    
+
+
+    <!-- http://dbpedia.org/ontology/profession -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/profession"/>
+    
+
+
+    <!-- http://dbpedia.org/ontology/relation -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/relation"/>
+    
+
+
+    <!-- http://dbpedia.org/ontology/religion -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/religion"/>
+    
+
+
+    <!-- http://dbpedia.org/ontology/restingPlace -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/restingPlace"/>
+    
+
+
+    <!-- http://dbpedia.org/ontology/spouse -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/spouse"/>
+    
+
+
+    <!-- http://dbpedia.org/ontology/starring -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/starring"/>
+    
+
+
+    <!-- http://dbpedia.org/ontology/stateOfOrigin -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/stateOfOrigin"/>
+    
+
+
+    <!-- http://dbpedia.org/ontology/successor -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/successor"/>
+    
+
+
+    <!-- http://dbpedia.org/ontology/termPeriod -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/termPeriod"/>
+    
+
+
+    <!-- http://dbpedia.org/ontology/thumbnail -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/thumbnail"/>
+    
+
+
+    <!-- http://dbpedia.org/ontology/vicePresident -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/vicePresident"/>
+    
+
+
+    <!-- http://dbpedia.org/ontology/wikiPageExternalLink -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/wikiPageExternalLink"/>
+    
+
+
+    <!-- http://dbpedia.org/ontology/wikiPageID -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/wikiPageID"/>
+    
+
+
+    <!-- http://dbpedia.org/ontology/wikiPageInterLanguageLink -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/wikiPageInterLanguageLink"/>
+    
+
+
+    <!-- http://dbpedia.org/ontology/wikiPageRedirects -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/wikiPageRedirects"/>
+    
+
+
+    <!-- http://dbpedia.org/ontology/wikiPageRevisionID -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/wikiPageRevisionID"/>
+    
+
+
+    <!-- http://dbpedia.org/ontology/wikiPageWikiLink -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/wikiPageWikiLink"/>
+    
+
+
+    <!-- http://id.dbpedia.org/property/after -->
+
+    <owl:AnnotationProperty rdf:about="http://id.dbpedia.org/property/after"/>
+    
+
+
+    <!-- http://id.dbpedia.org/property/allegiance -->
+
+    <owl:AnnotationProperty rdf:about="http://id.dbpedia.org/property/allegiance"/>
+    
+
+
+    <!-- http://id.dbpedia.org/property/almaMater -->
+
+    <owl:AnnotationProperty rdf:about="http://id.dbpedia.org/property/almaMater"/>
+    
+
+
+    <!-- http://id.dbpedia.org/property/alt -->
+
+    <owl:AnnotationProperty rdf:about="http://id.dbpedia.org/property/alt"/>
+    
+
+
+    <!-- http://id.dbpedia.org/property/appointed -->
+
+    <owl:AnnotationProperty rdf:about="http://id.dbpedia.org/property/appointed"/>
+    
+
+
+    <!-- http://id.dbpedia.org/property/archdiocese -->
+
+    <owl:AnnotationProperty rdf:about="http://id.dbpedia.org/property/archdiocese"/>
+    
+
+
+    <!-- http://id.dbpedia.org/property/author -->
+
+    <owl:AnnotationProperty rdf:about="http://id.dbpedia.org/property/author"/>
+    
+
+
+    <!-- http://id.dbpedia.org/property/awards -->
+
+    <owl:AnnotationProperty rdf:about="http://id.dbpedia.org/property/awards"/>
+    
+
+
+    <!-- http://id.dbpedia.org/property/battles -->
+
+    <owl:AnnotationProperty rdf:about="http://id.dbpedia.org/property/battles"/>
+    
+
+
+    <!-- http://id.dbpedia.org/property/before -->
+
+    <owl:AnnotationProperty rdf:about="http://id.dbpedia.org/property/before"/>
+    
+
+
+    <!-- http://id.dbpedia.org/property/birthDate -->
+
+    <owl:AnnotationProperty rdf:about="http://id.dbpedia.org/property/birthDate"/>
+    
+
+
+    <!-- http://id.dbpedia.org/property/birthName -->
+
+    <owl:AnnotationProperty rdf:about="http://id.dbpedia.org/property/birthName"/>
+    
+
+
+    <!-- http://id.dbpedia.org/property/birthPlace -->
+
+    <owl:AnnotationProperty rdf:about="http://id.dbpedia.org/property/birthPlace"/>
+    
+
+
+    <!-- http://id.dbpedia.org/property/birthname -->
+
+    <owl:AnnotationProperty rdf:about="http://id.dbpedia.org/property/birthname"/>
+    
+
+
+    <!-- http://id.dbpedia.org/property/birthplace -->
+
+    <owl:AnnotationProperty rdf:about="http://id.dbpedia.org/property/birthplace"/>
+    
+
+
+    <!-- http://id.dbpedia.org/property/branch -->
+
+    <owl:AnnotationProperty rdf:about="http://id.dbpedia.org/property/branch"/>
+    
+
+
+    <!-- http://id.dbpedia.org/property/buried -->
+
+    <owl:AnnotationProperty rdf:about="http://id.dbpedia.org/property/buried"/>
+    
+
+
+    <!-- http://id.dbpedia.org/property/caption -->
+
+    <owl:AnnotationProperty rdf:about="http://id.dbpedia.org/property/caption"/>
+    
+
+
+    <!-- http://id.dbpedia.org/property/children -->
+
+    <owl:AnnotationProperty rdf:about="http://id.dbpedia.org/property/children"/>
+    
+
+
+    <!-- http://id.dbpedia.org/property/cinematography -->
+
+    <owl:AnnotationProperty rdf:about="http://id.dbpedia.org/property/cinematography"/>
+    
+
+
+    <!-- http://id.dbpedia.org/property/commander -->
+
+    <owl:AnnotationProperty rdf:about="http://id.dbpedia.org/property/commander"/>
+    
+
+
+    <!-- http://id.dbpedia.org/property/commands -->
+
+    <owl:AnnotationProperty rdf:about="http://id.dbpedia.org/property/commands"/>
+    
+
+
+    <!-- http://id.dbpedia.org/property/consecratedBy -->
+
+    <owl:AnnotationProperty rdf:about="http://id.dbpedia.org/property/consecratedBy"/>
+    
+
+
+    <!-- http://id.dbpedia.org/property/consecration -->
+
+    <owl:AnnotationProperty rdf:about="http://id.dbpedia.org/property/consecration"/>
+    
+
+
+    <!-- http://id.dbpedia.org/property/consort -->
+
+    <owl:AnnotationProperty rdf:about="http://id.dbpedia.org/property/consort"/>
+    
+
+
+    <!-- http://id.dbpedia.org/property/coronation -->
+
+    <owl:AnnotationProperty rdf:about="http://id.dbpedia.org/property/coronation"/>
+    
+
+
+    <!-- http://id.dbpedia.org/property/dateOfBirth -->
+
+    <owl:AnnotationProperty rdf:about="http://id.dbpedia.org/property/dateOfBirth"/>
+    
+
+
+    <!-- http://id.dbpedia.org/property/dateOfDeath -->
+
+    <owl:AnnotationProperty rdf:about="http://id.dbpedia.org/property/dateOfDeath"/>
+    
+
+
+    <!-- http://id.dbpedia.org/property/dead -->
+
+    <owl:AnnotationProperty rdf:about="http://id.dbpedia.org/property/dead"/>
+    
+
+
+    <!-- http://id.dbpedia.org/property/deathCause -->
+
+    <owl:AnnotationProperty rdf:about="http://id.dbpedia.org/property/deathCause"/>
+    
+
+
+    <!-- http://id.dbpedia.org/property/deathDate -->
+
+    <owl:AnnotationProperty rdf:about="http://id.dbpedia.org/property/deathDate"/>
+    
+
+
+    <!-- http://id.dbpedia.org/property/deathPlace -->
+
+    <owl:AnnotationProperty rdf:about="http://id.dbpedia.org/property/deathPlace"/>
+    
+
+
+    <!-- http://id.dbpedia.org/property/deathplace -->
+
+    <owl:AnnotationProperty rdf:about="http://id.dbpedia.org/property/deathplace"/>
+    
+
+
+    <!-- http://id.dbpedia.org/property/deputy -->
+
+    <owl:AnnotationProperty rdf:about="http://id.dbpedia.org/property/deputy"/>
+    
+
+
+    <!-- http://id.dbpedia.org/property/dynasty -->
+
+    <owl:AnnotationProperty rdf:about="http://id.dbpedia.org/property/dynasty"/>
+    
+
+
+    <!-- http://id.dbpedia.org/property/extra -->
+
+    <owl:AnnotationProperty rdf:about="http://id.dbpedia.org/property/extra"/>
+    
+
+
+    <!-- http://id.dbpedia.org/property/father -->
+
+    <owl:AnnotationProperty rdf:about="http://id.dbpedia.org/property/father"/>
+    
+
+
+    <!-- http://id.dbpedia.org/property/fullName -->
+
+    <owl:AnnotationProperty rdf:about="http://id.dbpedia.org/property/fullName"/>
+    
+
+
+    <!-- http://id.dbpedia.org/property/heir -->
+
+    <owl:AnnotationProperty rdf:about="http://id.dbpedia.org/property/heir"/>
+    
+
+
+    <!-- http://id.dbpedia.org/property/honorificPrefix -->
+
+    <owl:AnnotationProperty rdf:about="http://id.dbpedia.org/property/honorificPrefix"/>
+    
+
+
+    <!-- http://id.dbpedia.org/property/honorificSuffix -->
+
+    <owl:AnnotationProperty rdf:about="http://id.dbpedia.org/property/honorificSuffix"/>
+    
+
+
+    <!-- http://id.dbpedia.org/property/house -->
+
+    <owl:AnnotationProperty rdf:about="http://id.dbpedia.org/property/house"/>
+    
+
+
+    <!-- http://id.dbpedia.org/property/image -->
+
+    <owl:AnnotationProperty rdf:about="http://id.dbpedia.org/property/image"/>
+    
+
+
+    <!-- http://id.dbpedia.org/property/imageSize -->
+
+    <owl:AnnotationProperty rdf:about="http://id.dbpedia.org/property/imageSize"/>
+    
+
+
+    <!-- http://id.dbpedia.org/property/imagesize -->
+
+    <owl:AnnotationProperty rdf:about="http://id.dbpedia.org/property/imagesize"/>
+    
+
+
+    <!-- http://id.dbpedia.org/property/imgw -->
+
+    <owl:AnnotationProperty rdf:about="http://id.dbpedia.org/property/imgw"/>
+    
+
+
+    <!-- http://id.dbpedia.org/property/issue -->
+
+    <owl:AnnotationProperty rdf:about="http://id.dbpedia.org/property/issue"/>
+    
+
+
+    <!-- http://id.dbpedia.org/property/jabatan -->
+
+    <owl:AnnotationProperty rdf:about="http://id.dbpedia.org/property/jabatan"/>
+    
+
+
+    <!-- http://id.dbpedia.org/property/knownFor -->
+
+    <owl:AnnotationProperty rdf:about="http://id.dbpedia.org/property/knownFor"/>
+    
+
+
+    <!-- http://id.dbpedia.org/property/laterwork -->
+
+    <owl:AnnotationProperty rdf:about="http://id.dbpedia.org/property/laterwork"/>
+    
+
+
+    <!-- http://id.dbpedia.org/property/leader -->
+
+    <owl:AnnotationProperty rdf:about="http://id.dbpedia.org/property/leader"/>
+    
+
+
+    <!-- http://id.dbpedia.org/property/lived -->
+
+    <owl:AnnotationProperty rdf:about="http://id.dbpedia.org/property/lived"/>
+    
+
+
+    <!-- http://id.dbpedia.org/property/metropolis -->
+
+    <owl:AnnotationProperty rdf:about="http://id.dbpedia.org/property/metropolis"/>
+    
+
+
+    <!-- http://id.dbpedia.org/property/monarch -->
+
+    <owl:AnnotationProperty rdf:about="http://id.dbpedia.org/property/monarch"/>
+    
+
+
+    <!-- http://id.dbpedia.org/property/mother -->
+
+    <owl:AnnotationProperty rdf:about="http://id.dbpedia.org/property/mother"/>
+    
+
+
+    <!-- http://id.dbpedia.org/property/motto -->
+
+    <owl:AnnotationProperty rdf:about="http://id.dbpedia.org/property/motto"/>
+    
+
+
+    <!-- http://id.dbpedia.org/property/music -->
+
+    <owl:AnnotationProperty rdf:about="http://id.dbpedia.org/property/music"/>
+    
+
+
+    <!-- http://id.dbpedia.org/property/name -->
+
+    <owl:AnnotationProperty rdf:about="http://id.dbpedia.org/property/name"/>
+    
+
+
+    <!-- http://id.dbpedia.org/property/nationality -->
+
+    <owl:AnnotationProperty rdf:about="http://id.dbpedia.org/property/nationality"/>
+    
+
+
+    <!-- http://id.dbpedia.org/property/nativeLang -->
+
+    <owl:AnnotationProperty rdf:about="http://id.dbpedia.org/property/nativeLang"/>
+    
+
+
+    <!-- http://id.dbpedia.org/property/occupation -->
+
+    <owl:AnnotationProperty rdf:about="http://id.dbpedia.org/property/occupation"/>
+    
+
+
+    <!-- http://id.dbpedia.org/property/office -->
+
+    <owl:AnnotationProperty rdf:about="http://id.dbpedia.org/property/office"/>
+    
+
+
+    <!-- http://id.dbpedia.org/property/officiallyOpenedBy -->
+
+    <owl:AnnotationProperty rdf:about="http://id.dbpedia.org/property/officiallyOpenedBy"/>
+    
+
+
+    <!-- http://id.dbpedia.org/property/order -->
+
+    <owl:AnnotationProperty rdf:about="http://id.dbpedia.org/property/order"/>
+    
+
+
+    <!-- http://id.dbpedia.org/property/ordinatedBy -->
+
+    <owl:AnnotationProperty rdf:about="http://id.dbpedia.org/property/ordinatedBy"/>
+    
+
+
+    <!-- http://id.dbpedia.org/property/ordination -->
+
+    <owl:AnnotationProperty rdf:about="http://id.dbpedia.org/property/ordination"/>
+    
+
+
+    <!-- http://id.dbpedia.org/property/otherNames -->
+
+    <owl:AnnotationProperty rdf:about="http://id.dbpedia.org/property/otherNames"/>
+    
+
+
+    <!-- http://id.dbpedia.org/property/othername -->
+
+    <owl:AnnotationProperty rdf:about="http://id.dbpedia.org/property/othername"/>
+    
+
+
+    <!-- http://id.dbpedia.org/property/othertitles -->
+
+    <owl:AnnotationProperty rdf:about="http://id.dbpedia.org/property/othertitles"/>
+    
+
+
+    <!-- http://id.dbpedia.org/property/parents -->
+
+    <owl:AnnotationProperty rdf:about="http://id.dbpedia.org/property/parents"/>
+    
+
+
+    <!-- http://id.dbpedia.org/property/party -->
+
+    <owl:AnnotationProperty rdf:about="http://id.dbpedia.org/property/party"/>
+    
+
+
+    <!-- http://id.dbpedia.org/property/pendahulu -->
+
+    <owl:AnnotationProperty rdf:about="http://id.dbpedia.org/property/pendahulu"/>
+    
+
+
+    <!-- http://id.dbpedia.org/property/pengganti -->
+
+    <owl:AnnotationProperty rdf:about="http://id.dbpedia.org/property/pengganti"/>
+    
+
+
+    <!-- http://id.dbpedia.org/property/pertama -->
+
+    <owl:AnnotationProperty rdf:about="http://id.dbpedia.org/property/pertama"/>
+    
+
+
+    <!-- http://id.dbpedia.org/property/placeOfBirth -->
+
+    <owl:AnnotationProperty rdf:about="http://id.dbpedia.org/property/placeOfBirth"/>
+    
+
+
+    <!-- http://id.dbpedia.org/property/placeOfBurial -->
+
+    <owl:AnnotationProperty rdf:about="http://id.dbpedia.org/property/placeOfBurial"/>
+    
+
+
+    <!-- http://id.dbpedia.org/property/placeOfDeath -->
+
+    <owl:AnnotationProperty rdf:about="http://id.dbpedia.org/property/placeOfDeath"/>
+    
+
+
+    <!-- http://id.dbpedia.org/property/placeofburial -->
+
+    <owl:AnnotationProperty rdf:about="http://id.dbpedia.org/property/placeofburial"/>
+    
+
+
+    <!-- http://id.dbpedia.org/property/predecessor -->
+
+    <owl:AnnotationProperty rdf:about="http://id.dbpedia.org/property/predecessor"/>
+    
+
+
+    <!-- http://id.dbpedia.org/property/president -->
+
+    <owl:AnnotationProperty rdf:about="http://id.dbpedia.org/property/president"/>
+    
+
+
+    <!-- http://id.dbpedia.org/property/profession -->
+
+    <owl:AnnotationProperty rdf:about="http://id.dbpedia.org/property/profession"/>
+    
+
+
+    <!-- http://id.dbpedia.org/property/province -->
+
+    <owl:AnnotationProperty rdf:about="http://id.dbpedia.org/property/province"/>
+    
+
+
+    <!-- http://id.dbpedia.org/property/queen -->
+
+    <owl:AnnotationProperty rdf:about="http://id.dbpedia.org/property/queen"/>
+    
+
+
+    <!-- http://id.dbpedia.org/property/rank -->
+
+    <owl:AnnotationProperty rdf:about="http://id.dbpedia.org/property/rank"/>
+    
+
+
+    <!-- http://id.dbpedia.org/property/reference -->
+
+    <owl:AnnotationProperty rdf:about="http://id.dbpedia.org/property/reference"/>
+    
+
+
+    <!-- http://id.dbpedia.org/property/regType -->
+
+    <owl:AnnotationProperty rdf:about="http://id.dbpedia.org/property/regType"/>
+    
+
+
+    <!-- http://id.dbpedia.org/property/regent -->
+
+    <owl:AnnotationProperty rdf:about="http://id.dbpedia.org/property/regent"/>
+    
+
+
+    <!-- http://id.dbpedia.org/property/reign -->
+
+    <owl:AnnotationProperty rdf:about="http://id.dbpedia.org/property/reign"/>
+    
+
+
+    <!-- http://id.dbpedia.org/property/relations -->
+
+    <owl:AnnotationProperty rdf:about="http://id.dbpedia.org/property/relations"/>
+    
+
+
+    <!-- http://id.dbpedia.org/property/religion -->
+
+    <owl:AnnotationProperty rdf:about="http://id.dbpedia.org/property/religion"/>
+    
+
+
+    <!-- http://id.dbpedia.org/property/restingPlace -->
+
+    <owl:AnnotationProperty rdf:about="http://id.dbpedia.org/property/restingPlace"/>
+    
+
+
+    <!-- http://id.dbpedia.org/property/royalHouse -->
+
+    <owl:AnnotationProperty rdf:about="http://id.dbpedia.org/property/royalHouse"/>
+    
+
+
+    <!-- http://id.dbpedia.org/property/serviceyears -->
+
+    <owl:AnnotationProperty rdf:about="http://id.dbpedia.org/property/serviceyears"/>
+    
+
+
+    <!-- http://id.dbpedia.org/property/sign -->
+
+    <owl:AnnotationProperty rdf:about="http://id.dbpedia.org/property/sign"/>
+    
+
+
+    <!-- http://id.dbpedia.org/property/signatories -->
+
+    <owl:AnnotationProperty rdf:about="http://id.dbpedia.org/property/signatories"/>
+    
+
+
+    <!-- http://id.dbpedia.org/property/signature -->
+
+    <owl:AnnotationProperty rdf:about="http://id.dbpedia.org/property/signature"/>
+    
+
+
+    <!-- http://id.dbpedia.org/property/source -->
+
+    <owl:AnnotationProperty rdf:about="http://id.dbpedia.org/property/source"/>
+    
+
+
+    <!-- http://id.dbpedia.org/property/spouse -->
+
+    <owl:AnnotationProperty rdf:about="http://id.dbpedia.org/property/spouse"/>
+    
+
+
+    <!-- http://id.dbpedia.org/property/starring -->
+
+    <owl:AnnotationProperty rdf:about="http://id.dbpedia.org/property/starring"/>
+    
+
+
+    <!-- http://id.dbpedia.org/property/sucType -->
+
+    <owl:AnnotationProperty rdf:about="http://id.dbpedia.org/property/sucType"/>
+    
+
+
+    <!-- http://id.dbpedia.org/property/successor -->
+
+    <owl:AnnotationProperty rdf:about="http://id.dbpedia.org/property/successor"/>
+    
+
+
+    <!-- http://id.dbpedia.org/property/tahun -->
+
+    <owl:AnnotationProperty rdf:about="http://id.dbpedia.org/property/tahun"/>
+    
+
+
+    <!-- http://id.dbpedia.org/property/termEnd -->
+
+    <owl:AnnotationProperty rdf:about="http://id.dbpedia.org/property/termEnd"/>
+    
+
+
+    <!-- http://id.dbpedia.org/property/termStart -->
+
+    <owl:AnnotationProperty rdf:about="http://id.dbpedia.org/property/termStart"/>
+    
+
+
+    <!-- http://id.dbpedia.org/property/text -->
+
+    <owl:AnnotationProperty rdf:about="http://id.dbpedia.org/property/text"/>
+    
+
+
+    <!-- http://id.dbpedia.org/property/title -->
+
+    <owl:AnnotationProperty rdf:about="http://id.dbpedia.org/property/title"/>
+    
+
+
+    <!-- http://id.dbpedia.org/property/torchLighter -->
+
+    <owl:AnnotationProperty rdf:about="http://id.dbpedia.org/property/torchLighter"/>
+    
+
+
+    <!-- http://id.dbpedia.org/property/unit -->
+
+    <owl:AnnotationProperty rdf:about="http://id.dbpedia.org/property/unit"/>
+    
+
+
+    <!-- http://id.dbpedia.org/property/vicepresident -->
+
+    <owl:AnnotationProperty rdf:about="http://id.dbpedia.org/property/vicepresident"/>
+    
+
+
+    <!-- http://id.dbpedia.org/property/years -->
+
+    <owl:AnnotationProperty rdf:about="http://id.dbpedia.org/property/years"/>
+    
+
+
+    <!-- http://id.dbpedia.org/property/yearsActive -->
+
+    <owl:AnnotationProperty rdf:about="http://id.dbpedia.org/property/yearsActive"/>
+    
+
+
+    <!-- http://id.dbpedia.org/property/yearsactive -->
+
+    <owl:AnnotationProperty rdf:about="http://id.dbpedia.org/property/yearsactive"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/subject -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/subject"/>
+    
+
+
+    <!-- http://www.georss.org/georss/point -->
+
+    <owl:AnnotationProperty rdf:about="http://www.georss.org/georss/point"/>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#comment -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#comment"/>
+    
+
+
+    <!-- http://www.w3.org/2003/01/geo/wgs84_pos#lat -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2003/01/geo/wgs84_pos#lat"/>
+    
+
+
+    <!-- http://www.w3.org/2003/01/geo/wgs84_pos#long -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2003/01/geo/wgs84_pos#long"/>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#wasDerivedFrom -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/prov#wasDerivedFrom"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/depiction -->
+
+    <owl:AnnotationProperty rdf:about="http://xmlns.com/foaf/0.1/depiction"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/isPrimaryTopicOf -->
+
+    <owl:AnnotationProperty rdf:about="http://xmlns.com/foaf/0.1/isPrimaryTopicOf"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/name -->
+
+    <owl:AnnotationProperty rdf:about="http://xmlns.com/foaf/0.1/name"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/primaryTopic -->
+
+    <owl:AnnotationProperty rdf:about="http://xmlns.com/foaf/0.1/primaryTopic"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#date -->
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#date"/>
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#gMonthDay -->
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#gMonthDay"/>
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#gYear -->
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#gYear"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://dbpedia.org/property/issue -->
+
+    <owl:ObjectProperty rdf:about="http://dbpedia.org/property/issue">
+        <owl:equivalentProperty rdf:resource="http://www.co-ode.org/roberts/family-tree.owl#hasChild"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.co-ode.org/roberts/family-tree.owl#hasBrother -->
+
+    <owl:ObjectProperty rdf:about="http://www.co-ode.org/roberts/family-tree.owl#hasBrother"/>
+    
+
+
+    <!-- http://www.co-ode.org/roberts/family-tree.owl#hasChild -->
+
+    <owl:ObjectProperty rdf:about="http://www.co-ode.org/roberts/family-tree.owl#hasChild">
+        <owl:equivalentProperty rdf:resource="http://www.co-ode.org/roberts/family-tree.owl#isParentOf"/>
+        <owl:inverseOf rdf:resource="http://www.co-ode.org/roberts/family-tree.owl#isChildOf"/>
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.co-ode.org/roberts/family-tree.owl#isSpouseOf"/>
+            <rdf:Description rdf:about="http://www.co-ode.org/roberts/family-tree.owl#hasChild"/>
+        </owl:propertyChainAxiom>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.co-ode.org/roberts/family-tree.owl#hasDaughter -->
+
+    <owl:ObjectProperty rdf:about="http://www.co-ode.org/roberts/family-tree.owl#hasDaughter">
+        <rdfs:subPropertyOf rdf:resource="http://www.co-ode.org/roberts/family-tree.owl#hasChild"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.co-ode.org/roberts/family-tree.owl#hasFather -->
+
+    <owl:ObjectProperty rdf:about="http://www.co-ode.org/roberts/family-tree.owl#hasFather">
+        <rdfs:subPropertyOf rdf:resource="http://www.co-ode.org/roberts/family-tree.owl#hasParent"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.co-ode.org/roberts/family-tree.owl#hasGrandChild -->
+
+    <owl:ObjectProperty rdf:about="http://www.co-ode.org/roberts/family-tree.owl#hasGrandChild">
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.co-ode.org/roberts/family-tree.owl#hasChild"/>
+            <rdf:Description rdf:about="http://www.co-ode.org/roberts/family-tree.owl#hasChild"/>
+        </owl:propertyChainAxiom>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.co-ode.org/roberts/family-tree.owl#hasMother -->
+
+    <owl:ObjectProperty rdf:about="http://www.co-ode.org/roberts/family-tree.owl#hasMother">
+        <rdfs:subPropertyOf rdf:resource="http://www.co-ode.org/roberts/family-tree.owl#hasParent"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.co-ode.org/roberts/family-tree.owl#hasParent -->
+
+    <owl:ObjectProperty rdf:about="http://www.co-ode.org/roberts/family-tree.owl#hasParent">
+        <owl:inverseOf rdf:resource="http://www.co-ode.org/roberts/family-tree.owl#isParentOf"/>
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
+        <rdfs:range rdf:resource="http://dbpedia.org/ontology/Person"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.co-ode.org/roberts/family-tree.owl#hasSister -->
+
+    <owl:ObjectProperty rdf:about="http://www.co-ode.org/roberts/family-tree.owl#hasSister"/>
+    
+
+
+    <!-- http://www.co-ode.org/roberts/family-tree.owl#hasSon -->
+
+    <owl:ObjectProperty rdf:about="http://www.co-ode.org/roberts/family-tree.owl#hasSon">
+        <rdfs:subPropertyOf rdf:resource="http://www.co-ode.org/roberts/family-tree.owl#hasChild"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.co-ode.org/roberts/family-tree.owl#isChildOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.co-ode.org/roberts/family-tree.owl#isChildOf"/>
+    
+
+
+    <!-- http://www.co-ode.org/roberts/family-tree.owl#isFatherInLawOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.co-ode.org/roberts/family-tree.owl#isFatherInLawOf"/>
+    
+
+
+    <!-- http://www.co-ode.org/roberts/family-tree.owl#isFatherOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.co-ode.org/roberts/family-tree.owl#isFatherOf"/>
+    
+
+
+    <!-- http://www.co-ode.org/roberts/family-tree.owl#isGrandParentOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.co-ode.org/roberts/family-tree.owl#isGrandParentOf"/>
+    
+
+
+    <!-- http://www.co-ode.org/roberts/family-tree.owl#isGrandfatherOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.co-ode.org/roberts/family-tree.owl#isGrandfatherOf"/>
+    
+
+
+    <!-- http://www.co-ode.org/roberts/family-tree.owl#isGrandmotherOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.co-ode.org/roberts/family-tree.owl#isGrandmotherOf"/>
+    
+
+
+    <!-- http://www.co-ode.org/roberts/family-tree.owl#isGreatAuntOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.co-ode.org/roberts/family-tree.owl#isGreatAuntOf"/>
+    
+
+
+    <!-- http://www.co-ode.org/roberts/family-tree.owl#isHusbandOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.co-ode.org/roberts/family-tree.owl#isHusbandOf"/>
+    
+
+
+    <!-- http://www.co-ode.org/roberts/family-tree.owl#isMotherInLawOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.co-ode.org/roberts/family-tree.owl#isMotherInLawOf"/>
+    
+
+
+    <!-- http://www.co-ode.org/roberts/family-tree.owl#isMotherOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.co-ode.org/roberts/family-tree.owl#isMotherOf"/>
+    
+
+
+    <!-- http://www.co-ode.org/roberts/family-tree.owl#isParentOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.co-ode.org/roberts/family-tree.owl#isParentOf"/>
+    
+
+
+    <!-- http://www.co-ode.org/roberts/family-tree.owl#isSpouseOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.co-ode.org/roberts/family-tree.owl#isSpouseOf">
+        <owl:inverseOf rdf:resource="http://www.co-ode.org/roberts/family-tree.owl#isSpouseOf"/>
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
+        <rdfs:range rdf:resource="http://dbpedia.org/ontology/Person"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.co-ode.org/roberts/family-tree.owl#isWifeOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.co-ode.org/roberts/family-tree.owl#isWifeOf"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.co-ode.org/roberts/family-tree.owl#alsoKnownAs -->
+
+    <owl:DatatypeProperty rdf:about="http://www.co-ode.org/roberts/family-tree.owl#alsoKnownAs">
+        <rdfs:subPropertyOf rdf:resource="http://www.co-ode.org/roberts/family-tree.owl#knownAs"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.co-ode.org/roberts/family-tree.owl#formerlyKnownAs -->
+
+    <owl:DatatypeProperty rdf:about="http://www.co-ode.org/roberts/family-tree.owl#formerlyKnownAs">
+        <rdfs:subPropertyOf rdf:resource="http://www.co-ode.org/roberts/family-tree.owl#knownAs"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.co-ode.org/roberts/family-tree.owl#hasBirthYear -->
+
+    <owl:DatatypeProperty rdf:about="http://www.co-ode.org/roberts/family-tree.owl#hasBirthYear">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.co-ode.org/roberts/family-tree.owl#hasDeathYear -->
+
+    <owl:DatatypeProperty rdf:about="http://www.co-ode.org/roberts/family-tree.owl#hasDeathYear">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.co-ode.org/roberts/family-tree.owl#hasFamilyName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.co-ode.org/roberts/family-tree.owl#hasFamilyName">
+        <rdfs:subPropertyOf rdf:resource="http://www.co-ode.org/roberts/family-tree.owl#hasName"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.co-ode.org/roberts/family-tree.owl#hasFirstGivenName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.co-ode.org/roberts/family-tree.owl#hasFirstGivenName">
+        <rdfs:subPropertyOf rdf:resource="http://www.co-ode.org/roberts/family-tree.owl#hasName"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.co-ode.org/roberts/family-tree.owl#hasMarriageYear -->
+
+    <owl:DatatypeProperty rdf:about="http://www.co-ode.org/roberts/family-tree.owl#hasMarriageYear">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.co-ode.org/roberts/family-tree.owl#hasName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.co-ode.org/roberts/family-tree.owl#hasName">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.co-ode.org/roberts/family-tree.owl#knownAs -->
+
+    <owl:DatatypeProperty rdf:about="http://www.co-ode.org/roberts/family-tree.owl#knownAs">
+        <rdfs:subPropertyOf rdf:resource="http://www.co-ode.org/roberts/family-tree.owl#hasName"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/gender -->
+
+    <owl:DatatypeProperty rdf:about="http://xmlns.com/foaf/0.1/gender">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://dbpedia.org/ontology/Agent -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/Agent"/>
+    
+
+
+    <!-- http://dbpedia.org/ontology/Artist -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/Artist"/>
+    
+
+
+    <!-- http://dbpedia.org/ontology/OfficeHolder -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/OfficeHolder"/>
+    
+
+
+    <!-- http://dbpedia.org/ontology/Person -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/Person"/>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+
