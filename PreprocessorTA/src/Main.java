@@ -2,17 +2,14 @@ import com.hp.hpl.jena.ontology.OntModel;
 import com.hp.hpl.jena.ontology.OntModelSpec;
 import com.hp.hpl.jena.query.*;
 import com.hp.hpl.jena.rdf.model.*;
-import com.hp.hpl.jena.rdf.model.impl.StmtIteratorImpl;
 import com.hp.hpl.jena.reasoner.Reasoner;
-import com.hp.hpl.jena.reasoner.ReasonerFactory;
 import com.hp.hpl.jena.util.FileManager;
-import com.hp.hpl.jena.util.iterator.ExtendedIterator;
 import org.apache.log4j.BasicConfigurator;
 import org.apache.log4j.LogManager;
 import org.apache.log4j.Logger;
 import org.apache.log4j.varia.NullAppender;
-import com.hp.hpl.jena.util.iterator.Filter;
 import org.mindswap.pellet.jena.PelletReasonerFactory;
+
 import java.io.*;
 
 /**
@@ -140,9 +137,9 @@ public class Main {
         final Model union = ModelFactory.createUnion(Instances,famonto);
 
         // REASONING MODEL UNION
-//        Reasoner reasoner = PelletReasonerFactory.theInstance().create();
-//        InfModel reasonedModel = ModelFactory.createInfModel(reasoner,union);
-        Model reasonedModel = union;
+        Reasoner reasoner = PelletReasonerFactory.theInstance().create();
+        InfModel reasonedModel = ModelFactory.createInfModel(reasoner,union);
+//        Model reasonedModel = union;
 
         // KONVERSI KE FILE .RDF
 
@@ -167,9 +164,8 @@ public class Main {
 //            e.printStackTrace();
 //        }
 //
-//        // upload the resulting model
-//        DatasetAccessor accessor = DatasetAccessorFactory
-//                .createHTTP(UPLOAD_FUSEKI);
+        // upload the resulting model
+//        DatasetAccessor accessor = DatasetAccessorFactory.createHTTP(UPLOAD_FUSEKI);
 //        accessor.putModel(reasonedModel);
     }
 }

@@ -3,12 +3,15 @@
      xml:base="http://www.co-ode.org/roberts/family-tree.owl"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:owl2xml="http://www.w3.org/2006/12/owl2-xml#"
+     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
+     xmlns:swrl="http://www.w3.org/2003/11/swrl#"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:j.1="http://www.w3.org/2003/01/geo/wgs84_pos#"
      xmlns:j.0="http://www.opengis.net/gml/"
      xmlns:j.3="http://schema.org/"
      xmlns:j.2="http://dbpedia.org/ontology/"
+     xmlns:swrla="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#"
      xmlns:j.5="http://www.georss.org/georss/"
      xmlns:j.4="http://purl.org/dc/terms/"
      xmlns:j.7="http://id.dbpedia.org/property/"
@@ -1000,6 +1003,12 @@
     
 
 
+    <!-- http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled -->
+
+    <owl:AnnotationProperty rdf:about="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+    
+
+
     <!-- http://www.georss.org/georss/point -->
 
     <owl:AnnotationProperty rdf:about="http://www.georss.org/georss/point"/>
@@ -1135,10 +1144,6 @@
     <owl:ObjectProperty rdf:about="http://www.co-ode.org/roberts/family-tree.owl#hasChild">
         <owl:equivalentProperty rdf:resource="http://www.co-ode.org/roberts/family-tree.owl#isParentOf"/>
         <owl:inverseOf rdf:resource="http://www.co-ode.org/roberts/family-tree.owl#isChildOf"/>
-        <owl:propertyChainAxiom rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://www.co-ode.org/roberts/family-tree.owl#isSpouseOf"/>
-            <rdf:Description rdf:about="http://www.co-ode.org/roberts/family-tree.owl#hasChild"/>
-        </owl:propertyChainAxiom>
     </owl:ObjectProperty>
     
 
@@ -1188,6 +1193,12 @@
     
 
 
+    <!-- http://www.co-ode.org/roberts/family-tree.owl#hasSibling -->
+
+    <owl:ObjectProperty rdf:about="http://www.co-ode.org/roberts/family-tree.owl#hasSibling"/>
+    
+
+
     <!-- http://www.co-ode.org/roberts/family-tree.owl#hasSister -->
 
     <owl:ObjectProperty rdf:about="http://www.co-ode.org/roberts/family-tree.owl#hasSister"/>
@@ -1199,6 +1210,18 @@
     <owl:ObjectProperty rdf:about="http://www.co-ode.org/roberts/family-tree.owl#hasSon">
         <rdfs:subPropertyOf rdf:resource="http://www.co-ode.org/roberts/family-tree.owl#hasChild"/>
     </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.co-ode.org/roberts/family-tree.owl#hasStepChild -->
+
+    <owl:ObjectProperty rdf:about="http://www.co-ode.org/roberts/family-tree.owl#hasStepChild"/>
+    
+
+
+    <!-- http://www.co-ode.org/roberts/family-tree.owl#hasStepParent -->
+
+    <owl:ObjectProperty rdf:about="http://www.co-ode.org/roberts/family-tree.owl#hasStepParent"/>
     
 
 
@@ -1408,6 +1431,281 @@
     <!-- http://dbpedia.org/ontology/Person -->
 
     <owl:Class rdf:about="http://dbpedia.org/ontology/Person"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Rules
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://www.co-ode.org/roberts/family-tree.owl#parent">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.co-ode.org/roberts/family-tree.owl#firstspouse">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.co-ode.org/roberts/family-tree.owl#secondspouse">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.co-ode.org/roberts/family-tree.owl#child">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.co-ode.org/roberts/family-tree.owl#x">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.co-ode.org/roberts/family-tree.owl#y">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.co-ode.org/roberts/family-tree.owl#z">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hasStepParent</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.co-ode.org/roberts/family-tree.owl#isSpouseOf"/>
+                        <swrl:argument1 rdf:resource="http://www.co-ode.org/roberts/family-tree.owl#parent"/>
+                        <swrl:argument2 rdf:resource="http://www.co-ode.org/roberts/family-tree.owl#firstspouse"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.co-ode.org/roberts/family-tree.owl#isSpouseOf"/>
+                                <swrl:argument1 rdf:resource="http://www.co-ode.org/roberts/family-tree.owl#parent"/>
+                                <swrl:argument2 rdf:resource="http://www.co-ode.org/roberts/family-tree.owl#secondspouse"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://www.co-ode.org/roberts/family-tree.owl#hasChild"/>
+                                        <swrl:argument1 rdf:resource="http://www.co-ode.org/roberts/family-tree.owl#parent"/>
+                                        <swrl:argument2 rdf:resource="http://www.co-ode.org/roberts/family-tree.owl#child"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="http://www.co-ode.org/roberts/family-tree.owl#hasChild"/>
+                                                <swrl:argument1 rdf:resource="http://www.co-ode.org/roberts/family-tree.owl#firstspouse"/>
+                                                <swrl:argument2 rdf:resource="http://www.co-ode.org/roberts/family-tree.owl#child"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                <rdf:first>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DifferentIndividualsAtom"/>
+                                                        <swrl:argument1 rdf:resource="http://www.co-ode.org/roberts/family-tree.owl#firstspouse"/>
+                                                        <swrl:argument2 rdf:resource="http://www.co-ode.org/roberts/family-tree.owl#secondspouse"/>
+                                                    </rdf:Description>
+                                                </rdf:first>
+                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.co-ode.org/roberts/family-tree.owl#hasStepParent"/>
+                        <swrl:argument1 rdf:resource="http://www.co-ode.org/roberts/family-tree.owl#child"/>
+                        <swrl:argument2 rdf:resource="http://www.co-ode.org/roberts/family-tree.owl#secondspouse"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hasBiologicalChild</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.co-ode.org/roberts/family-tree.owl#isSpouseOf"/>
+                        <swrl:argument1 rdf:resource="http://www.co-ode.org/roberts/family-tree.owl#x"/>
+                        <swrl:argument2 rdf:resource="http://www.co-ode.org/roberts/family-tree.owl#y"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.co-ode.org/roberts/family-tree.owl#hasChild"/>
+                                <swrl:argument1 rdf:resource="http://www.co-ode.org/roberts/family-tree.owl#x"/>
+                                <swrl:argument2 rdf:resource="http://www.co-ode.org/roberts/family-tree.owl#z"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://www.co-ode.org/roberts/family-tree.owl#hasParent"/>
+                                        <swrl:argument1 rdf:resource="http://www.co-ode.org/roberts/family-tree.owl#z"/>
+                                        <swrl:argument2 rdf:resource="http://www.co-ode.org/roberts/family-tree.owl#x"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="http://www.co-ode.org/roberts/family-tree.owl#hasParent"/>
+                                                <swrl:argument1 rdf:resource="http://www.co-ode.org/roberts/family-tree.owl#z"/>
+                                                <swrl:argument2 rdf:resource="http://www.co-ode.org/roberts/family-tree.owl#y"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.co-ode.org/roberts/family-tree.owl#hasChild"/>
+                        <swrl:argument1 rdf:resource="http://www.co-ode.org/roberts/family-tree.owl#y"/>
+                        <swrl:argument2 rdf:resource="http://www.co-ode.org/roberts/family-tree.owl#z"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hasStepChild</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.co-ode.org/roberts/family-tree.owl#isSpouseOf"/>
+                        <swrl:argument1 rdf:resource="http://www.co-ode.org/roberts/family-tree.owl#parent"/>
+                        <swrl:argument2 rdf:resource="http://www.co-ode.org/roberts/family-tree.owl#firstspouse"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.co-ode.org/roberts/family-tree.owl#isSpouseOf"/>
+                                <swrl:argument1 rdf:resource="http://www.co-ode.org/roberts/family-tree.owl#parent"/>
+                                <swrl:argument2 rdf:resource="http://www.co-ode.org/roberts/family-tree.owl#secondspouse"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://www.co-ode.org/roberts/family-tree.owl#hasChild"/>
+                                        <swrl:argument1 rdf:resource="http://www.co-ode.org/roberts/family-tree.owl#parent"/>
+                                        <swrl:argument2 rdf:resource="http://www.co-ode.org/roberts/family-tree.owl#child"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="http://www.co-ode.org/roberts/family-tree.owl#hasChild"/>
+                                                <swrl:argument1 rdf:resource="http://www.co-ode.org/roberts/family-tree.owl#firstspouse"/>
+                                                <swrl:argument2 rdf:resource="http://www.co-ode.org/roberts/family-tree.owl#child"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                <rdf:first>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DifferentIndividualsAtom"/>
+                                                        <swrl:argument1 rdf:resource="http://www.co-ode.org/roberts/family-tree.owl#firstspouse"/>
+                                                        <swrl:argument2 rdf:resource="http://www.co-ode.org/roberts/family-tree.owl#secondspouse"/>
+                                                    </rdf:Description>
+                                                </rdf:first>
+                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.co-ode.org/roberts/family-tree.owl#hasStepChild"/>
+                        <swrl:argument1 rdf:resource="http://www.co-ode.org/roberts/family-tree.owl#secondspouse"/>
+                        <swrl:argument2 rdf:resource="http://www.co-ode.org/roberts/family-tree.owl#child"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
 </rdf:RDF>
 
 
