@@ -1243,24 +1243,6 @@
     
 
 
-    <!-- http://www.co-ode.org/roberts/family-tree.owl#isGrandParentOf -->
-
-    <owl:ObjectProperty rdf:about="http://www.co-ode.org/roberts/family-tree.owl#isGrandParentOf"/>
-    
-
-
-    <!-- http://www.co-ode.org/roberts/family-tree.owl#isGrandfatherOf -->
-
-    <owl:ObjectProperty rdf:about="http://www.co-ode.org/roberts/family-tree.owl#isGrandfatherOf"/>
-    
-
-
-    <!-- http://www.co-ode.org/roberts/family-tree.owl#isGrandmotherOf -->
-
-    <owl:ObjectProperty rdf:about="http://www.co-ode.org/roberts/family-tree.owl#isGrandmotherOf"/>
-    
-
-
     <!-- http://www.co-ode.org/roberts/family-tree.owl#isGreatAuntOf -->
 
     <owl:ObjectProperty rdf:about="http://www.co-ode.org/roberts/family-tree.owl#isGreatAuntOf"/>
