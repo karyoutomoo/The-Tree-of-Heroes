@@ -1103,6 +1103,14 @@
     
 
 
+    <!-- http://dbpedia.org/ontology/child -->
+
+    <owl:ObjectProperty rdf:about="http://dbpedia.org/ontology/child">
+        <owl:equivalentProperty rdf:resource="http://www.co-ode.org/roberts/family-tree.owl#hasChild"/>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://dbpedia.org/ontology/parent -->
 
     <owl:ObjectProperty rdf:about="http://dbpedia.org/ontology/parent">
@@ -1115,6 +1123,14 @@
 
     <owl:ObjectProperty rdf:about="http://dbpedia.org/ontology/spouse">
         <owl:equivalentProperty rdf:resource="http://www.co-ode.org/roberts/family-tree.owl#isSpouseOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://dbpedia.org/property/children -->
+
+    <owl:ObjectProperty rdf:about="http://dbpedia.org/property/children">
+        <owl:equivalentProperty rdf:resource="http://www.co-ode.org/roberts/family-tree.owl#hasChild"/>
     </owl:ObjectProperty>
     
 

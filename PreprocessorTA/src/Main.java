@@ -1,6 +1,5 @@
 import com.hp.hpl.jena.ontology.OntModel;
 import com.hp.hpl.jena.ontology.OntModelSpec;
-import com.hp.hpl.jena.query.*;
 import com.hp.hpl.jena.rdf.model.*;
 import com.hp.hpl.jena.reasoner.Reasoner;
 import com.hp.hpl.jena.util.FileManager;
@@ -25,12 +24,6 @@ public class Main {
     public static void main(String[] args) throws FileNotFoundException {
 
         String dbJenaFuseki="brits";
-        String prop = "http://id.dbpedia.org/property/";
-        String res = "http://id.dbpedia.org/resource/";
-        String rdfs ="http://www.w3.org/1999/02/22-rdf-syntax-ns#";
-        String schema="http://schema.org/";
-        String foaf = "http://xmlns.com/foaf/0.1/";
-        String UPLOAD_FUSEKI = "http://localhost:3030/"+dbJenaFuseki;
         String READ_FUSEKI = "http://localhost:3030/"+dbJenaFuseki;
         String OWL_FILE_LOCATION = "D:/The-Tree-of-Heroes/ontologi_lokal.owl";
         File fileRDF = new File("D:\\The-Tree-of-Heroes\\PreprocessorTA\\result.rdf");
@@ -49,45 +42,6 @@ public class Main {
         //ADD ACTOR
         FileManager fManager = FileManager.get();
         fManager.addLocatorURL();
-        String[] actors = {
-//      Pahlawan Nasional
-                "Soekarno",
-                "Mohammad_Hatta",
-                "Abdul_Haris_Nasution",
-                "Adam_Malik",
-                "Ahmad_Yani",
-                "Basuki_Rahmat",
-                "Tjipto_Mangoenkoesoemo",
-                "Diponegoro",
-                "Fatmawati",
-                "Teuku_Nyak_Arif",
-                "Ferdinand_Lumbantobing",
-                "Frans_Kaisiepo",
-                "Halim_Perdanakusuma",
-                "Hamengkubuwana_I",
-                "Hamengkubuwana_IX",
-                "Hasjim_Asy%27ari",
-                "Sultan_Hasanuddin",
-                "Tuanku_Imam_Bonjol",
-                "Ki_Hadjar_Dewantara",
-                "Cut_Nyak_Meutia",
-                "Mohammad_Natsir",
-                "I_Gusti_Ngurah_Rai",
-                "Pattimura",
-                "Slamet_Rijadi",
-                "Soedirman",
-                "Teuku_Umar",
-                "Untung_Suropati",
-                "Wahid_Hasjim",
-                //Tokoh kerajaan
-                "Raden_Wijaya",
-                "Hayam_Wuruk",
-                "Jayanegara",
-                "Airlangga",
-                "Tribhuwana_Wijayatunggadewi",
-                "Ken_Arok",
-
-        };
 
         String[] royalFamilies = {
                 //British Royal Family
@@ -116,16 +70,12 @@ public class Main {
                 "Lady_Louise_Windsor",
                 "James,_Viscount_Severn",
                 "Prince_George_of_Cambridge",
-                "Princess_Charlotte_of_Cambridge"
+                "Princess_Charlotte_of_Cambridge",
+                "Savannah_Phillips",
+                "Isla_Phillips"
 
         };
 
-//        for (Integer counter = 0; counter < actors.length; counter++) {
-//            Model modelActor = fManager.loadModel("http://id.dbpedia.org/data/" + actors[counter] + ".rdf");
-//
-//            Instances.add(modelActor);
-//            System.out.println(actors[counter]);
-//        }
         for (Integer counter = 0; counter < royalFamilies.length; counter++) {
             Model modelActor = fManager.loadModel("http://dbpedia.org/data/" + royalFamilies[counter] + ".ttl");
 
@@ -156,16 +106,5 @@ public class Main {
 
         reasonedModel.write( System.out, "RDF/XML" );
 
-//        // UPLOAD TO JENA FUSEKI
-//        // parse the file
-//        try (FileInputStream in = new FileInputStream(fileRDF)) {
-//            reasonedModel.read(in, null, "RDF/XML");
-//        } catch (IOException e) {
-//            e.printStackTrace();
-//        }
-//
-        // upload the resulting model
-//        DatasetAccessor accessor = DatasetAccessorFactory.createHTTP(UPLOAD_FUSEKI);
-//        accessor.putModel(reasonedModel);
     }
 }
