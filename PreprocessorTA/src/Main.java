@@ -73,7 +73,6 @@ public class Main {
                 "Princess_Charlotte_of_Cambridge",
                 "Savannah_Phillips",
                 "Isla_Phillips"
-
         };
 
         for (Integer counter = 0; counter < royalFamilies.length; counter++) {
