@@ -1,5 +1,3 @@
-import com.hp.hpl.jena.ontology.OntModel;
-import com.hp.hpl.jena.ontology.OntModelSpec;
 import com.hp.hpl.jena.rdf.model.*;
 import com.hp.hpl.jena.reasoner.Reasoner;
 import com.hp.hpl.jena.util.FileManager;
@@ -29,7 +27,6 @@ public class Main {
         File fileRDF = new File("D:\\The-Tree-of-Heroes\\PreprocessorTA\\result.rdf");
 
         BasicConfigurator.configure(new NullAppender());
-        final OntModel ontModel = ModelFactory.createOntologyModel( OntModelSpec.OWL_DL_MEM );
         System.out.println("Apache Jena Modelling, Reasoning and Inferring Tool");
 
         // MEMODELKAN FILE ACTOR DARI OWL ONTOLOGI FAMILY dan JENA-FUSEKI
@@ -88,7 +85,6 @@ public class Main {
         // REASONING MODEL UNION
         Reasoner reasoner = PelletReasonerFactory.theInstance().create();
         InfModel reasonedModel = ModelFactory.createInfModel(reasoner,union);
-//        Model reasonedModel = union;
 
         // KONVERSI KE FILE .RDF
 
