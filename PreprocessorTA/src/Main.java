@@ -42,35 +42,35 @@ public class Main {
 
         String[] royalFamilies = {
                 //Indonesian Emperors
-                "Raden_Wijaya",
-                "Hayam_Wuruk",
-                "Jayanegara",
-                "Airlangga",
-                "Tribhuwana_Wijayatunggadewi",
-                "Ken_Arok",
-                "Ken_Dedes",
-                "Anusapati",
-                "Tohjaya",
-                "Wisnuwardhana",
-                "Kertanagara",
-                "Prajnaparamita",
-                "Jayanagara",
-                "Tribhuwana_Wijayatunggadewi",
-                "Hayam_Wuruk",
-                "Wikramawardhana",
-                "Suhita",
-                "Kertawijaya",
-                "Rajasawardhana",
-                "Girishawardhana",
-                "Suraprabhawa",
-                "Girindrawardhana",
-                "Raden_Patah",
-                "Pati_Unus",
-                "Trenggana",
-                "Sunan_Prawoto",
-                "Indreswari",
-                "Narendraduhita",
-                "Prajnaparamita",
+//                "Raden_Wijaya",
+//                "Hayam_Wuruk",
+//                "Jayanegara",
+//                "Airlangga",
+//                "Tribhuwana_Wijayatunggadewi",
+//                "Ken_Arok",
+//                "Ken_Dedes",
+//                "Anusapati",
+//                "Tohjaya",
+//                "Wisnuwardhana",
+//                "Kertanagara",
+//                "Prajnaparamita",
+//                "Jayanagara",
+//                "Tribhuwana_Wijayatunggadewi",
+//                "Hayam_Wuruk",
+//                "Wikramawardhana",
+//                "Suhita",
+//                "Kertawijaya",
+//                "Rajasawardhana",
+//                "Girishawardhana",
+//                "Suraprabhawa",
+//                "Girindrawardhana",
+//                "Raden_Patah",
+//                "Pati_Unus",
+//                "Trenggana",
+//                "Sunan_Prawoto",
+//                "Indreswari",
+//                "Narendraduhita",
+//                "Prajnaparamita",
 
                 //Tokoh Sejarah
                 "Soekarno",
@@ -134,8 +134,9 @@ public class Main {
         final Model union = ModelFactory.createUnion(Instances,famonto);
 
         // REASONING MODEL UNION
-        Reasoner reasoner = PelletReasonerFactory.theInstance().create();
-        InfModel reasonedModel = ModelFactory.createInfModel(reasoner,union);
+//        Reasoner reasoner = PelletReasonerFactory.theInstance().create();
+//        InfModel reasonedModel = ModelFactory.createInfModel(reasoner,union);
+        Model reasonedModel = union;
 
         // KONVERSI KE FILE .RDF
 
