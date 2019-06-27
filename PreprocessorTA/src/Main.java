@@ -40,7 +40,7 @@ public class Main {
         FileManager fManager = FileManager.get();
         fManager.addLocatorURL();
 
-        String[] royalFamilies = {
+        String[] actors = {
                 //Indonesian Emperors
 //                "Raden_Wijaya",
 //                "Hayam_Wuruk",
@@ -55,8 +55,6 @@ public class Main {
 //                "Kertanagara",
 //                "Prajnaparamita",
 //                "Jayanagara",
-//                "Tribhuwana_Wijayatunggadewi",
-//                "Hayam_Wuruk",
 //                "Wikramawardhana",
 //                "Suhita",
 //                "Kertawijaya",
@@ -74,23 +72,48 @@ public class Main {
 
                 //Tokoh Sejarah
                 "Soekarno",
+                "Oetari",
+                "Inggit_Garnasih",
                 "Ratna_Sari_Dewi_Soekarno",
+                "Haryati",
+                "Hartini",
+                "Kartini_Manoppo",
+                "Yurike_Sanger",
+                "Heldy_Djafar",
+                "Fatmawati",
                 "Megawati_Soekarnoputri",
-                "Fatmawati_Soekarno",
+                "Taufiq_Kiemas",
+                "Puan_Maharani",
                 "Guruh_Soekarnoputra",
+                "Guntur_Soekarnoputra",
                 "Kartika_Sari_Dewi_Soekarno",
                 "Sukmawati_Soekarnoputri",
                 "Rachmawati_Soekarnoputri",
                 "Soeharto",
                 "Siti_Hartinah",
+                "Siti_Hardijanti_Rukmana",
+                "Hutomo_Mandala_Putra",
+                "Siti_Hediati_Hariyadi",
+                "Bambang_Trihatmodjo",
+                "Sigit_Harjojudanto",
+                "Siti_Hutami_Endang_Adiningsih",
                 "Bacharuddin_Jusuf_Habibie",
                 "Hasri_Ainun_Habibie",
+                "Ilham_Akbar",
+                "Thareq_Kemal",
+                "Abdurrahman_Wahid",
+                "Yenny_Wahid",
+                "Inayah_Wulandari",
+                "Sinta_Nuriyah",
                 "Susilo_Bambang_Yudhoyono",
                 "Kristiani_Herrawati",
+                "Agus_Harimurti_Yudhoyono",
+                "Edhie_Baskoro_Yudhoyono",
                 "Jusuf_Kalla",
                 "Mufidah_Jusuf_Kalla",
+                "Solihin_Kalla",
                 "Joko_Widodo",
-                "Iriana_Joko_Widodo",
+                "Iriana_Joko_Widodo"
 
                 //British Royal Family
 //                "Elizabeth_II",
@@ -122,21 +145,19 @@ public class Main {
 //                "Savannah_Phillips",
 //                "Isla_Phillips"
         };
-
-        for (Integer counter = 0; counter < royalFamilies.length; counter++) {
-            Model modelActor = fManager.loadModel("http://dbpedia.org/data/" + royalFamilies[counter] + ".ttl");
+        for (Integer counter = 0; counter < actors.length; counter++) {
+            Model modelActor = fManager.loadModel("http://id.dbpedia.org/data/" + actors[counter]);
 
             Instances.add(modelActor);
-            System.out.println(royalFamilies[counter]);
+            System.out.println(actors[counter]);
         }
 
         // MERGING MODEL DARI JENA-FUSEKI DAN MODEL ONTOLOGI FAMILY
         final Model union = ModelFactory.createUnion(Instances,famonto);
 
         // REASONING MODEL UNION
-//        Reasoner reasoner = PelletReasonerFactory.theInstance().create();
-//        InfModel reasonedModel = ModelFactory.createInfModel(reasoner,union);
-        Model reasonedModel = union;
+        Reasoner pelletReasoner = PelletReasonerFactory.theInstance().create();
+        InfModel reasonedModel = ModelFactory.createInfModel(pelletReasoner,union);
 
         // KONVERSI KE FILE .RDF
 
@@ -152,6 +173,5 @@ public class Main {
         System.setOut(fileStream);
 
         reasonedModel.write( System.out, "RDF/XML" );
-
     }
 }
