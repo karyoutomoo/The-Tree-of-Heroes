@@ -1,0 +1,47 @@
+<component name="libraryTable">
+  <library name="antlr-2.7.7">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib/pellet-2.4.0-ignazio1977/lib/antlr-2.7.7.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/pellet-2.4.0-ignazio1977/lib/antlr-runtime-3.4.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/pellet-2.4.0-ignazio1977/lib/aopalliance-1.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/pellet-2.4.0-ignazio1977/lib/aterm-java-1.8.2-p1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/pellet-2.4.0-ignazio1977/lib/commons-codec-1.6.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/pellet-2.4.0-ignazio1977/lib/commons-io-2.4.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/pellet-2.4.0-ignazio1977/lib/guava-18.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/pellet-2.4.0-ignazio1977/lib/guice-4.0-beta.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/pellet-2.4.0-ignazio1977/lib/guice-assistedinject-4.0-beta.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/pellet-2.4.0-ignazio1977/lib/guice-multibindings-4.0-beta.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/pellet-2.4.0-ignazio1977/lib/httpclient-4.2.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/pellet-2.4.0-ignazio1977/lib/httpcore-4.2.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/pellet-2.4.0-ignazio1977/lib/javax.inject-1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/pellet-2.4.0-ignazio1977/lib/jena-arq-2.10.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/pellet-2.4.0-ignazio1977/lib/jena-core-2.10.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/pellet-2.4.0-ignazio1977/lib/jena-iri-0.9.6.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/pellet-2.4.0-ignazio1977/lib/jgrapht-jdk1.5-0.7.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/pellet-2.4.0-ignazio1977/lib/jjtraveler-0.6.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/pellet-2.4.0-ignazio1977/lib/jsr305-2.0.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/pellet-2.4.0-ignazio1977/lib/owlapi-distribution-4.1.0-SNAPSHOT.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/pellet-2.4.0-ignazio1977/lib/pellet-cli-ignazio1977-2.4.0-ignazio1977.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/pellet-2.4.0-ignazio1977/lib/pellet-core-ignazio1977-2.4.0-ignazio1977.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/pellet-2.4.0-ignazio1977/lib/pellet-examples-ignazio1977-2.4.0-ignazio1977.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/pellet-2.4.0-ignazio1977/lib/pellet-explanation-ignazio1977-2.4.0-ignazio1977.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/pellet-2.4.0-ignazio1977/lib/pellet-jena-ignazio1977-2.4.0-ignazio1977.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/pellet-2.4.0-ignazio1977/lib/pellet-modularity-ignazio1977-2.4.0-ignazio1977.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/pellet-2.4.0-ignazio1977/lib/pellet-owlapi-ignazio1977-2.4.0-ignazio1977.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/pellet-2.4.0-ignazio1977/lib/pellet-pellint-ignazio1977-2.4.0-ignazio1977.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/pellet-2.4.0-ignazio1977/lib/pellet-query-ignazio1977-2.4.0-ignazio1977.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/pellet-2.4.0-ignazio1977/lib/shared-objects-1.4.9-p1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/pellet-2.4.0-ignazio1977/lib/slf4j-api-1.7.7.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/pellet-2.4.0-ignazio1977/lib/slf4j-simple-1.7.7.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/pellet-2.4.0-ignazio1977/lib/stringtemplate-3.2.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/pellet-2.4.0-ignazio1977/lib/trove4j-3.0.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/pellet-2.4.0-ignazio1977/lib/xercesImpl-2.11.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/pellet-2.4.0-ignazio1977/lib/xml-apis-1.4.01.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/lib/pellet-2.4.0-ignazio1977/lib/guice-4.0-beta.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/pellet-2.4.0-ignazio1977/lib/jsr305-2.0.1.jar!/" />
+    </SOURCES>
+  </library>
+</component>

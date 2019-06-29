@@ -92,8 +92,10 @@ public class Main {
                 "Soeharto",
                 "Siti_Hartinah",
                 "Siti_Hardijanti_Rukmana",
+                "Indra_Rukmana",
                 "Hutomo_Mandala_Putra",
                 "Siti_Hediati_Hariyadi",
+                "Prabowo_Subianto",
                 "Bambang_Trihatmodjo",
                 "Sigit_Harjojudanto",
                 "Siti_Hutami_Endang_Adiningsih",
@@ -108,12 +110,14 @@ public class Main {
                 "Susilo_Bambang_Yudhoyono",
                 "Kristiani_Herrawati",
                 "Agus_Harimurti_Yudhoyono",
+                "Annisa_Pohan",
                 "Edhie_Baskoro_Yudhoyono",
+                "Siti_Ruby_Aliya_Radjasa",
                 "Jusuf_Kalla",
                 "Mufidah_Jusuf_Kalla",
                 "Solihin_Kalla",
                 "Joko_Widodo",
-                "Iriana_Joko_Widodo"
+                "Iriana_Joko_Widodo",
 
                 //British Royal Family
 //                "Elizabeth_II",
@@ -147,7 +151,6 @@ public class Main {
         };
         for (Integer counter = 0; counter < actors.length; counter++) {
             Model modelActor = fManager.loadModel("http://id.dbpedia.org/data/" + actors[counter]);
-
             Instances.add(modelActor);
             System.out.println(actors[counter]);
         }
@@ -156,11 +159,12 @@ public class Main {
         final Model union = ModelFactory.createUnion(Instances,famonto);
 
         // REASONING MODEL UNION
-        Reasoner pelletReasoner = PelletReasonerFactory.theInstance().create();
-        InfModel reasonedModel = ModelFactory.createInfModel(pelletReasoner,union);
+//        Reasoner pelletReasoner = PelletReasonerFactory.theInstance().create();
+//        InfModel reasonedModel = ModelFactory.createInfModel(pelletReasoner,union);
+        Model reasonedModel = union;
+
 
         // KONVERSI KE FILE .RDF
-
         if(fileRDF.delete())
         {
             System.out.println("The old result.rdf file deleted successfully");

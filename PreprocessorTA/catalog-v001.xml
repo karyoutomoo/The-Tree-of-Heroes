@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
     <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
-        <uri id="Automatically generated entry, Timestamp=1561605921324" name="http://cohse.semanticweb.org/ontologies/people" uri="lib/pellet-2.4.0-ignazio1977/examples/src/main/resources/data/people+pets.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1561605921324" name="http://www.co-ode.org/ontologies/galen" uri="lib/pellet-2.4.0-ignazio1977/examples/src/main/resources/data/simple-galen.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1561605921324" name="http://www.eswc2006.org/technologies/ontology" uri="lib/apache-jena-2.7.4/src-examples/data/eswc-2006-09-21.rdf"/>
-        <uri id="Automatically generated entry, Timestamp=1561605921324" name="http://www.example.org/ontology3e84710c:1139cb9e449:-8000" uri="lib/pellet-2.4.0-ignazio1977/examples/src/main/resources/data/wine.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1561605921324" name="http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl" uri="lib/pellet-2.4.0-ignazio1977/examples/src/main/resources/data/univ-bench.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1561605921324" name="http://www.xfront.com/owl/ontologies/camera/" uri="lib/apache-jena-2.7.4/src-examples/data/camera.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1561605921324" name="urn:x-hp-jena:test1" uri="lib/apache-jena-2.7.4/src-examples/data/test1.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1561605921324" name="urn:x-hp-jena:test2" uri="lib/apache-jena-2.7.4/src-examples/data/test2.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1561802795547" name="http://cohse.semanticweb.org/ontologies/people" uri="lib/pellet-2.4.0-ignazio1977/examples/src/main/resources/data/people+pets.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1561802795547" name="http://www.co-ode.org/ontologies/galen" uri="lib/pellet-2.4.0-ignazio1977/examples/src/main/resources/data/simple-galen.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1561802795547" name="http://www.eswc2006.org/technologies/ontology" uri="lib/apache-jena-2.7.4/src-examples/data/eswc-2006-09-21.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1561802795547" name="http://www.example.org/ontology3e84710c:1139cb9e449:-8000" uri="lib/pellet-2.4.0-ignazio1977/examples/src/main/resources/data/wine.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1561802795547" name="http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl" uri="lib/pellet-2.4.0-ignazio1977/examples/src/main/resources/data/univ-bench.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1561802795547" name="http://www.semanticweb.org/asus/ontologies/2019/5/untitled-ontology-146" uri="Result%20Tokoh%20Sejarah%20DBpedia%20ID.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1561802795547" name="http://www.xfront.com/owl/ontologies/camera/" uri="lib/apache-jena-2.7.4/src-examples/data/camera.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1561802795547" name="urn:x-hp-jena:test1" uri="lib/apache-jena-2.7.4/src-examples/data/test1.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1561802795547" name="urn:x-hp-jena:test2" uri="lib/apache-jena-2.7.4/src-examples/data/test2.owl"/>
     </group>
 </catalog>
