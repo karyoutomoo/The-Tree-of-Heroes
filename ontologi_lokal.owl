@@ -1147,6 +1147,22 @@
     
 
 
+    <!-- http://id.dbpedia.org/property/child -->
+
+    <owl:ObjectProperty rdf:about="http://id.dbpedia.org/property/child">
+        <owl:equivalentProperty rdf:resource="http://www.co-ode.org/roberts/family-tree.owl#hasChild"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://id.dbpedia.org/property/spouse -->
+
+    <owl:ObjectProperty rdf:about="http://id.dbpedia.org/property/spouse">
+        <owl:equivalentProperty rdf:resource="http://www.co-ode.org/roberts/family-tree.owl#isSpouseOf"/>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://www.co-ode.org/roberts/family-tree.owl#hasChild -->
 
     <owl:ObjectProperty rdf:about="http://www.co-ode.org/roberts/family-tree.owl#hasChild">

@@ -42,33 +42,33 @@ public class Main {
 
         String[] actors = {
                 //Indonesian Emperors
-//                "Raden_Wijaya",
-//                "Hayam_Wuruk",
-//                "Jayanegara",
-//                "Airlangga",
-//                "Tribhuwana_Wijayatunggadewi",
-//                "Ken_Arok",
-//                "Ken_Dedes",
-//                "Anusapati",
-//                "Tohjaya",
-//                "Wisnuwardhana",
-//                "Kertanagara",
-//                "Prajnaparamita",
-//                "Jayanagara",
-//                "Wikramawardhana",
-//                "Suhita",
-//                "Kertawijaya",
-//                "Rajasawardhana",
-//                "Girishawardhana",
-//                "Suraprabhawa",
-//                "Girindrawardhana",
-//                "Raden_Patah",
-//                "Pati_Unus",
-//                "Trenggana",
-//                "Sunan_Prawoto",
-//                "Indreswari",
-//                "Narendraduhita",
-//                "Prajnaparamita",
+                "Raden_Wijaya",
+                "Hayam_Wuruk",
+                "Jayanegara",
+                "Airlangga",
+                "Tribhuwana_Wijayatunggadewi",
+                "Ken_Arok",
+                "Ken_Dedes",
+                "Anusapati",
+                "Tohjaya",
+                "Wisnuwardhana",
+                "Kertanagara",
+                "Prajnaparamita",
+                "Jayanagara",
+                "Wikramawardhana",
+                "Suhita",
+                "Kertawijaya",
+                "Rajasawardhana",
+                "Girishawardhana",
+                "Suraprabhawa",
+                "Girindrawardhana",
+                "Raden_Patah",
+                "Pati_Unus",
+                "Trenggana",
+                "Sunan_Prawoto",
+                "Indreswari",
+                "Narendraduhita",
+                "Prajnaparamita",
 
                 //Tokoh Sejarah
                 "Soekarno",
@@ -117,7 +117,7 @@ public class Main {
                 "Mufidah_Jusuf_Kalla",
                 "Solihin_Kalla",
                 "Joko_Widodo",
-                "Iriana_Joko_Widodo",
+//                "Iriana_Joko_Widodo",
 
                 //British Royal Family
 //                "Elizabeth_II",
@@ -150,7 +150,7 @@ public class Main {
 //                "Isla_Phillips"
         };
         for (Integer counter = 0; counter < actors.length; counter++) {
-            Model modelActor = fManager.loadModel("http://id.dbpedia.org/data/" + actors[counter]);
+            Model modelActor = fManager.loadModel("http://"+"id."+"dbpedia.org/data/" + actors[counter]);
             Instances.add(modelActor);
             System.out.println(actors[counter]);
         }
@@ -159,9 +159,9 @@ public class Main {
         final Model union = ModelFactory.createUnion(Instances,famonto);
 
         // REASONING MODEL UNION
-//        Reasoner pelletReasoner = PelletReasonerFactory.theInstance().create();
-//        InfModel reasonedModel = ModelFactory.createInfModel(pelletReasoner,union);
-        Model reasonedModel = union;
+        Reasoner pelletReasoner = PelletReasonerFactory.theInstance().create();
+        InfModel reasonedModel = ModelFactory.createInfModel(pelletReasoner,union);
+//        Model reasonedModel = union;
 
 
         // KONVERSI KE FILE .RDF
