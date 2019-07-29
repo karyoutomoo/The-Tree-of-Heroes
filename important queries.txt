@@ -1,9 +1,0 @@
-select ?spouse
-    where {
-        dbpedia-id:Soekarno dbpedia-owl:spouse ?spouse.
-    }
-
-select ?c
-    where {
-        dbpedia-id:Soekarno dbpedia-owl:child ?c.
-    }
